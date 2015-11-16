@@ -29,6 +29,7 @@ header nav a:first-child {
   margin-left: 0;
 }
 
+
 /* regular logo */
 .logo {
   display: block;
@@ -107,6 +108,14 @@ p {
   font-size: 1.1em;
 }
 
+a {
+  color: #008B8B;
+}
+
+a:hover {
+  color: #2F4F4F;
+}
+
 .main-wrapper {
   background-color: #FFF;
   width: 90em;
@@ -115,7 +124,7 @@ p {
 
 .main-content {
   /*padding: 18em 5em 5em 5em;*/
-  padding-top: 15.5em;
+  padding-top: 17.5em;
 
   -webkit-box-shadow: 0 0 8px rgba(0,0,0,.1);
   -moz-box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -126,7 +135,7 @@ p {
 
 .section {
   border-bottom: solid 0.1em #CCC;
-  padding: 5em;
+  padding: 3em;
 }
 
 .section:last-of-type {
@@ -143,14 +152,10 @@ p {
   margin-top: 0;
 }
 
-.title-section h1 {
-  padding-right: 1em;
-}
-
 .title-img {
   position: relative;
   background-color: #000;
-  height: 35em;
+  height: 30em;
   overflow: hidden;
 }
 
@@ -165,21 +170,39 @@ p {
 
 .title-text {
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   color: #FFF;
-  text-align: center;
 }
 
 .title-text h1 {
   font-size: 3em;
-  margin-bottom: 0;
+  margin: 0;
+}
+
+.title-left-col h2 {
+  color: #FFF;
+  margin-top: 0;
 }
 
 .title-text p {
-  margin-bottom: 2em;
+  margin-top: 0.8em;
+  margin-right: 12em;
+}
+
+.title-left-col {
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.title-left-col a {
+  color: #FFF;
+}
+
+.title-left-col a:hover {
+  color: #008B8B;
 }
 
 /* main page - projects section */
@@ -189,7 +212,7 @@ p {
 }
 
 .interests-img {
-  padding: 1em 5em;
+  padding: 0em 5em;
 }
 
 /* ordering elements */
@@ -234,7 +257,6 @@ p {
   margin: 1em 0;
   color: #FFF;
   text-align: center;
-  border: solid 0.2em #FFF;
 
   -webkit-border-radius: 4px; 
   -moz-border-radius: 4px; 
@@ -299,11 +321,25 @@ a .button {
 
   .title-text h1 {
     font-size: 1.5em;
+    margin-bottom: 0.5rem;
+  }
+
+  .title-text h2 {
+    font-size: 1.1em;
   }
 
   .title-text p {
     font-size: 1.1em;
-    margin-bottom: 1em;
+    margin-right: 0;
+  }
+
+  .title-left-col {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .title-text {
+    text-align: center;
   }
 
   .projects-section,

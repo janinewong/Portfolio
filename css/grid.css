@@ -30,10 +30,6 @@
   padding: 1em 0;
 }
 
-[class^='grid-col-']:last-of-type {
-  padding: 0;
-}
-
 [class^='grid-col-'] img {
   margin: 0;
 }
@@ -125,13 +121,6 @@
   }
 
   .grid-pad {
-    padding-right: 1em;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  [class^='grid-col-']:last-of-type {
-    padding-left: 1em;
-    padding-right: 0;
+    padding: 1.5em;
   }
 }
