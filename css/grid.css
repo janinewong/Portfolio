@@ -30,10 +30,6 @@
   padding: 1em 0;
 }
 
-[class^='grid-col-'] img {
-  margin: 0;
-}
-
 
 /*
 	Here we are defining our default column widths with the intention
@@ -42,7 +38,7 @@
 .grid-col-1of10, .grid-col-2of10, .grid-col-3of10, 
 .grid-col-4of10, .grid-col-5of10, .grid-col-6of10, 
 .grid-col-7of10, .grid-col-8of10, .grid-col-9of10,
-.grid-col-10of10, .grid-col-33, .grid-col-66 {
+.grid-col-10of10, .grid-col-25, .grid-col-33, .grid-col-66 {
   width: 100%;
 }
 
@@ -110,6 +106,10 @@
 
   .grid-col-10of10 {
     width: 100%;
+  }
+
+  .grid-col-25 {
+    width: 25%;
   }
 
   .grid-col-33 {

@@ -98,22 +98,36 @@ h1 {
 
 h2 {
   font-size: 1.1em;
-  color: #808080;
+  color: #008B8B;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 1.1em;
+  color: #808080;
+}
+
 p {
   font-size: 1.1em;
+  margin-bottom: 2em;
 }
 
 a {
   color: #008B8B;
+  text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:active,
+a:focus {
   color: #2F4F4F;
+}
+
+.selected {
+  color: #008B8B;
+  display: inline-block;
 }
 
 .main-wrapper {
@@ -336,8 +350,7 @@ a .button {
 
   .title-text p {
     font-size: 1.1em;
-    margin-right: 0;
-    margin-bottom: 0;
+    margin: 0 1em;
   }
 
   .title-left-col {
@@ -378,4 +391,81 @@ a .button {
     width: auto;
     height: auto;
   }
+}
+
+
+
+
+/* --------------------- STYLEGUIDE --------------------- */
+code {
+  background-color: #EFEFEF;
+  padding: 0.5em 0.75em;
+  display: block;
+
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */    
+  white-space: -o-pre-wrap; /* Opera 7 */    
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.logo-render {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.typeface-render p {
+  margin: 0;
+  text-align: justify;
+}
+
+.palette-pad {
+  padding-right: 1.5em;
+}
+
+.palette-pad:last-of-type {
+  padding-right: 0;
+}
+
+.palette-pad h3 {
+  margin-bottom: 0;
+}
+
+.palette-pad p {
+  margin: 0;
+}
+
+.palette-box {
+  display: inline-block;
+  width: 100%;
+  height: 7.5em;
+}
+
+.palette-teal {
+  background-color: #008B8B;
+}
+
+.palette-dark-teal {
+  background-color: #2F4F4F;
+}
+
+.palette-light-grey {
+  background-color: #808080;
+}
+
+.palette-dark-grey {
+  background-color: #343434;
+}
+
+.icon-pad {
+  padding-right: 1em;
+}
+
+.icon-pad:last-of-type {
+  padding: 0;
 }
