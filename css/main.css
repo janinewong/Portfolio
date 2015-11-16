@@ -432,7 +432,8 @@ code {
   padding-right: 0;
 }
 
-.palette-pad h3 {
+.palette-pad h3,
+.intext-render {
   margin-bottom: 0;
 }
 
