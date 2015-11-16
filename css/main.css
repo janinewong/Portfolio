@@ -143,15 +143,6 @@ a:hover {
 }
 
 /* main page - title section */
-
-.title-section {
-  text-align: center;
-}
-
-.title-section h2 {
-  margin-top: 0;
-}
-
 .title-img {
   position: relative;
   background-color: #000;
@@ -211,8 +202,23 @@ a:hover {
   margin-top: 2em;
 }
 
+/* main page - interests section */
+
+.interests-section {
+  text-align: center;
+}
+
+.interests-section h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.interests-section p {
+  margin: 0em;
+}
+
 .interests-img {
-  padding: 0em 5em;
+  padding: 0em 5em 1em 5em;
 }
 
 /* ordering elements */
@@ -315,7 +321,7 @@ a .button {
     padding: 2em 1em;
   }
 
-  .passions-img {
+  .interests-img {
     padding: 1em 0;
   }
 
@@ -331,6 +337,7 @@ a .button {
   .title-text p {
     font-size: 1.1em;
     margin-right: 0;
+    margin-bottom: 0;
   }
 
   .title-left-col {
@@ -340,6 +347,7 @@ a .button {
 
   .title-text {
     text-align: center;
+    top: 50%;
   }
 
   .projects-section,
