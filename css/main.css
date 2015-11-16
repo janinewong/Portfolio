@@ -1,0 +1,337 @@
+/* --------------------- HEADER --------------------- */
+header {
+  width: 90em;
+  height: auto;
+  position: fixed;
+  z-index: 999;
+  background-color: #FFF;
+}
+
+header nav a {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-left: 3em;
+  color: #343434;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header nav a:hover {
+  color: #008B8B;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+/* regular logo */
+.logo {
+  display: block;
+  width: 9em;
+  margin: 0 auto;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+  -webkit-transition: width 0.4s, padding 0.4s;
+  -moz-transition: width 0.4s, padding 0.4s;
+  -ms-transition: width 0.4s, padding 0.4s;
+  -o-transition: width 0.4s, padding 0.4s;
+  transition: width 0.4s, padding 0.4s;
+}
+
+/* logo when scrolling down */
+.small-logo {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  width: 7em;
+  margin: 0 auto;
+  display: block;
+  -webkit-transition: width 0.4s, padding 0.4s;
+  -moz-transition: width 0.4s, padding 0.4s;
+  -ms-transition: width 0.4s, padding 0.4s;
+  -o-transition: width 0.4s, padding 0.4s;
+  transition: width 0.4s, padding 0.4s;
+}
+
+/* title below logo */
+.logo-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+/* navigation labels */
+.sub-nav {
+  padding: 1.5em;
+  display: block;
+  text-align: center;
+  border-top: solid 0.1em #f2f2f2;
+  border-bottom: solid 0.1em #f2f2f2;
+}
+
+
+/* --------------------- STYLING --------------------- */
+
+body {
+  font-family: "Open Sans";
+  font-size: 12.5px;
+  background-color: #EFEFEF;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.1em;
+  color: #808080;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.main-wrapper {
+  background-color: #FFF;
+  width: 90em;
+  margin: 0 auto;
+}
+
+.main-content {
+  /*padding: 18em 5em 5em 5em;*/
+  padding-top: 15.5em;
+
+  -webkit-box-shadow: 0 0 8px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 0 8px rgba(0,0,0,.1);
+  -ms-box-shadow: 0 0 8px rgba(0,0,0,.1);
+  -o-box-shadow: 0 0 8px rgba(0,0,0,.1);
+  box-shadow: 0 0 8px rgba(0,0,0,.1);
+}
+
+.section {
+  border-bottom: solid 0.1em #CCC;
+  padding: 5em;
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+/* main page - title section */
+
+.title-section {
+  text-align: center;
+}
+
+.title-section h2 {
+  margin-top: 0;
+}
+
+.title-section h1 {
+  padding-right: 1em;
+}
+
+.title-img {
+  position: relative;
+  background-color: #000;
+  height: 35em;
+  overflow: hidden;
+}
+
+.title-img img {
+  top: -10em;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=75);
+  -moz-opacity:0.75;
+  -khtml-opacity: 0.75;
+  opacity: 0.75;
+}
+
+.title-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  text-align: center;
+}
+
+.title-text h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.title-text p {
+  margin-bottom: 2em;
+}
+
+/* main page - projects section */
+
+.projects-section {
+  margin-top: 2em;
+}
+
+.interests-img {
+  padding: 1em 5em;
+}
+
+/* ordering elements */
+.flex-container {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -moz-box-flex-wrap: wrap;
+  -ms-box-flex-wrap: wrap;
+  -o-box-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.order1 {
+  -webkit-box-ordinal-group: 1;  
+  -moz-box-ordinal-group: 1;     
+  -ms-flex-order: 1;     
+  -webkit-order: 1;  
+  order: 1;
+}
+
+.order2 {
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  -webkit-order: 2;
+  order: 2; 
+}
+
+
+/* --------------------- INTERACTION --------------------- */
+.button {
+  display: inline-block;
+  background-color: #008B8B;
+  padding: 0.75em;
+  margin: 1em 0;
+  color: #FFF;
+  text-align: center;
+  border: solid 0.2em #FFF;
+
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px; 
+  border-radius: 4px; 
+}
+
+.button:hover, .button:active, .button-focus {
+  background-color: #2F4F4F;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a .button {
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+
+
+/* --------------------- RESIZE --------------------- */
+
+@media (max-width: 70em) {
+  header,
+  .main-wrapper,
+  .button {
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 9em 0 0 0;
+  }
+
+  .logo {
+    width: 6em;
+    padding: 1em 0;
+  }
+
+  .small-logo {
+    width: 4em;
+    padding: 0.5em 0;
+  }
+
+  .logo-title {
+    display: none;
+  }
+
+  .sub-nav {
+    padding: 1em;
+  }
+
+  .section {
+    padding: 2em 1em;
+  }
+
+  .passions-img {
+    padding: 1em 0;
+  }
+
+  .title-text h1 {
+    font-size: 1.5em;
+  }
+
+  .title-text p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+  }
+
+  .projects-section,
+  .title-section img:first-child {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  /* ORDER */
+  .order1 {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2; 
+  }
+
+  .order2 {
+    -webkit-box-ordinal-group: 1;  
+    -moz-box-ordinal-group: 1;     
+    -ms-flex-order: 1;     
+    -webkit-order: 1;  
+    order: 1;
+  }
+
+  .button-width-retained,
+  .title-img {
+    width: auto;
+    height: auto;
+  }
+}
