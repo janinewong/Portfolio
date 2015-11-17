@@ -417,21 +417,20 @@ a .button {
   }
 
   .main-content {
-    padding: 11.75em 0 0 0;
+    padding: 14em 0 0 0;
   }
 
   .logo {
-    width: 5em;
+    width: 7em;
     padding: 1em 0;
   }
 
   .logo-title {
-    padding-bottom: 1em;
-    font-size: 1.1em;
+    padding-bottom: 1.5em;
   }
 
   .small-logo {
-    width: 4em;
+    width: 5em;
     padding: 0.5em 0;
   }
 
@@ -455,6 +454,25 @@ a .button {
 @media (max-width: 45em) {
   p {
     margin-bottom: 1em;
+  }
+
+  .main-content {
+    padding: 11.75em 0 0 0;
+  }
+
+  .logo {
+    width: 5em;
+    padding: 1em 0;
+  }
+
+  .logo-title {
+    padding-bottom: 1em;
+    font-size: 1.1em;
+  }
+
+  .small-logo {
+    width: 4em;
+    padding: 0.5em 0;
   }
 
   .button {
