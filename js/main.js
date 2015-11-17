@@ -9,11 +9,15 @@ function init() {
       if(distanceY > mobileShrinkOn) {
         $('nav img').addClass('small-logo');
         $('nav img').removeClass('logo');
+
+        $('.logo-title').css({'display':'none'});
       }
       
        if(distanceY < mobileShrinkOn) {
         $('nav img').addClass('logo');
         $('nav img').removeClass('small-logo');
+
+        $('.logo-title').css({'display':'block'});
       }
     } 
 
