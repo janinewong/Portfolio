@@ -417,21 +417,22 @@ a .button {
   }
 
   .main-content {
-    padding: 9.9em 0 0 0;
+    padding: 12em 0 0 0;
   }
 
   .logo {
-    width: 6em;
+    width: 5em;
     padding: 1em 0;
+  }
+
+  .logo-title {
+    padding-bottom: 1em;
+    font-size: 1.1em;
   }
 
   .small-logo {
     width: 4em;
     padding: 0.5em 0;
-  }
-
-  .logo-title {
-    display: none;
   }
 
   .sub-nav {
@@ -455,7 +456,7 @@ a .button {
   p {
     margin-bottom: 1em;
   }
-  
+
   .button {
     width: 100%;
   }
