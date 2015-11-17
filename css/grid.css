@@ -129,6 +129,6 @@
   }
 
   .grid-pad:first-of-type {
-    padding-top: auto;
+    padding: 1.5em;
   }
 }
