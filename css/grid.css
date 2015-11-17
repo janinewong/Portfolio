@@ -27,7 +27,11 @@
 
 /* padding for the columns */
 .grid-pad {
-  padding: 1em 0;
+  padding: 1.5em 0;
+}
+
+.grid-pad:first-of-type {
+  padding-top: 0;
 }
 
 
@@ -122,5 +126,9 @@
 
   .grid-pad {
     padding: 1.5em;
+  }
+
+  .grid-pad:first-of-type {
+    padding-top: auto;
   }
 }
