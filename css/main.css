@@ -33,7 +33,7 @@ nav a:first-child {
 /* regular logo */
 .logo {
   display: block;
-  width: 9em;
+  width: 7em;
   margin: 0 auto;
   padding-top: 2em;
   padding-bottom: 1.5em;
@@ -48,7 +48,7 @@ nav a:first-child {
 .small-logo {
   padding-top: 1em;
   padding-bottom: 0.5em;
-  width: 7em;
+  width: 5em;
   margin: 0 auto;
   display: block;
   -webkit-transition: width 0.4s, padding 0.4s;
@@ -326,14 +326,14 @@ a .button {
 
 /* --------------------- RESIZE --------------------- */
 
-@media (max-width: 70em) {
+@media (max-width: 69em) {
   header,
   .main-wrapper {
     width: 100%;
   }
 
   .main-content {
-    padding: 9.5em 0 0 0;
+    padding: 9em 0 0 0;
   }
 
   .logo {
