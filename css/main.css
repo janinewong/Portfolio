@@ -328,13 +328,12 @@ a .button {
 
 @media (max-width: 70em) {
   header,
-  .main-wrapper,
-  .button {
+  .main-wrapper {
     width: 100%;
   }
 
   .main-content {
-    padding: 9em 0 0 0;
+    padding: 9.5em 0 0 0;
   }
 
   .logo {
@@ -356,6 +355,24 @@ a .button {
   }
 
   .section {
+    padding: 3em 2em;
+  }
+
+  .interests-img {
+    padding: 0em 3em 1em 3em;
+  }
+
+  .title-text p {
+    margin-right: 8em;
+  }
+}
+
+@media (max-width: 45em) {
+  .button {
+    width: 100%;
+  }
+
+  .section {
     padding: 2em 1em;
   }
 
@@ -364,7 +381,7 @@ a .button {
   }
 
   .title-text h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 0.5rem;
   }
 
