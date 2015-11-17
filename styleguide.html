@@ -66,7 +66,7 @@
           <div class="grid-row">
             <div class="grid-col-5of10">
               <h3>With name</h3>
-              <a href="Home.html"><img src="img/brand-logo.png" class="logo">
+              <a><img src="img/brand-logo.png" class="logo">
                 <div class="logo-render">Janine Wong</div>
               </a>
               
@@ -74,7 +74,7 @@
 
             <div class="grid-col-5of10">
               <h3>Without name</h3>
-              <a href="Home.html"><img src="img/brand-logo.png" class="logo"></a>
+              <img src="img/brand-logo.png" class="logo">
               
             </div>
           </div>
@@ -171,14 +171,217 @@
           <h1>In-text link</h1>
 
           <h2>CSS selector:</h2>
-          <p>.selected, .selected-link</p>
+          <p>.selected</p>
 
           <h2>Sample code:</h2>
           <p><code>&lt;a href="#" class="selected"&gt;Default In-text Link&lt;/a&gt;</code></p>
 
           <h2>Rendered element:</h2>
-          <p class="intext-render">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac varius nisi. <a class="selected" href="">Mauris</a> dui diam, porta in tempus sit amet, volutpat at nulla. Aliquam condimentum diam mi. Donec sed molestie ante. Quisque id eleifend leo, sit amet auctor arcu. Phasellus et diam ac lectus interdum pellentesque id sit amet ipsum. Nunc egestas mauris sit amet turpis feugiat tincidunt. Ut eu sagittis tellus, vitae cursus dui. Fusce ornare non felis eget rhoncus. Integer a nisl quis massa vehicula ultricies. Sed vel turpis dui.</p>
+          <p class="section-render">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac varius nisi. <a class="selected" href="">Mauris</a> dui diam, porta in tempus sit amet, volutpat at nulla. Aliquam condimentum diam mi. Donec sed molestie ante. Quisque id eleifend leo, sit amet auctor arcu. Phasellus et diam ac lectus interdum pellentesque id sit amet ipsum. Nunc egestas mauris sit amet turpis feugiat tincidunt. Ut eu sagittis tellus, vitae cursus dui. Fusce ornare non felis eget rhoncus. Integer a nisl quis massa vehicula ultricies. Sed vel turpis dui.</p>
         </div>
+
+
+        <!-- Form -->
+        <div class="section">
+          <h1>Form</h1>
+
+          <h2>CSS selector:</h2>
+          <p>.contact-form</p>
+
+          <h2>Sample code:</h2>
+          <p><code>&lt;form class="contact-form"&gt;Default Form&lt;/form&gt;</code></p>
+
+          <h2>Rendered element:</h2>
+          <form class="contact-form" name="contact" accept-charset="utf-8">
+            <label><input name="name" type="text" placeholder="Name"/></label>
+            <label><input name="email" type="email" placeholder="Email"/></label>
+            <label><textarea name="message" placeholder="Message"></textarea></label>
+            <input class="button" name="submit" type="submit" value="Send"/>
+          </form>
+        </div>
+
+
+        <!-- Headings -->
+        <div class="section">
+          <h1>Headings</h1>
+
+          <h2>CSS Selector:</h2>
+          <p>h1, h2, h3</p>
+
+          <h2>Sample code:</h2>
+          <p><code>&lt;h1&gt;Your Content&lt;/h1&gt;</code>
+          <code>&lt;h2&gt;Your Content&lt;/h2&gt;</code>
+          <code>&lt;h3&gt;Your Content&lt;/h3&gt;</code></p>
+
+          <h2>Rendered element:</h2>
+
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+        </div>
+
+
+        <!-- Paragraph text -->
+        <div class="section">
+          <h1>Paragraphs</h1>
+
+          <h2>Sample code:</h2>
+          <p><code>&lt;p&gt;Your Content&lt;/p&gt;</code></p>
+
+          <h2>Rendered element:</h2>
+
+          <p class="section-render">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac varius nisi. Mauris dui diam, porta in tempus sit amet, volutpat at nulla. Aliquam condimentum diam mi. Donec sed molestie ante. Quisque id eleifend leo, sit amet auctor arcu. Phasellus et diam ac lectus interdum pellentesque id sit amet ipsum. Nunc egestas mauris sit amet turpis feugiat tincidunt. Ut eu sagittis tellus, vitae cursus dui. Fusce ornare non felis eget rhoncus. Integer a nisl quis massa vehicula ultricies. Sed vel turpis dui.</p>
+        </div>
+
+
+        <!-- Bulleted Lists -->
+        <div class="section">
+          <h1>Bulleted Lists</h1>
+
+          <h2>CSS Selector:</h2>
+          <p>ul, li</p>
+
+          <h2>Sample code:</h2>
+          <p>
+            <code>&lt;ul&gt;
+              <br>&nbsp;&lt;li&gt;
+                <br>&nbsp;&nbsp;List One
+              <br>&nbsp;&lt;/li&gt;
+            <br>&lt;/ul&gt;</code>
+          </p>
+
+          <h2>Rendered element:</h2>
+
+          <ul>
+            <li>List One</li>
+            <li>List Two</li> 
+            <li>List Three</li>
+          </ul>
+        </div>
+
+
+        <!-- Ordered Lists -->
+        <div class="section">
+          <h1>Ordered Lists</h1>
+
+          <h2>CSS Selector:</h2>
+          <p>ol, li</p>
+
+          <h2>Sample code:</h2>
+          <p>
+            <code>&lt;ol&gt;
+              <br>&nbsp;&lt;li&gt;
+                <br>&nbsp;&nbsp;List One
+              <br>&nbsp;&lt;/li&gt;
+            <br>&lt;/ol&gt;</code>
+          </p>
+
+          <h2>Rendered element:</h2>
+
+          <ol>
+            <li>List One</li>
+            <li>List Two</li> 
+            <li>List Three</li>
+          </ol>
+        </div>
+
+
+        <!-- Main Navigation -->
+        <div class="section">
+          <h1>Main Navigation</h1>
+
+          <h2>CSS Selector:</h2>
+          <p>.nav-logo, .sub-nav, .logo, .logo-title, .selected</p>
+
+          <h2>Sample code:</h2>
+          <p><code>&lt;nav&gt; &lt;/nav&gt;</code></p>
+
+          <h2>Rendered element:</h2>
+
+          <!-- Main nav with title -->
+          <h3>Main Nav Menu</h3>
+          <nav>
+            <div class="nav-logo">
+              <a href=""><img src="img/brand-logo.png" class="logo">
+              <div class="logo-title-render">Janine Wong</div></a>
+            </div>
+
+            <div class="sub-nav">
+                <a href=""><div class="selected">Styleguide</div></a>
+                <a href="">Sketches</a>
+                <a href="">Website</a>
+            </div>
+          </nav>
+
+          <!-- Main nav without title -->
+          <h3>Shrunken Down Nav Menu</h3>
+          <nav>
+            <div class="nav-logo">
+              <a href=""><img src="img/brand-logo.png" class="small-logo"></a>
+            </div>
+
+            <div class="sub-nav">
+                <a href=""><div class="selected">Styleguide</div></a>
+                <a href="">Sketches</a>
+                <a href="">Website</a>
+            </div>
+          </nav>
+        </div>
+
+
+        <!-- Grids -->
+        <div class="section">
+          <h1>Grids</h1>
+
+          <h2>CSS selector:</h2>
+          <p>.grid-col-</p>
+
+          <h2>Sample code:</h2>
+          <p><code>&lt;div class="grid-col-2of10"&gt;Some Content&lt;/div&gt;</code></p>
+
+          <h2>Rendered element:</h2>
+
+          <h3>Main Page Interests Grid</h3>
+          <div class="grid-row">
+            <div class="grid-col-33">
+               <p class="grid-style">1</p>
+            </div>
+
+            <div class="grid-col-33">
+               <p class="grid-style">2</p>
+            </div>
+
+            <div class="grid-col-33">
+               <p class="grid-style">3</p>
+            </div>
+          </div>
+
+          <h3>Main Page Projects Grid</h3>
+          <div class="grid-row">
+            <div class="grid-col-33">
+               <p class="grid-style">1</p>
+            </div>
+
+            <div class="grid-col-66">
+               <p class="grid-style">2</p>
+            </div>
+          </div>
+
+          <h3>Project In-Depth Grid</h3>
+          <div class="grid-row">
+            <div class="grid-col-2of10">
+               <p class="grid-style">1</p>
+            </div>
+
+            <div class="grid-col-8of10">
+               <p class="grid-style">2</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
 
     <!-- Javascript -->
     <script src="js/jquery-1.11.3.min.js"></script>

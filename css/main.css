@@ -7,7 +7,7 @@ header {
   background-color: #FFF;
 }
 
-header nav a {
+nav a {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-left: 3em;
@@ -21,11 +21,11 @@ header nav a {
   transition: all 0.3s;
 }
 
-header nav a:hover {
+nav a:hover {
   color: #008B8B;
 }
 
-header nav a:first-child {
+nav a:first-child {
   margin-left: 0;
 }
 
@@ -125,6 +125,10 @@ a:focus {
   color: #2F4F4F;
 }
 
+li {
+  font-size: 1.1em;
+}
+
 .selected {
   color: #008B8B;
   display: inline-block;
@@ -137,7 +141,6 @@ a:focus {
 }
 
 .main-content {
-  /*padding: 18em 5em 5em 5em;*/
   padding-top: 17.5em;
 
   -webkit-box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -277,6 +280,7 @@ a:focus {
   margin: 1em 0;
   color: #FFF;
   text-align: center;
+  border: none;
 
   -webkit-border-radius: 4px; 
   -moz-border-radius: 4px; 
@@ -296,6 +300,26 @@ a:focus {
 a .button {
   color: #FFF;
   text-transform: uppercase;
+}
+
+/* Forms */
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 50%;
+  padding: 0.25em;
+  border: solid 0.1em #CCC;
+}
+
+.contact-form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.contact-form .button {
+  padding: 0.75em;
+  border: none;
 }
 
 
@@ -408,6 +432,7 @@ code {
   word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
+/* logo section */
 .logo-render {
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -419,11 +444,13 @@ code {
   padding-bottom: 2em;
 }
 
+/* typeface section */
 .typeface-render p {
   margin: 0;
   text-align: justify;
 }
 
+/* color section */
 .palette-pad {
   padding-right: 1.5em;
 }
@@ -432,8 +459,7 @@ code {
   padding-right: 0;
 }
 
-.palette-pad h3,
-.intext-render {
+.palette-pad h3 {
   margin-bottom: 0;
 }
 
@@ -463,10 +489,37 @@ code {
   background-color: #343434;
 }
 
+/* intext link section */
+.section-render {
+  margin-bottom: 0.5em;
+}
+
+/* icon section */
 .icon-pad {
   padding-right: 1em;
+  padding-bottom: 0.25em;
 }
 
 .icon-pad:last-of-type {
   padding: 0;
+}
+
+/* grids section */
+.grid-style {
+  background-color: #008B8B;
+  border: 0.1em solid #fff;
+  color: #fff;
+  text-align: center;
+  padding: 0.2em;
+}
+
+
+/* Resize */
+
+@media (max-width: 70em) {
+  /* form section */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
 }
