@@ -452,6 +452,10 @@ a .button {
 }
 
 @media (max-width: 45em) {
+  p {
+    margin-bottom: 1em;
+  }
+  
   .button {
     width: 100%;
   }
