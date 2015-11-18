@@ -168,13 +168,17 @@ li {
   background-color: #FFF;
 }
 
-.section:last-of-type {
-  border-bottom: none;
-  margin-bottom: 2em;
-}
-
 .section-with-header {
   padding-top: 0;
+}
+
+.section-with-header .section {
+  margin-top: 0;
+}
+
+.section-last {
+  margin-bottom: 2em;
+  border-bottom: none;
 }
 
 .section h1 {
@@ -199,6 +203,7 @@ li {
 
 .title-img .title-img-back picture {
   position: relative;
+  bottom: -0.5em;
 }
 
 .title-img-back picture {
@@ -396,26 +401,30 @@ a .icon:focus {
 }
 
 /* about page - header img */
-.title-img-about {
+.title-img-white-bg {
   background-color: #FFF;
   padding: 0 7em;
 }
 
 /* about page - title text */
-.title-text-about h1,
-.title-text-about p {
+.title-text-white-bg h1,
+.title-text-white-bg p {
   color: #008B8B;
 }
 
 /* about page - section */
-.about-section,
+.main-section,
 .interests-section {
   background-color: #EFEFEF;
   border: none;
 }
 
-.about-section h2 {
+.main-section h2 {
   text-align: center;
+}
+
+.secondary-section {
+  background-color: #FFF;
 }
 
 
@@ -597,7 +606,7 @@ a .button {
     margin: 1em 0;
   }
 
-  .section:last-of-type {
+  .section-last {
     margin-bottom: 1em;
   }
 
@@ -630,7 +639,7 @@ a .button {
     width: 100%;
   }
 
-  .projects-section,
+  .main-projects-section,
   .title-section img:first-child {
     padding-top: 0;
     margin-top: 0;
