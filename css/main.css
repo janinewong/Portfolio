@@ -90,25 +90,28 @@ img {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 3em;
+  font-weight: 400;
 }
 
 h2 {
-  font-size: 1.1em;
+  font-size: 1.5em;
   color: #008B8B;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: #808080;
+  font-weight: 400;
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.3em;
   margin-bottom: 2em;
+  font-weight: 400;
 }
 
 a {
@@ -164,22 +167,34 @@ li {
 
 /* main page - title section */
 .title-img {
-  position: relative;
-  background-color: #000;
-  height: 30em;
+  max-width: 100%;
+  max-height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .title-img img {
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
-  filter: alpha(opacity=75);
-  -moz-opacity:0.75;
-  -khtml-opacity: 0.75;
-  opacity: 0.75;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
 }
 
-a.main-img,
-.footer.title-img a {
+.title-img img:first-child {
+  position: relative;
+}
+
+.title-img-back {
+  z-index: 1;
+}
+
+.title-img-front {
+  z-index: 3;
+}
+
+
+.title-img,
+.footer.title-img {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -187,9 +202,9 @@ a.main-img,
   transition: all 0.3s;
 }
 
-a.main-img:hover,
-a.main-img:active,
-a.main-img:focus {
+.title-img:hover,
+.title-img:active,
+.title-img:focus {
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
   filter: alpha(opacity=60);
   -moz-opacity:0.6;
@@ -199,46 +214,48 @@ a.main-img:focus {
 
 .title-text {
   position: absolute;
-  top: 43%;
+  z-index: 2;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+}
+
+.title-text h1 {
+  font-size: 9em;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 900;
+}
+
+.title-text-first {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   color: #FFF;
 }
 
-.title-text h1 {
-  font-size: 3em;
-  margin: 0;
-}
-
-.title-left-col h2 {
+.title-text-first h2 {
   color: #FFF;
   margin-top: 0;
 }
 
-.title-text p {
-  margin-top: 0.8em;
+.title-text-first p {
   width: 30em;
   color: #FFF;
-}
-
-.title-left-col {
-  text-align: right;
-  padding-right: 2rem;
-}
-
-.title-left-col a {
-  color: #FFF;
-}
-
-.title-left-col a:hover {
-  color: #008B8B;
 }
 
 /* main page - projects section */
 
 .projects-section {
   margin-top: 2em;
+}
+
+.projects-img {
+  padding: 0;
 }
 
 /* main page - interests section */
@@ -301,6 +318,10 @@ a.main-img:focus {
   top: 50%;
 }
 
+.footer .title-text a h1 {
+  font-size: 3em;
+}
+
 .footer.title-img {
   height: 17em;
   background-color: #008B8B;
@@ -312,6 +333,7 @@ a.main-img:focus {
   -moz-opacity:0.4;
   -khtml-opacity: 0.4;
   opacity: 0.4;
+  background-color: #008B8B;
 }
 
 a.footer-img:hover,
@@ -364,7 +386,7 @@ a .icon:focus {
 .button {
   display: inline-block;
   background-color: #008B8B;
-  padding: 0.75em;
+  padding: 0.75em 1.5em;
   margin: 1em 0;
   color: #FFF;
   text-align: center;
@@ -388,6 +410,7 @@ a .icon:focus {
 a .button {
   color: #FFF;
   text-transform: uppercase;
+  font-size: 1.2em;
 }
 
 /* Forms */
