@@ -518,6 +518,10 @@ a .button {
     margin-bottom: 1em;
   }
 
+  h1 {
+    font-size: 2em;
+  }
+
   .header {
     padding-top: 9.3em;
   }
