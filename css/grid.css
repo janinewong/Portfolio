@@ -70,7 +70,7 @@
 
   Think of this as saying, when display width > 50em, apply this
 */
-@media (min-width: 45em) {
+@media (min-width: 45rem) {
 
   .grid-col-1of10{
     width: 10%;

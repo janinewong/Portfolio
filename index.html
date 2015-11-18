@@ -49,22 +49,37 @@
     <!-- ===================== Main header and welcome text ===================== -->
     <div class="header">
       <div class="title-img">
-        <a href="">
-          <img src="img/background-main3-01.jpg" alt="Yusuhara Wooden Bridge Museum designed by Kengo Kuma & Associates" class="title-img-back">
 
-          <div class="title-text">
-            <h1>Hello there!</h1>
+        <!-- Title image background -->
+        <div class="title-img-back">
+          <picture>
+            <source srcset="img/background-main-3x-back.jpg 3x" media="(min-width: 70rem)">
+            <source srcset="img/background-main-2x-back.jpg 2x" media="(min-width: 45rem)">
+            <img src="img/background-main-1x-back.jpg" />
+          </picture>
+        </div>
+
+        <!-- Title text -->
+        <div class="title-text">
+          <h1>Hello there!</h1>
+        </div>
+
+        <!-- Title image front -->
+        <div class="title-img-front">
+          <picture>
+            <source srcset="img/background-main-3x-front.png 3x" media="(min-width: 70rem)">
+            <source srcset="img/background-main-2x-front.png 2x" media="(min-width: 45rem)">
+            <img src="img/background-main-1x-front.png" />
+          </picture>
+        </div>
+
+        <!-- Title text description -->
+        <div class="title-text-first">
+          <div class="grid-col-5of10">
+            <h2>I am Janine Wong.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac varius nisi. Mauris dui diam, porta in tempus sit amet, volutpat at nulla. Aliquam condimentum diam mi.</p>
           </div>
-
-          <img src="img/background-main3-02.png" class="title-img-front">
-
-          <div class="title-text-first">
-            <div class="grid-col-5of10">
-              <h2>I am Janine Wong.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac varius nisi. Mauris dui diam, porta in tempus sit amet, volutpat at nulla. Aliquam condimentum diam mi.</p>
-            </div>
-          </div>
-        </a>
+        </div>
 
       </div>
     </div>
@@ -100,12 +115,8 @@
 
         <!-- ===================== My Projects ===================== -->
 
-        <div class="section">
-          <h1>My Projects</h1>
-        </div>
-
         <!-- Project 1 -->
-        <div class="section">
+        <div class="section projects">
           <div class="grid-row">
             <div class="grid-col-10of10 projects-img">
               <img src="img/puppies-1.jpg">

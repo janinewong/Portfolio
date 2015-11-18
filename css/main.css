@@ -33,7 +33,7 @@ nav a:first-child {
   display: block;
   width: 5em;
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 1.5em 0;
   -webkit-transition: width 0.4s, padding 0.4s;
   -moz-transition: width 0.4s, padding 0.4s;
   -ms-transition: width 0.4s, padding 0.4s;
@@ -173,23 +173,29 @@ li {
   position: relative;
 }
 
-.title-img img {
+/*.title-img img,*/
+.title-img .title-img-front picture {
   width: 100%;
   left: 0;
   top: 0;
   position: absolute;
 }
 
-.title-img img:first-child {
+/*.title-img img:first-child,*/
+.title-img .title-img-back picture {
   position: relative;
 }
 
-.title-img-back {
+.title-img-back picture {
   z-index: 1;
 }
 
-.title-img-front {
+.title-img-front picture {
   z-index: 3;
+}
+
+picture img {
+  width: 100%;
 }
 
 
@@ -202,20 +208,10 @@ li {
   transition: all 0.3s;
 }
 
-.title-img:hover,
-.title-img:active,
-.title-img:focus {
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-  filter: alpha(opacity=60);
-  -moz-opacity:0.6;
-  -khtml-opacity: 0.6;
-  opacity: 0.6;
-}
-
 .title-text {
   position: absolute;
   z-index: 2;
-  top: 55%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #FFF;
@@ -226,12 +222,13 @@ li {
   text-transform: uppercase;
   margin: 0;
   font-weight: 900;
+  white-space: nowrap;
 }
 
 .title-text-first {
   position: absolute;
-  z-index: 2;
-  top: 30%;
+  z-index: 5;
+  top: 80%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -241,11 +238,13 @@ li {
 .title-text-first h2 {
   color: #FFF;
   margin-top: 0;
+  font-weight: 700;
 }
 
 .title-text-first p {
-  width: 30em;
+  width: 40em;
   color: #FFF;
+  font-weight: 600;
 }
 
 /* main page - projects section */
@@ -318,7 +317,7 @@ li {
   top: 50%;
 }
 
-.footer .title-text a h1 {
+.footer .title-text h1 {
   font-size: 3em;
 }
 
@@ -437,7 +436,7 @@ a .button {
 
 /* --------------------- RESIZE --------------------- */
 
-@media (max-width: 69em) {
+@media (max-width: 70rem) {
   header,
   .main-wrapper {
     width: 100%;
@@ -477,9 +476,21 @@ a .button {
     padding: 0em 3em 1em 3em;
   }
 
-  .title-text p {
-    margin-right: 8em;
-    width: auto;
+  .title-text {
+    top: 40%;
+  }
+
+  .title-text h1 {
+    font-size: 6em;
+  }
+
+  .title-text-first p {
+    width: 30em;
+    font-weight: 500;
+  }
+
+  .title-text-first {
+    top: 80%;
   }
 
   .title-img {
@@ -492,7 +503,7 @@ a .button {
   }
 }
 
-@media (max-width: 45em) {
+@media (max-width: 45rem) {
   p {
     margin-bottom: 1em;
   }
@@ -542,27 +553,23 @@ a .button {
   }
 
   .title-text h1 {
-    font-size: 2em;
-    margin-bottom: 0.5rem;
+    font-size: 4em;
+    width: 100%;
   }
 
-  .title-text h2 {
-    font-size: 1.1em;
+  .title-text-first {
+    margin: 0;
+    padding: 1em;
+    width: 100%;
   }
 
-  .title-text p {
-    font-size: 1.1em;
-    margin: 0 1em;
-  }
-
-  .title-left-col {
-    text-align: center;
-    padding-right: 0;
+  .title-text-first p {
+    width: 100%;
   }
 
   .title-text {
     text-align: center;
-    top: 50%;
+    top: 43%;
   }
 
   .projects-section,
@@ -591,6 +598,14 @@ a .button {
   .footer.title-img {
     width: auto;
     height: auto;
+  }
+
+  .footer .title-text h1 {
+    font-size: 2em;
+  }
+
+  .footer .title-text h2 {
+    font-size: 1.1em;
   }
 
   .section-with-header {
