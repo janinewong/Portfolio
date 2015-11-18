@@ -216,11 +216,7 @@ picture img {
 .title-text-mobile {
   position: absolute;
   z-index: 2;
-<<<<<<< HEAD
   top: 40%;
-=======
-  top: 30%;
->>>>>>> parent of 4ac9411... Changed main title header picture
   left: 50%;
   transform: translate(-50%, -50%);
   color: #FFF;
