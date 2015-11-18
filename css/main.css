@@ -95,11 +95,18 @@ img {
 }
 
 h1 {
+  font-size: 6em;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 900;
+}
+
+h2 {
   font-size: 3em;
   font-weight: 400;
 }
 
-h2 {
+h3 {
   font-size: 1.5em;
   color: #008B8B;
   font-weight: 600;
@@ -107,7 +114,7 @@ h2 {
   text-transform: uppercase;
 }
 
-h3 {
+h4 {
   font-size: 1.3em;
   color: #808080;
   font-weight: 400;
@@ -230,9 +237,6 @@ picture img {
 .title-text h1,
 .title-text-mobile h1 {
   font-size: 9em;
-  text-transform: uppercase;
-  margin: 0;
-  font-weight: 900;
   white-space: nowrap;
 }
 
@@ -246,7 +250,7 @@ picture img {
   color: #FFF;
 }
 
-.title-text-first h2 {
+.title-text-first h3 {
   color: #FFF;
   margin-top: 0;
   font-weight: 700;
@@ -280,7 +284,7 @@ picture img {
   border: none;
 }
 
-.interests-section h2 {
+.interests-section h3 {
   margin-top: 0;
   margin-bottom: 0.5em;
 }
@@ -360,7 +364,7 @@ a.footer-img:focus {
   opacity: 0;
 }
 
-.title-text h2,
+.footer-img h3,
 .title-text h1 {
   color: #FFF;
 }
@@ -457,16 +461,20 @@ a .button {
     width: 100%;
   }
 
+  .header {
+    padding-top: 12.8em;
+  }
+
   .main-wrapper {
     padding: 0 2em;
   }
 
   .main-content {
-    padding: 14.1em 0 0 0;
+    padding: 12.8em 0 0 0;
   }
 
   .logo {
-    width: 7em;
+    width: 5em;
     padding: 1em 0;
   }
 
@@ -475,7 +483,7 @@ a .button {
   }
 
   .small-logo {
-    width: 5em;
+    width: 4em;
     padding: 0.5em 0;
   }
 
@@ -521,14 +529,25 @@ a .button {
 @media (max-width: 45rem) {
   p {
     margin-bottom: 1em;
+    font-size: 1em;
+  }
+
+  a {
+    font-size: 1em;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 4em;
+    margin: 0.5em 0;
+  }
+
+  h2 {
+    font-size: 3em;
+    margin: 0.5em 0;
   }
 
   .header {
-    padding-top: 7.5em;
+    padding-top: 7em;
   }
 
   .main-wrapper {
@@ -536,12 +555,16 @@ a .button {
   }
 
   .main-content {
-    padding: 11.8em 0 0 0;
+    padding: 7em 0 0 0;
   }
 
   .logo,
   .logo-title {
     display: none;
+  }
+
+  .small-logo {
+    width: 3em;
   }
 
 
@@ -623,8 +646,9 @@ a .button {
     font-size: 2em;
   }
 
-  .footer .title-text h2 {
+  .footer .title-text h3 {
     font-size: 1.1em;
+    color: #FFF;
   }
 
   .section-with-header {
@@ -648,7 +672,7 @@ code {
 }
 
 /* logo section */
-.logo-render {
+.logo-title-render {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-decoration: none;
@@ -657,6 +681,10 @@ code {
   font-size: 1.2em;
   text-align: center;
   padding-bottom: 2em;
+}
+
+.logo-render {
+  display: block;
 }
 
 /* typeface section */
@@ -674,8 +702,9 @@ code {
   padding-right: 0;
 }
 
-.palette-pad h3 {
+.palette-pad h4 {
   margin-bottom: 0;
+  margin-top: 1em;
 }
 
 .palette-pad p {
@@ -726,5 +755,10 @@ code {
   .contact-form input,
   .contact-form textarea {
     width: 100%;
+  }
+
+  /* color section */
+  .palette-pad {
+    padding: 2em 0 0 0;
   }
 }
