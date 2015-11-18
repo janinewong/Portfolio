@@ -197,7 +197,6 @@ li {
   position: absolute;
 }
 
-/*.title-img img:first-child,*/
 .title-img .title-img-back picture {
   position: relative;
 }
@@ -280,8 +279,6 @@ picture img {
 
 .interests-section {
   text-align: center;
-  background-color: #EFEFEF;
-  border: none;
 }
 
 .interests-section h3 {
@@ -396,6 +393,29 @@ a .icon:hover,
 a .icon:active,
 a .icon:focus {
   color: #2F4F4F;
+}
+
+/* about page - header img */
+.title-img-about {
+  background-color: #FFF;
+  padding: 0 7em;
+}
+
+/* about page - title text */
+.title-text-about h1,
+.title-text-about p {
+  color: #008B8B;
+}
+
+/* about page - section */
+.about-section,
+.interests-section {
+  background-color: #EFEFEF;
+  border: none;
+}
+
+.about-section h2 {
+  text-align: center;
 }
 
 
