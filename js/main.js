@@ -6,15 +6,7 @@ function init() {
       mq = window.matchMedia( "(max-width: 65em)" );
 
     if (mq.matches) {
-      if(distanceY > mobileShrinkOn) {
-        $('nav img').addClass('small-logo');
-        $('nav img').removeClass('logo');
-      }
-      
-       if(distanceY < mobileShrinkOn) {
-        $('nav img').addClass('logo');
-        $('nav img').removeClass('small-logo');
-      }
+
     } 
 
     else {

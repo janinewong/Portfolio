@@ -47,7 +47,7 @@ nav a:first-child {
   padding-bottom: 0.5em;
   width: 4em;
   margin: 0 auto;
-  display: block;
+  display: none;
   -webkit-transition: width 0.4s, padding 0.4s;
   -moz-transition: width 0.4s, padding 0.4s;
   -ms-transition: width 0.4s, padding 0.4s;
@@ -523,7 +523,7 @@ a .button {
   }
 
   .header {
-    padding-top: 9.3em;
+    padding-top: 7.5em;
   }
 
   .main-wrapper {
@@ -534,16 +534,14 @@ a .button {
     padding: 11.8em 0 0 0;
   }
 
-  .logo {
-    width: 5em;
-    padding: 1em 0;
-  }
-
+  .logo,
   .logo-title {
     display: none;
   }
 
+
   .small-logo {
+    display: block;
     width: 4em;
     padding: 0.5em 0;
   }
