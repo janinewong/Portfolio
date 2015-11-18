@@ -3,7 +3,7 @@ function init() {
     var distanceY = window.pageYOffset || document.documentElement.scrollTop,
       shrinkOn = 100,
       mobileShrinkOn = 10,
-      mq = window.matchMedia( "(max-width: 65em)" );
+      mq = window.matchMedia( "(max-width: 45rem)" );
 
     if (mq.matches) {
 

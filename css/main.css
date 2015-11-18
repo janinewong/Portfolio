@@ -47,12 +47,17 @@ nav a:first-child {
   padding-bottom: 0.5em;
   width: 4em;
   margin: 0 auto;
-  display: none;
+  display: block;
   -webkit-transition: width 0.4s, padding 0.4s;
   -moz-transition: width 0.4s, padding 0.4s;
   -ms-transition: width 0.4s, padding 0.4s;
   -o-transition: width 0.4s, padding 0.4s;
   transition: width 0.4s, padding 0.4s;
+}
+
+/* logo in mobile view */
+.logo-mobile {
+  display: none;
 }
 
 /* title below logo */
@@ -332,7 +337,7 @@ picture img {
 }
 
 .footer.title-img {
-  height: 17em;
+  height: 20em;
   background-color: #008B8B;
 }
 
@@ -540,10 +545,8 @@ a .button {
   }
 
 
-  .small-logo {
+  .logo-mobile {
     display: block;
-    width: 4em;
-    padding: 0.5em 0;
   }
 
   .button {
