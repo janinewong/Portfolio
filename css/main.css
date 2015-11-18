@@ -165,6 +165,10 @@ li {
   padding-top: 0;
 }
 
+.section h1 {
+  margin-top: 0;
+}
+
 /* main page - title section */
 .title-img {
   max-width: 100%;
@@ -208,16 +212,18 @@ picture img {
   transition: all 0.3s;
 }
 
-.title-text {
+.title-text,
+.title-text-mobile {
   position: absolute;
   z-index: 2;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #FFF;
 }
 
-.title-text h1 {
+.title-text h1,
+.title-text-mobile h1 {
   font-size: 9em;
   text-transform: uppercase;
   margin: 0;
@@ -245,6 +251,10 @@ picture img {
   width: 47.3em;
   color: #FFF;
   font-weight: 600;
+}
+
+.title-text-mobile {
+  display: none;
 }
 
 /* main page - projects section */
@@ -509,7 +519,7 @@ a .button {
   }
 
   .header {
-    padding-top: 11.8em;
+    padding-top: 9.3em;
   }
 
   .main-wrapper {
@@ -526,8 +536,7 @@ a .button {
   }
 
   .logo-title {
-    padding-bottom: 1em;
-    font-size: 1.1em;
+    display: none;
   }
 
   .small-logo {
@@ -552,11 +561,6 @@ a .button {
     padding: 1em 0;
   }
 
-  .title-text h1 {
-    font-size: 4em;
-    width: 100%;
-  }
-
   .title-text-first {
     margin: 0;
     padding: 1em;
@@ -567,9 +571,19 @@ a .button {
     width: 100%;
   }
 
-  .title-text {
+  .title-header {
+    display: none;
+  }
+
+  .title-text-mobile {
+    display: block;
     text-align: center;
     top: 43%;
+  }
+
+  .title-text-mobile h1 {
+    font-size: 6em;
+    width: 100%;
   }
 
   .projects-section,
@@ -687,7 +701,7 @@ code {
 
 /* intext link section */
 .section-render {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 /* grids section */
