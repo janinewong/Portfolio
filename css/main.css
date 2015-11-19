@@ -345,7 +345,7 @@ picture img {
 }
 
 .footer.title-img {
-  height: 20em;
+  height: 17em;
   background-color: #008B8B;
 }
 
@@ -368,9 +368,10 @@ a.footer-img:focus {
   opacity: 0;
 }
 
-.footer-img h3,
+.title-text h3,
 .title-text h1 {
   color: #FFF;
+  margin: 0.25em 0;
 }
 
 /* footer section - icons */
@@ -427,6 +428,12 @@ a .icon:focus {
 
 .secondary-section {
   background-color: #FFF;
+}
+
+/* projects page - section */
+.section-centered p {
+  width: 45em;
+  margin: 0 auto;
 }
 
 
