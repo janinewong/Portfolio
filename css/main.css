@@ -16,14 +16,15 @@
 header {
   width: 100%;
   z-index: 999;
-  border-bottom: solid 0.1em #021C1E;
-  margin-top: 10em;
+  margin-top: 6em;
+  border-bottom: solid 0.1em #e6e6e6;
 }
 
 nav {
   width: 100em;
   height: 5em;
   margin: 0 auto;
+  
 }
 
 nav a {
@@ -48,12 +49,7 @@ nav a:first-child {
   display: inline-block;
   height: 5em;
   margin: 0 auto;
-  padding: 1.5em 0;
-  -webkit-transition: width 0.4s, padding 0.4s;
-  -moz-transition: width 0.4s, padding 0.4s;
-  -ms-transition: width 0.4s, padding 0.4s;
-  -o-transition: width 0.4s, padding 0.4s;
-  transition: width 0.4s, padding 0.4s;
+  padding: 1.25em 0;
 }
 
 /* navigation labels */
@@ -69,6 +65,9 @@ nav a:first-child {
 body {
   font-family: "Josefin Sans";
   font-size: 12px;
+  background-image: url("../img/background-main.jpg");
+  background-size: contain;
+  background-repeat: repeat;
 }
 
 img {
@@ -85,23 +84,23 @@ h1 {
 
 h2 {
   font-family: 'Adam.CG Pro';
-  font-size: 2em;
-  color: #2C7873;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #008B8B;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 h3 {
   font-size: 1.5em;
-  color: #008B8B;
+  color: #CCA161;
   font-weight: 600;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 p {
   font-size: 1.75em;
-  margin-bottom: 2em;
+  color: #808080;
 }
 
 a {
@@ -133,13 +132,12 @@ li {
 .main-wrapper {
   width: 100em;
   margin: 0 auto;
+  overflow: hidden;
+  margin-top: 2em;
 }
 
 .section {
-  border-bottom: solid 0.1em #CCC;
-  padding: 3em;
-  margin-top: 2em;
-  background-color: #FFF;
+  padding: 5em;
 }
 
 .section-without-header {
@@ -151,109 +149,24 @@ li {
   border-bottom: none;
 }
 
-.section h1 {
-  margin-top: 0;
-}
-
 .secondary-section {
-  background-color: #FFF;
-  border-bottom: solid 0.1em #CCC;
-}
-
-.secondary-section .section {
-  margin: 0;
-  border-bottom: none;
-}
-
-/* main page - title section */
-.title-img {
-  max-width: 100%;
-  max-height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-/*.title-img img,*/
-.title-img .title-img-front picture {
-  width: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-}
-
-.title-img .title-img-back picture {
-  position: relative;
-  bottom: -0.5em;
-}
-
-.title-img-back picture {
-  z-index: 1;
-}
-
-.title-img-front picture {
-  z-index: 3;
+  width: 50em;
+  margin: 0 auto;
 }
 
 picture img {
   width: 100%;
 }
 
-
-.title-img,
-.footer.title-img {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.title-text,
-.title-text-mobile {
-  position: absolute;
-  z-index: 2;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #FFF;
-}
-
-.title-text h1,
-.title-text-mobile h1 {
-  font-size: 9em;
-  white-space: nowrap;
-}
-
-.title-text-first {
-  position: absolute;
-  z-index: 5;
-  top: 80%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  color: #FFF;
-}
-
-.title-text-first h3 {
-  color: #FFF;
-  margin-top: 0;
-  font-weight: 700;
-}
-
-.title-text-first p {
-  width: 47.3em;
-  color: #FFF;
-  font-weight: 600;
-}
-
-.title-text-mobile {
-  display: none;
+.title-section {
+  width: 50em;
+  margin: 10em auto;
 }
 
 /* main page - projects section */
 
 .projects-section {
-  margin-top: 2em;
+  background-color: #FFF;
 }
 
 .projects-img {
@@ -313,44 +226,29 @@ picture img {
 }
 
 /* footer section */
-.footer .title-text {
-  text-align: center;
-  top: 50%;
+.footer {
+  width: 100%;
+  height: auto;
+  margin: 10em auto;
+  padding: 2em 0;
+  border-top: solid 0.1em #e6e6e6;
 }
 
-.footer .title-text h1 {
-  font-size: 3em;
+.footer-icon {
+  float: right;
 }
 
-.footer.title-img {
-  height: 17em;
-  background-color: #008B8B;
+.footer h3 {
+  display: inline;
+  margin-bottom: 0;
 }
 
-.footer.title-img img {
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-  filter: alpha(opacity=40);
-  -moz-opacity:0.4;
-  -khtml-opacity: 0.4;
-  opacity: 0.4;
-  background-color: #008B8B;
+.footer h3:last-child {
+  display: block;
+  margin-top: 0.5em;
+  color: #808080;
 }
 
-a.footer-img:hover,
-a.footer-img:active,
-a.footer-img:focus {
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  -moz-opacity:0;
-  -khtml-opacity: 0;
-  opacity: 0;
-}
-
-.title-text h3,
-.title-text h1 {
-  color: #FFF;
-  margin: 0.25em 0;
-}
 
 /* footer section - icons */
 .icon-pad,
@@ -403,14 +301,52 @@ a .icon:focus {
   text-align: center;
 }
 
-.secondary-section {
-  background-color: #FFF;
-}
-
 /* projects page - section */
 .section-centered p {
   width: 45em;
   margin: 0 auto;
+}
+
+/* about page - project one */
+.project-one-section {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-one-section img {
+  position: absolute;
+  width: 100%;
+
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+  -moz-opacity:0.2;
+  -khtml-opacity: 0.2;
+  opacity: 0.2;
+
+  transform: scale(1, 1);
+  transition: opacity 600ms ease-in,transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.project-one-section img:hover,
+.project-one-section img:focus,
+.project-one-section img:active {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+
+  transform: scale(1.03, 1.03);
+}
+
+.project-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
 }
 
 
@@ -621,8 +557,7 @@ a .button {
     width: 100%;
   }
 
-  .main-projects-section,
-  .title-section img:first-child {
+  .main-projects-section {
     padding-top: 0;
     margin-top: 0;
   }
@@ -642,20 +577,6 @@ a .button {
     -ms-flex-order: 1;     
     -webkit-order: 1;  
     order: 1;
-  }
-
-  .footer.title-img {
-    width: auto;
-    height: auto;
-  }
-
-  .footer .title-text h1 {
-    font-size: 2em;
-  }
-
-  .footer .title-text h3 {
-    font-size: 1.1em;
-    color: #FFF;
   }
 }
 
