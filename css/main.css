@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #008B8B;
+  color: #CCA161;
 }
 
 nav a:first-child {
@@ -118,7 +118,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #2F4F4F;
+  color: #CCA161;
 }
 
 li {
@@ -126,8 +126,7 @@ li {
 }
 
 .selected {
-  color: #008B8B;
-  display: inline-block;
+  color: #CCA161;
 }
 
 .main-wrapper {
