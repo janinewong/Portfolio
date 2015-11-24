@@ -325,20 +325,35 @@ a .icon:focus {
   -khtml-opacity: 0.2;
   opacity: 0.2;
 
+  /* set default scale size */
+  -o-transform: scale(1, 1);
+  -moz-transform: scale (1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transofrm: scale(1, 1);
   transform: scale(1, 1);
+
+  /* transition for scaling picture on hover */
+  -o-transition: opacity 600ms ease-in,-webkit-transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: opacity 600ms ease-in,-webkit-transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-transition: opacity 600ms ease-in,-webkit-transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: opacity 600ms ease-in,transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .project-one-section img:hover,
 .project-one-section img:focus,
 .project-one-section img:active {
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  opacity: 1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  opacity: 0.4;
 
-  transform: scale(1.03, 1.03);
+  /*scale picture bigger on hover */
+  -o-transform: scale(1.05, 1.05);
+  -moz-transform: scale (1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -webkit-transofrm: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
 }
 
 .project-text {
@@ -407,116 +422,25 @@ a .button {
 /* --------------------- RESIZE --------------------- */
 
 @media (max-width: 70rem) {
-  header,
-  .main-wrapper {
+  .main-wrapper,
+  nav {
     width: 100%;
-  }
-
-  .header {
-    padding-top: 12.8em;
-  }
-
-  .main-wrapper {
-    padding: 0 2em;
-  }
-
-  .section-without-header {
-    padding: 12.8em 0 0 0;
-  }
-
-  .logo {
-    width: 5em;
-    padding: 1em 0;
-  }
-
-  .logo-title {
-    padding-bottom: 1.5em;
-  }
-
-  .small-logo {
-    width: 4em;
-    padding: 0.5em 0;
-  }
-
-  .sub-nav {
-    padding: 1em;
+    padding: 0 10%;
   }
 
   .section {
     padding: 3em 1.5em;
   }
 
-  .interests-img {
+  .interests-section img {
     padding: 0em 3em 1em 3em;
-  }
-
-  .title-text {
-    top: 40%;
-  }
-
-  .title-text h1 {
-    font-size: 6em;
-  }
-
-  .title-text-first p {
-    width: 31.5em;
-    font-weight: 500;
-  }
-
-  .title-text-first {
-    top: 80%;
-  }
-
-  .title-img {
-    width: auto;
-    height: auto;
   }
 }
 
 @media (max-width: 45rem) {
-  p {
-    margin-bottom: 1em;
-    font-size: 1.2em;
-  }
 
-  h1 {
-    font-size: 4em;
-    margin: 0.5em 0;
-  }
-
-  h2 {
-    font-size: 3em;
-    margin: 0.5em 0;
-  }
-
-  .header {
-    padding-top: 7em;
-  }
-
-  .main-wrapper {
-    padding: 0;
-  }
-
-  .section-without-header {
-    padding: 7em 0 0 0;
-  }
-
-  .logo,
-  .logo-title {
-    display: none;
-  }
-
-  .small-logo {
-    width: 3em;
-  }
-
-
-  .logo-mobile {
-    display: block;
-  }
-
-  .button {
-    width: 100%;
+  .main-wrapper, nav {
+    padding: 0 2em;
   }
 
   .section {
@@ -528,42 +452,16 @@ a .button {
     margin-bottom: 1em;
   }
 
-  .interests-img {
-    padding: 1em 0;
+  .interests-section img {
+    padding: 10%;
   }
 
-  .title-text-first {
-    margin: 0;
-    padding: 1em;
+  .secondary-section {
     width: 100%;
-  }
-
-  .title-text-first p {
-    width: 100%;
-  }
-
-  .title-header {
-    display: none;
-  }
-
-  .title-text-mobile {
-    display: block;
-    text-align: center;
-    top: 43%;
-  }
-
-  .title-text-mobile h1 {
-    font-size: 6em;
-    width: 100%;
-  }
-
-  .main-projects-section {
-    padding-top: 0;
-    margin-top: 0;
   }
 
   /* ORDER */
-  .order1 {
+/*  .order1 {
     -webkit-box-ordinal-group: 2;
     -moz-box-ordinal-group: 2;
     -ms-flex-order: 2;
@@ -577,7 +475,7 @@ a .button {
     -ms-flex-order: 1;     
     -webkit-order: 1;  
     order: 1;
-  }
+  }*/
 }
 
 
