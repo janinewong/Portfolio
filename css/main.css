@@ -65,9 +65,10 @@ nav a:first-child {
 body {
   font-family: "Josefin Sans";
   font-size: 12px;
-  background-image: url("../img/background-main.jpg");
+  background-image: url("../img/background-main.png");
   background-size: contain;
   background-repeat: repeat;
+  background-color: #FFF;
 }
 
 img {
@@ -165,9 +166,6 @@ picture img {
 
 /* main page - projects section */
 
-.projects-section {
-  background-color: #FFF;
-}
 
 .projects-img {
   padding: 0;
@@ -177,6 +175,10 @@ picture img {
 
 .interests-section {
   text-align: center;
+}
+
+.interests-section img {
+  padding: 3em;
 }
 
 .interests-section h3 {
@@ -249,6 +251,10 @@ picture img {
   color: #808080;
 }
 
+.footer-about-page {
+  margin-top: 0;
+}
+
 
 /* footer section - icons */
 .icon-pad,
@@ -273,32 +279,11 @@ a .icon {
   transition: all 0.3s;
 }
 
-a .icon:hover,
+
 a .icon:active,
-a .icon:focus {
+a .icon:focus,
+a .icon:hover {
   color: #2F4F4F;
-}
-
-/* about page - header img */
-.title-img-white-bg {
-  background-color: #FFF;
-  padding: 0 7em;
-}
-
-/* about page - title text */
-.title-text-white-bg h1,
-.title-text-white-bg p {
-  color: #008B8B;
-}
-
-/* about page - section */
-.main-section,
-.interests-section {
-  border: none;
-}
-
-.main-section h2 {
-  text-align: center;
 }
 
 /* projects page - section */
@@ -307,23 +292,28 @@ a .icon:focus {
   margin: 0 auto;
 }
 
-/* about page - project one */
-.project-one-section {
+/* ------------------------------------ MAIN PAGE ---------------------------------------- */
+
+/* main page - projects section */
+.projects-section {
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
   position: relative;
+  display: block;
+  border: double 0.6em #e9e9e9;
 }
 
-.project-one-section img {
-  position: absolute;
-  width: 100%;
+.projects-section::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-  filter: alpha(opacity=20);
-  -moz-opacity:0.2;
-  -khtml-opacity: 0.2;
-  opacity: 0.2;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;   
 
   /* set default scale size */
   -o-transform: scale(1, 1);
@@ -333,21 +323,15 @@ a .icon:focus {
   transform: scale(1, 1);
 
   /* transition for scaling picture on hover */
-  -o-transition: opacity 600ms ease-in,-webkit-transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -moz-transition: opacity 600ms ease-in,-webkit-transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -webkit-transition: opacity 600ms ease-in,-webkit-transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition: opacity 600ms ease-in,transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: all 600ms ease-in,-webkit-transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: all 600ms ease-in,-webkit-transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-transition: all 600ms ease-in,-webkit-transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 600ms ease-in,transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-.project-one-section img:hover,
-.project-one-section img:focus,
-.project-one-section img:active {
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-  filter: alpha(opacity=40);
-  -moz-opacity: 0.4;
-  -khtml-opacity: 0.4;
-  opacity: 0.4;
-
+.projects-section:hover::before,
+.projects-section:focus::before,
+.projects-section:active::before {
   /*scale picture bigger on hover */
   -o-transform: scale(1.05, 1.05);
   -moz-transform: scale (1.05, 1.05);
@@ -356,12 +340,33 @@ a .icon:focus {
   transform: scale(1.05, 1.05);
 }
 
-.project-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #FFF;
+
+/* main page - project one - knitstitch */
+.projects-section#project-one::before {
+  background-image: url("../img/project-knitstitch-main.jpg");
+  }
+
+.projects-section#project-one:hover::before,
+.projects-section#project-one:focus::before,
+.projects-section#project-one:active::before {
+  background-image: url("../img/project-knitstitch-main-hover.jpg");
+}
+
+
+/* main page - project two - misa */
+.projects-section#project-two::before {
+  background-image: url("../img/project-misa-main.jpg");
+  }
+
+.projects-section#project-two:hover::before,
+.projects-section#project-two:focus::before,
+.projects-section#project-two:active::before {
+  background-image: url("../img/project-misa-main-hover.jpg");
+}
+
+.project-img-mobile {
+  display: none;
+  width: 100%;
 }
 
 
@@ -369,32 +374,28 @@ a .icon:focus {
 /* --------------------- INTERACTION --------------------- */
 .button {
   display: inline-block;
-  background-color: #008B8B;
   padding: 0.75em 1.5em;
   margin: 1em 0;
-  color: #FFF;
-  text-align: center;
-  border: none;
 
-  -webkit-border-radius: 4px; 
-  -moz-border-radius: 4px; 
-  border-radius: 4px; 
+  color: #021C1E;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.25em;
+
+  border-top: solid 0.1em #021C1E;
+  border-bottom: solid 0.1em #021C1E;
 }
 
 .button:hover, .button:active, .button-focus {
-  background-color: #2F4F4F;
+  padding: 0.75em 1em;
+  color: #CCA161;
+  border-color: #CCA161;
 
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-a .button {
-  color: #FFF;
-  text-transform: uppercase;
-  font-size: 1.2em;
 }
 
 /* Forms */
@@ -459,6 +460,21 @@ a .button {
   .secondary-section {
     width: 100%;
   }
+
+  .projects-section::before {
+    display: none;
+  }
+
+  .project-img-mobile {
+    display: block;
+    padding: 3em;
+  }
+
+  .projects-section .section {
+    text-align: center;
+    background-color: #FFF;
+  }
+
 
   /* ORDER */
 /*  .order1 {
