@@ -84,18 +84,16 @@ h1 {
 }
 
 h2 {
-  font-family: 'Adam.CG Pro';
   font-size: 1.5em;
-  font-weight: normal;
-  color: #008B8B;
+  color: #CCA161;
+  font-weight: 600;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 h3 {
   font-size: 1.5em;
-  color: #CCA161;
-  font-weight: 600;
+  color: #808080;
+  font-weight: normal;
   letter-spacing: 0.1em;
 }
 
@@ -158,10 +156,6 @@ picture img {
   width: 100%;
 }
 
-.title-section {
-  width: 50em;
-  margin: 10em auto;
-}
 
 /* main page - projects section */
 
@@ -292,6 +286,12 @@ a .icon:hover {
 }
 
 /* ------------------------------------ MAIN PAGE ---------------------------------------- */
+
+/* title content */
+.title-section {
+  width: 50em;
+  margin: 10em auto;
+}
 
 /* main page - projects section */
 .projects-section {
