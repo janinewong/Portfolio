@@ -12,6 +12,108 @@
 }
 
 
+/* ------------------------ GRIDS ------------------------- */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class^='grid-col-'] {
+  float: left;
+}
+
+/* padding for the columns */
+.grid-pad {
+  padding: 1.5em 0;
+}
+
+.grid-pad:first-of-type {
+  padding-top: 0;
+}
+
+
+/* column widths in mobile view */
+.grid-col-1of10, .grid-col-2of10, .grid-col-3of10, 
+.grid-col-4of10, .grid-col-5of10, .grid-col-6of10, 
+.grid-col-7of10, .grid-col-8of10, .grid-col-9of10,
+.grid-col-10of10, .grid-col-25, .grid-col-33, .grid-col-66 {
+  width: 100%;
+}
+
+
+.grid-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* column widths with bigger resolutions */
+@media (min-width: 45rem) {
+
+  .grid-col-1of10{
+    width: 10%;
+  }
+
+  .grid-col-2of10{
+    width: 20%;
+  }
+
+  .grid-col-3of10 {
+    width: 30%;
+  }
+
+  .grid-col-4of10 {
+    width: 40%;
+  }
+
+  .grid-col-5of10 {
+    width: 50%;
+  }
+
+  .grid-col-6of10 {
+    width: 60%;
+  }
+
+  .grid-col-7of10 {
+    width: 60%;
+  }
+
+  .grid-col-8of10 {
+    width: 80%;
+  }
+
+  .grid-col-9of10 {
+    width: 90%;
+  }
+
+  .grid-col-10of10 {
+    width: 100%;
+  }
+
+  .grid-col-25 {
+    width: 25%;
+  }
+
+  .grid-col-33 {
+    width: 33.33%;
+  }
+
+  .grid-col-66 {
+    width: 66.66%;
+  }
+
+  .grid-pad {
+    padding: 1.5em;
+  }
+
+  .grid-pad:first-of-type {
+    padding: 1.5em;
+  }
+}
+
+
+
 /* --------------------- HEADER --------------------- */
 header {
   width: 100%;
@@ -91,10 +193,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: #808080;
-  font-weight: normal;
+  font-weight: 600;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 p {
@@ -103,8 +206,9 @@ p {
 }
 
 a {
-  color: #008B8B;
+  color: #CCA161;
   text-decoration: none;
+  border-bottom: none;
 
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -113,14 +217,17 @@ a {
   transition: all 0.3s;
 }
 
-a:hover,
-a:active,
-a:focus {
-  color: #CCA161;
+
+a.hover:focus,
+a.hover:active,
+a.hover:hover,
+.selected {
+  border-bottom: solid 0.1rem #CCA161;
+  padding-bottom: 0.5rem;
 }
 
 li {
-  font-size: 1.1em;
+  font-size: 1.75em;
 }
 
 .selected {
@@ -135,11 +242,7 @@ li {
 }
 
 .section {
-  padding: 5em;
-}
-
-.section-without-header {
-  padding-top: 14em;
+  padding: 5em 0;
 }
 
 .section-last {
@@ -147,24 +250,41 @@ li {
   border-bottom: none;
 }
 
-.secondary-section {
-  width: 50em;
+/* sections */
+
+.main-section {
+  max-width: 80em;
   margin: 0 auto;
 }
 
-picture img {
-  width: 100%;
+/* section with double borders */
+.secondary-section {
+  padding: 5em;
+  background-color: #FFF;
+}
+
+.centered-section {
+  max-width: 80em;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+.images-section {
+  padding: 3em 0;
+  padding-bottom: 5em;
+  margin: 0 auto;
+  display: block;
+}
+
+/* main page projects section styling */
+.projects-section .secondary-section {
+  background-color: transparent;
 }
 
 
-/* main page - projects section */
 
-
-.projects-img {
-  padding: 0;
-}
-
-/* main page - interests section */
+/* interests section */
 
 .interests-section {
   text-align: center;
@@ -174,18 +294,6 @@ picture img {
   padding: 3em;
 }
 
-.interests-section h3 {
-  margin-top: 0;
-  margin-bottom: 0.5em;
-}
-
-.interests-section p {
-  margin: 0em;
-}
-
-.interests-img {
-  padding: 0em 5em 1em 5em;
-}
 
 /* ordering elements */
 .flex-container {
@@ -224,24 +332,15 @@ picture img {
 .footer {
   width: 100%;
   height: auto;
-  margin: 10em auto;
-  padding: 2em 0;
+  margin-top: 10em;
+  padding-top: 2em;
+  padding-bottom: 7em;
   border-top: solid 0.1em #e6e6e6;
+  background-color: #FFF;
 }
 
 .footer-icon {
   float: right;
-}
-
-.footer h3 {
-  display: inline;
-  margin-bottom: 0;
-}
-
-.footer h3:last-child {
-  display: block;
-  margin-top: 0.5em;
-  color: #808080;
 }
 
 .footer-about-page {
@@ -262,8 +361,8 @@ picture img {
   margin: 0;
 }
 
-a .icon {
-  color: #FFF;
+a .icon-hover {
+  color: #021C1E;
 
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -273,23 +372,19 @@ a .icon {
 }
 
 
-a .icon:active,
-a .icon:focus,
-a .icon:hover {
-  color: #2F4F4F;
+a .icon-hover:active,
+a .icon-hover:focus,
+a .icon-hover:hover {
+  color: #CCA161;
 }
 
-/* projects page - section */
-.section-centered p {
-  width: 45em;
-  margin: 0 auto;
-}
+
 
 /* ------------------------------------ MAIN PAGE ---------------------------------------- */
 
 /* title content */
 .title-section {
-  width: 50em;
+  max-width: 50em;
   margin: 10em auto;
 }
 
@@ -370,6 +465,23 @@ a .icon:hover {
 
 
 
+
+/* ------------------------------------ PROJECTS PAGE ---------------------------------------- */
+.prototype-text {
+  display: inline-block;
+}
+
+.prototype-text-pad {
+  display: inline-block;
+  padding: 1em;
+}
+
+.project-img-small {
+  max-width: 50%;
+}
+
+
+
 /* --------------------- INTERACTION --------------------- */
 .button {
   display: inline-block;
@@ -445,7 +557,6 @@ a .icon:hover {
 
   .section {
     padding: 2em 1em;
-    margin: 1em 0;
   }
 
   .section-last {
@@ -476,7 +587,7 @@ a .icon:hover {
 
 
   /* ORDER */
-/*  .order1 {
+  .order1 {
     -webkit-box-ordinal-group: 2;
     -moz-box-ordinal-group: 2;
     -ms-flex-order: 2;
@@ -490,7 +601,7 @@ a .icon:hover {
     -ms-flex-order: 1;     
     -webkit-order: 1;  
     order: 1;
-  }*/
+  }
 }
 
 
@@ -530,6 +641,14 @@ code {
   text-align: justify;
 }
 
+.typeface-adamcgreg {
+  font-family: 'Adam.CG Pro';
+}
+
+.typeface-josefinsans {
+  font-family: 'Josefin Sans';
+}
+
 /* color section */
 .palette-pad {
   padding-right: 1.5em;
@@ -554,20 +673,20 @@ code {
   height: 7.5em;
 }
 
-.palette-teal {
-  background-color: #008B8B;
+.palette-dark-green {
+  background-color: #021C1E;
 }
 
-.palette-dark-teal {
-  background-color: #2F4F4F;
+.palette-yellow {
+  background-color: #CCA161;
 }
 
 .palette-light-grey {
-  background-color: #F2F2F2;
+  background-color: #E9E9E9;
 }
 
 .palette-dark-grey {
-  background-color: #343434;
+  background-color: #808080;
 }
 
 /* intext link section */
@@ -577,7 +696,7 @@ code {
 
 /* grids section */
 .grid-style {
-  background-color: #008B8B;
+  background-color: #CCA161;
   border: 0.1em solid #fff;
   color: #fff;
   text-align: center;
@@ -588,12 +707,7 @@ code {
 /* Resize */
 
 @media (max-width: 70em) {
-  /* form section */
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-  }
-
+  
   /* color section */
   .palette-pad {
     padding: 2em 0 0 0;

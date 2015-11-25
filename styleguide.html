@@ -17,7 +17,7 @@
   ================================================== -->
     <link href="css/normalize.css" rel="stylesheet" >
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/grid.css" rel="stylesheet">
+
 
     <!-- Font Awesome
   ================================================== -->
@@ -36,10 +36,10 @@
       <nav>
         <div class="grid-row">
           <div class="grid-col-10of10">
-            <a href="index.html"><img src="img/brand-logo2.png" class="logo"></a>
+            <a href="index.html"><img src="img/brand-logo.png" class="logo"></a>
 
           <div class="sub-nav">
-              <a href="about.html">About</a>
+              <a href="about.html" class="hover">About</a>
           </div>
         </div>
       </nav>
@@ -62,21 +62,8 @@
 
 
         <h2>Rendered element</h2>
-        <div class="grid-row">
-          <div class="grid-col-5of10">
-            <h3>With Name</h3>
-            <a><img src="img/brand-logo.png" class="logo logo-render">
-              <div class="logo-title-render">Janine Wong</div>
-            </a>
-            
-          </div>
+        <img src="img/brand-logo.png" class="logo">
 
-          <div class="grid-col-5of10">
-            <h3>Without Name</h3>
-            <img src="img/brand-logo.png" class="logo logo-render">
-            
-          </div>
-        </div>
       </div>
 
         <!-- ===================== Typeface Section ===================== -->
@@ -91,8 +78,15 @@
           
           <h2>Rendered element</h2> 
           <div class="grid-row">
-            <div class="grid-col-3of10 typeface-render"> 
-              <h3>Open Sans</h3>
+            <div class="grid-col-3of10 typeface-render typeface-adamcgreg grid-pad"> 
+              <h3>Adam Cg. Regular</h3>
+              <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+              a b c d e f g h i j k l m n o p q r s t u v w x y z
+              0 1 2 3 4 5 6 7 8 9</p>
+            </div>
+
+            <div class="grid-col-3of10 typeface-render typeface-josefinsans grid-pad"> 
+              <h3>Josefin Sans</h3>
               <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
               a b c d e f g h i j k l m n o p q r s t u v w x y z
               0 1 2 3 4 5 6 7 8 9</p>
@@ -107,27 +101,27 @@
           <h2>Color Palette Used</h2>
           <div class="grid-row">
             <div class="grid-col-25 palette-pad">
-              <div class="palette-box palette-teal"></div>
-              <h3>Teal</h3>
-              <p>#008B8B</p>
+              <div class="palette-box palette-dark-green"></div>
+              <h3>Dark Green</h3>
+              <p>#021C1E</p>
             </div>
 
             <div class="grid-col-25 palette-pad">
-              <div class="palette-box palette-dark-teal"></div>
-              <h3>Dark Teal</h3>
-              <p>#2F4F4F</p>
+              <div class="palette-box palette-yellow"></div>
+              <h3>Golden Yellow</h3>
+              <p>#CCA161</p>
             </div>
 
             <div class="grid-col-25 palette-pad">
               <div class="palette-box palette-light-grey"></div>
               <h3>Light Grey</h3>
-              <p>#F2F2F2</p>
+              <p>#E9E9E9</p>
             </div>
 
             <div class="grid-col-25 palette-pad">
               <div class="palette-box palette-dark-grey"></div>
               <h3>Dark Grey</h3>
-              <p>#343434</p>
+              <p>#808080</p>
             </div>
           </div>
         </div>
@@ -145,10 +139,7 @@
 
           <h2>Rendered element</h2>
           <div class="icon-pad-render">
-            <a><i class="fa fa-linkedin-square fa-3x"></i></a>
-          </div>
-          <div class="icon-pad-render">
-            <a><i class="fa fa-envelope fa-3x"></i></a>
+            <a href=""><i class="fa fa-linkedin-square fa-3x icon-hover"></i></a>
           </div>
         </div>
 
@@ -180,28 +171,9 @@
           <p><code>&lt;a href="#" class="selected"&gt;Default In-text Link&lt;/a&gt;</code></p>
 
           <h2>Rendered element</h2>
-          <p class="section-render">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac varius nisi. <a class="selected" href="">Mauris</a> dui diam, porta in tempus sit amet, volutpat at nulla. Aliquam condimentum diam mi. Donec sed molestie ante. Quisque id eleifend leo, sit amet auctor arcu. Phasellus et diam ac lectus interdum pellentesque id sit amet ipsum. Nunc egestas mauris sit amet turpis feugiat tincidunt. Ut eu sagittis tellus, vitae cursus dui. Fusce ornare non felis eget rhoncus. Integer a nisl quis massa vehicula ultricies. Sed vel turpis dui.</p>
+          <p class="section-render">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac varius nisi. <a href="" class="hover">Mauris</a> dui diam, porta in tempus sit amet, volutpat at nulla.</p>
         </div>
 
-
-        <!-- ===================== Form Section ===================== -->
-        <div class="section">
-          <h1>Form</h1>
-
-          <h2>CSS selector</h2>
-          <p>.contact-form</p>
-
-          <h2>Sample code</h2>
-          <p><code>&lt;form class="contact-form"&gt;Default Form&lt;/form&gt;</code></p>
-
-          <h2>Rendered element</h2>
-          <form class="contact-form" name="contact" accept-charset="utf-8">
-            <label><input name="name" type="text" placeholder="Name"/></label>
-            <label><input name="email" type="email" placeholder="Email"/></label>
-            <label><textarea name="message" placeholder="Message"></textarea></label>
-            <input class="button" name="submit" type="submit" value="Send"/>
-          </form>
-        </div>
 
 
         <!-- ===================== Headings Section ===================== -->
@@ -209,7 +181,7 @@
           <h1>Headings</h1>
 
           <h2>CSS Selector</h2>
-          <p>h1, h2, h2</p>
+          <p>h1, h2, h3</p>
 
           <h2>Sample code</h2>
           <p><code>&lt;h1&gt;Your Content&lt;/h1&gt;</code>
@@ -220,9 +192,9 @@
           <h2>Rendered element</h2>
 
           <h1>Heading 1</h1>
-          <h1>Heading 2</h1>
-          <h2>Heading 3</h2>
+          <h2>Heading 2</h2>
           <h3>Heading 3</h3>
+
         </div>
 
 
@@ -256,12 +228,13 @@
           </p>
 
           <h2>Rendered element</h2>
-
-          <ul>
-            <li>List One</li>
-            <li>List Two</li> 
-            <li>List Three</li>
-          </ul>
+          <p>
+            <ul>
+              <li>List One</li>
+              <li>List Two</li> 
+              <li>List Three</li>
+            </ul>
+          </p>
         </div>
 
 
@@ -283,11 +256,14 @@
 
           <h2>Rendered element</h2>
 
-          <ol>
-            <li>List One</li>
-            <li>List Two</li> 
-            <li>List Three</li>
-          </ol>
+          <p>
+            <ol>
+              <li>List One</li>
+              <li>List Two</li> 
+              <li>List Three</li>
+            </ol>
+          </p>
+
         </div>
 
 
@@ -296,41 +272,25 @@
           <h1>Main Navigation</h1>
 
           <h2>CSS Selector</h2>
-          <p>.nav-logo, .sub-nav, .logo, .logo-title, .selected</p>
+          <p>.nav-logo, .sub-nav, .logo</p>
 
           <h2>Sample code</h2>
           <p><code>&lt;nav&gt; &lt;/nav&gt;</code></p>
 
           <h2>Rendered element</h2>
 
-          <!-- Main nav with title -->
-          <h3>Main Nav Menu</h3>
-          <nav>
-            <div class="nav-logo">
-              <a href=""><img src="img/brand-logo.png" class="logo logo-render">
-              <div class="logo-title-render">Janine Wong</div></a>
-            </div>
+          <header>
+            <nav>
+              <div class="grid-row">
+                <div class="grid-col-10of10">
+                  <a href="index.html"><img src="img/brand-logo.png" class="logo"></a>
 
-            <div class="sub-nav">
-                <a href=""><div class="selected">Styleguide</div></a>
-                <a href="">Sketches</a>
-                <a href="">Website</a>
-            </div>
-          </nav>
-
-          <!-- Main nav without title -->
-          <h3>Shrunken Down Nav Menu</h3>
-          <nav>
-            <div class="nav-logo">
-              <a href=""><img src="img/brand-logo.png" class="small-logo"></a>
-            </div>
-
-            <div class="sub-nav">
-                <a href=""><div class="selected">Styleguide</div></a>
-                <a href="">Sketches</a>
-                <a href="">Website</a>
-            </div>
-          </nav>
+                <div class="sub-nav">
+                    <a href="about.html" class="hover">About</a>
+                </div>
+              </div>
+            </nav>
+          </header>
         </div>
 
 
@@ -346,7 +306,7 @@
 
           <h2>Rendered element</h2>
 
-          <h3>Main Page Interests Grid</h3>
+          <h3>Interests Grid</h3>
           <div class="grid-row">
             <div class="grid-col-33">
                <p class="grid-style">1</p>
@@ -358,17 +318,6 @@
 
             <div class="grid-col-33">
                <p class="grid-style">3</p>
-            </div>
-          </div>
-
-          <h3>Main Page Projects Grid</h3>
-          <div class="grid-row">
-            <div class="grid-col-33">
-               <p class="grid-style">1</p>
-            </div>
-
-            <div class="grid-col-66">
-               <p class="grid-style">2</p>
             </div>
           </div>
 
@@ -384,10 +333,10 @@
       <div class="main-wrapper">
 
         <!-- Text on Footer Image -->
-        <h2>Let's work together</h2>
-
         <i class="fa fa-linkedin-square fa-3x icon-pad footer-icon"></i>
-        <h2 class="email-icon-text">jaeninwong@gmail.com</h2>
+
+        <h2>Let's work together</h2>     
+        <p>jaeninwong@gmail.com</p>
 
       </div>
     </div>
