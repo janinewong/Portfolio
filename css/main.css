@@ -146,6 +146,10 @@ nav a:first-child {
   margin-left: 0;
 }
 
+.nav-wrapper {
+  margin: 0;
+}
+
 /* regular logo */
 .logo {
   display: inline-block;
@@ -394,13 +398,12 @@ a .icon-hover:hover {
 
 .projects-section::before {
   content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 2em;
+  right: 10em;
+  bottom: 2em;
+  width: 100%;
 
   position: absolute;
-  background-size: cover;
   z-index: -1;   
 
   /* set default scale size */
@@ -428,28 +431,42 @@ a .icon-hover:hover {
   transform: scale(1.05, 1.05);
 }
 
-
 /* main page - project one - knitstitch */
 .projects-section#project-one::before {
-  background-image: url("../img/project-knitstitch-main.jpg");
+  background: url("../img/project-knitstitch-main.jpg") no-repeat top right;
+  background-size: contain;
   }
 
 .projects-section#project-one:hover::before,
 .projects-section#project-one:focus::before,
 .projects-section#project-one:active::before {
-  background-image: url("../img/project-knitstitch-main-hover.jpg");
+  background: url("../img/project-knitstitch-main-hover.jpg") no-repeat top right;
+  background-size: contain;
 }
 
 
 /* main page - project two - misa */
 .projects-section#project-two::before {
-  background-image: url("../img/project-misa-main.jpg");
+  background: url("../img/project-misa-main.jpg") no-repeat top right;
+  background-size: contain;
   }
 
 .projects-section#project-two:hover::before,
 .projects-section#project-two:focus::before,
 .projects-section#project-two:active::before {
-  background-image: url("../img/project-misa-main-hover.jpg");
+  background: url("../img/project-misa-main-hover.jpg") no-repeat top right;
+  background-size: contain;
+}
+
+.projects-section::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #FFF;
+  z-index: -2;
 }
 
 /* main page projects section styling */
@@ -532,11 +549,15 @@ a .icon-hover:hover {
 
 /* --------------------- RESIZE --------------------- */
 
-@media (max-width: 70rem) {
-  .main-wrapper,
+@media (max-width: 80em) {
+  .main-wrapper {
+    width: 100%;
+    padding: 0 10em;
+  }
+
   nav {
     width: 100%;
-    padding: 0 10%;
+    margin: 0;
   }
 
   .section {
@@ -546,11 +567,41 @@ a .icon-hover:hover {
   .interests-section img {
     padding: 0em 3em 1em 3em;
   }
+
+  .projects-section::before {
+    right: 5em;
+  }
 }
 
-@media (max-width: 45rem) {
+@media (max-width: 62em) {
+  .secondary-section {
+    width: 100%;
+    text-align: center;
+    background-color: #FFF;
+    padding: 3em 1em;
+  }
 
-  .main-wrapper, nav {
+  .projects-section::before {
+    display: none;
+  }
+
+  .project-img-mobile {
+    display: block;
+    padding: 3em;
+  }
+
+  .projects-section .secondary-section {
+    background-color: #FFF;    
+  }
+}
+
+@media (max-width: 40em) {
+
+  header {
+    margin-top: 3em;
+  }
+
+  .main-wrapper {
     padding: 0 2em;
   }
 
@@ -570,6 +621,7 @@ a .icon-hover:hover {
     width: 100%;
     text-align: center;
     background-color: #FFF;
+    padding: 3em 1em;
   }
 
   .projects-section::before {
@@ -583,6 +635,11 @@ a .icon-hover:hover {
 
   .projects-section .secondary-section {
     background-color: #FFF;    
+  }
+
+  .footer {
+    margin-top: 7em;
+    padding-bottom: 5em;
   }
 
 
