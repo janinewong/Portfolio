@@ -245,11 +245,6 @@ li {
   padding: 5em 0;
 }
 
-.section-last {
-  margin-bottom: 2em;
-  border-bottom: none;
-}
-
 /* sections */
 
 .main-section {
@@ -263,6 +258,8 @@ li {
   background-color: #FFF;
 }
 
+/* section with centered text */
+
 .centered-section {
   max-width: 80em;
   text-align: center;
@@ -270,6 +267,7 @@ li {
   padding-bottom: 0;
 }
 
+/* section for images */
 .images-section {
   padding: 3em 0;
   padding-bottom: 5em;
@@ -277,55 +275,13 @@ li {
   display: block;
 }
 
-/* main page projects section styling */
-.projects-section .secondary-section {
-  background-color: transparent;
-}
-
-
-
 /* interests section */
-
 .interests-section {
   text-align: center;
 }
 
 .interests-section img {
   padding: 3em;
-}
-
-
-/* ordering elements */
-.flex-container {
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-wrap: wrap;
-  -moz-box-flex-wrap: wrap;
-  -ms-box-flex-wrap: wrap;
-  -o-box-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.order1 {
-  -webkit-box-ordinal-group: 1;  
-  -moz-box-ordinal-group: 1;     
-  -ms-flex-order: 1;     
-  -webkit-order: 1;  
-  order: 1;
-}
-
-.order2 {
-  -webkit-box-ordinal-group: 2;
-  -moz-box-ordinal-group: 2;
-  -ms-flex-order: 2;
-  -webkit-order: 2;
-  order: 2; 
 }
 
 /* footer section */
@@ -376,6 +332,44 @@ a .icon-hover:active,
 a .icon-hover:focus,
 a .icon-hover:hover {
   color: #CCA161;
+}
+
+/* ordering elements */
+.flex-container {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -moz-box-flex-wrap: wrap;
+  -ms-box-flex-wrap: wrap;
+  -o-box-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.order1 {
+  -webkit-box-ordinal-group: 1;  
+  -moz-box-ordinal-group: 1;     
+  -ms-flex-order: 1;     
+  -webkit-order: 1;  
+  order: 1;
+}
+
+.order2 {
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  -webkit-order: 2;
+  order: 2; 
+}
+
+/* extra padding on bottom */
+.extra-pad-bot {
+  padding-bottom: 2em;
 }
 
 
@@ -456,6 +450,11 @@ a .icon-hover:hover {
 .projects-section#project-two:focus::before,
 .projects-section#project-two:active::before {
   background-image: url("../img/project-misa-main-hover.jpg");
+}
+
+/* main page projects section styling */
+.projects-section .secondary-section {
+  background-color: transparent;
 }
 
 .project-img-mobile {
@@ -569,6 +568,8 @@ a .icon-hover:hover {
 
   .secondary-section {
     width: 100%;
+    text-align: center;
+    background-color: #FFF;
   }
 
   .projects-section::before {
@@ -580,9 +581,8 @@ a .icon-hover:hover {
     padding: 3em;
   }
 
-  .projects-section .section {
-    text-align: center;
-    background-color: #FFF;
+  .projects-section .secondary-section {
+    background-color: #FFF;    
   }
 
 
