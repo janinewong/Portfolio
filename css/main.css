@@ -279,6 +279,10 @@ li {
   display: block;
 }
 
+.images-section img {
+  padding-bottom: 1em;
+}
+
 /* interests section */
 .interests-section {
   text-align: center;
@@ -427,28 +431,29 @@ a .icon-hover:hover {
 
 /* main page - project one - knitstitch */
 .projects-section#project-one::before {
-  background: url("../img/project-knitstitch-main.jpg") no-repeat top right;
+  background: url("../img/project-misa-main.jpg") no-repeat top right;
   background-size: contain;
+  
   }
 
 .projects-section#project-one:hover::before,
 .projects-section#project-one:focus::before,
 .projects-section#project-one:active::before {
-  background: url("../img/project-knitstitch-main-hover.jpg") no-repeat top right;
+  background: url("../img/project-misa-main-hover.jpg") no-repeat top right;
   background-size: contain;
 }
 
 
 /* main page - project two - misa */
 .projects-section#project-two::before {
-  background: url("../img/project-misa-main.jpg") no-repeat top right;
+  background: url("../img/project-knitstitch-main.jpg") no-repeat top right;
   background-size: contain;
-  }
+}
 
 .projects-section#project-two:hover::before,
 .projects-section#project-two:focus::before,
 .projects-section#project-two:active::before {
-  background: url("../img/project-misa-main-hover.jpg") no-repeat top right;
+  background: url("../img/project-knitstitch-main-hover.jpg") no-repeat top right;
   background-size: contain;
 }
 
