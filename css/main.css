@@ -49,7 +49,7 @@
 }
 
 /* column widths with bigger resolutions */
-@media (min-width: 45rem) {
+@media (min-width: 40em) {
 
   .grid-col-1of10{
     width: 10%;
@@ -340,19 +340,13 @@ a .icon-hover:hover {
 
 /* ordering elements */
 .flex-container {
-  -ms-box-orient: horizontal;
   display: -webkit-box;
   display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
+  display: box;
 
-  -webkit-flex-wrap: wrap;
-  -moz-box-flex-wrap: wrap;
-  -ms-box-flex-wrap: wrap;
-  -o-box-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
 }
 
 .order1 {
@@ -574,6 +568,7 @@ a .icon-hover:hover {
 }
 
 @media (max-width: 62em) {
+
   .secondary-section {
     width: 100%;
     text-align: center;
@@ -593,6 +588,20 @@ a .icon-hover:hover {
   .projects-section .secondary-section {
     background-color: #FFF;    
   }
+
+  .project-img-small {
+    max-width: 100%;
+  }
+
+  .images-section {
+    padding-bottom: 1em;
+  }
+}
+
+@media (max-width:50em) {
+  .main-wrapper {
+    padding: 0 5em;
+  }
 }
 
 @media (max-width: 40em) {
@@ -606,15 +615,11 @@ a .icon-hover:hover {
   }
 
   .section {
-    padding: 2em 1em;
-  }
-
-  .section-last {
-    margin-bottom: 1em;
+    padding: 3em 1em;
   }
 
   .interests-section img {
-    padding: 10%;
+    padding: 5em 5em 1em 5em;
   }
 
   .secondary-section {
@@ -640,6 +645,10 @@ a .icon-hover:hover {
   .footer {
     margin-top: 7em;
     padding-bottom: 5em;
+  }
+
+  .prototype-text-pad {
+    padding: 0;
   }
 
 
