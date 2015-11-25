@@ -509,6 +509,7 @@ a .icon-hover:hover {
   padding-top: 30px; 
   height: 0; 
   overflow: hidden;
+  border: none;
 }
  
 .video-container iframe,
