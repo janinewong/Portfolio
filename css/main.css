@@ -689,11 +689,6 @@ code {
   background-color: #808080;
 }
 
-/* intext link section */
-.section-render {
-  margin-bottom: 1em;
-}
-
 /* grids section */
 .grid-style {
   background-color: #CCA161;
@@ -707,7 +702,7 @@ code {
 /* Resize */
 
 @media (max-width: 70em) {
-  
+
   /* color section */
   .palette-pad {
     padding: 2em 0 0 0;
