@@ -339,7 +339,7 @@ a .icon-hover:hover {
 }
 
 /* ordering elements */
-.flex-container {
+.order-container {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -488,6 +488,14 @@ a .icon-hover:hover {
 
 .project-img-small {
   max-width: 50%;
+}
+
+.project-overview-section p {
+  margin-bottom: 0;
+}
+
+.project-overview-section p:last-child {
+  margin: 0;
 }
 
 
