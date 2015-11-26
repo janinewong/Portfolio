@@ -123,7 +123,6 @@ header {
 }
 
 nav {
-  width: 100em;
   height: 5em;
   margin: 0 auto;
   
@@ -239,7 +238,7 @@ li {
 }
 
 .main-wrapper {
-  width: 100em;
+  width: 60%;
   margin: 0 auto;
   overflow: hidden;
   margin-top: 2em;
@@ -577,8 +576,7 @@ a .icon-hover:hover {
 
 @media (max-width: 80em) {
   .main-wrapper {
-    width: 100%;
-    padding: 0 10em;
+    width: 80%;
   }
 
   nav {
