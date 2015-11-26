@@ -574,9 +574,9 @@ a .icon-hover:hover {
 
 /* --------------------- RESIZE --------------------- */
 
-@media (max-width: 80em) {
+@media (max-width: 90em) {
   .main-wrapper {
-    width: 80%;
+    width: 70%;
   }
 
   nav {
@@ -597,7 +597,7 @@ a .icon-hover:hover {
   }
 }
 
-@media (max-width: 62em) {
+@media (max-width: 70em) {
 
   .secondary-section {
     width: 100%;
@@ -630,6 +630,7 @@ a .icon-hover:hover {
 
 @media (max-width:50em) {
   .main-wrapper {
+    width: 100%;
     padding: 0 5em;
   }
 }
