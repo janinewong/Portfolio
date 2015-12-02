@@ -508,6 +508,8 @@ a .icon-hover:hover {
 /* Images in project page */
 .project-img-small {
   max-width: 50%;
+  margin: 0 auto;
+  display: block;
 }
 
 /* Project overview section styling */
