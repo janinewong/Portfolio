@@ -262,12 +262,19 @@ li {
 }
 
 /* section with centered text */
-
 .centered-section {
   max-width: 80em;
   text-align: center;
   margin: 0 auto;
   padding-bottom: 0;
+}
+
+/* sectino with lines */
+.line-section {
+  border-top: solid 0.1em #808080;
+  border-bottom: solid 0.1em #808080;
+  padding-bottom: 5em;
+  text-align: center;
 }
 
 /* section for images */
@@ -481,26 +488,41 @@ a .icon-hover:hover {
 
 
 /* ------------------------------------ PROJECTS PAGE ---------------------------------------- */
+
+/* Prototype section */
 .prototype-text {
   display: inline-block;
 }
 
-.prototype-text-pad {
+.text-pad {
   display: inline-block;
-  padding: 1em;
+  padding: 0em 1em;
 }
 
+.text-pad:first-child {
+  padding-left: 0;
+}
+
+.text-pad:last-child {
+  padding-right: 0;
+}
+
+/* Images in project page */
 .project-img-small {
   max-width: 50%;
 }
 
-.project-overview-section p {
+/* Project overview section styling */
+
+.project-overview-section p:first-of-type {
   margin-bottom: 0;
 }
 
-.project-overview-section p:last-child {
-  margin: 0;
+.project-overview-section p:last-of-type {
+  margin-top: 0;
 }
+
+/* Project video */
 
 .video-container {
   position: relative;
@@ -520,6 +542,12 @@ a .icon-hover:hover {
   width: 100%;
   height: 100%;
 }
+
+/* Scrolling */
+
+var element_to_scroll_to = document.getElementById('anchorName2');
+element_to_scroll_to.scrollIntoView();
+
 
 
 
@@ -550,24 +578,24 @@ a .icon-hover:hover {
   transition: all 0.3s;
 }
 
-/* Forms */
-.contact-form input,
-.contact-form textarea {
-  display: block;
-  width: 50%;
-  padding: 0.25em;
-  border: solid 0.1em #CCC;
+.button-to-top {
+  position: fixed;
+  bottom: 0.5%;
+  right: 1%;
+  background-color: #FFF;
+  z-index: 99;
 }
 
-.contact-form label {
+.button-to-top-desktop {
   display: block;
-  width: 100%;
-  margin-bottom: 1em;
 }
 
-.contact-form .button {
-  padding: 0.75em;
-  border: none;
+.button-to-top-mobile {
+  display: none;
+}
+
+.button-to-top-padding {
+  padding-right: 0.5em;
 }
 
 
@@ -623,6 +651,20 @@ a .icon-hover:hover {
 
   .images-section {
     padding-bottom: 1em;
+  }
+
+  .button-to-top-desktop {
+    display: none;
+  }
+
+  .button-to-top-mobile {
+    display: block;
+  }
+
+  .button-to-top {
+    bottom: 5%;
+    right: 5%;
+    background-color: transparent;
   }
 }
 

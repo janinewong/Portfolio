@@ -1,5 +1,5 @@
 <!doctype html>
-  <html lang="en">
+  <html lang="en" id="top">
   <head>
 
     <!-- Basic Page Needs
@@ -41,10 +41,25 @@
           <div class="sub-nav">
               <a href="about.html" class="hover">About</a>
           </div>
+
         </div>
       </nav>
     </header>
 
+    <!-- =================== Back to Top Button ==================== -->
+    <a href="#top">
+      <div class="button button-to-top button-to-top-desktop">
+        <i class="fa fa-arrow-circle-up button-to-top-padding"></i>
+        Back to Top
+      </div>
+    </a>
+
+    <!-- mobile version -->
+    <div class="button-to-top-mobile">
+      <a href="#top">
+        <i class="fa fa-arrow-circle-up fa-4x button-to-top"></i>
+      </a>
+    </div>
 
     <!-- ===================== Main Content ===================== -->
 
@@ -102,7 +117,7 @@
 
         <h1>Objective</h1>
 
-        <p class="extra-pad-bot">We saw the need to give a more <strong>social experience</strong> to the members of Knit N Crochet since they only met once a month. Our proposal to them: Knitstitch, an iPad application letting them share and start knitting projects together as long as they had wifi!</p>
+        <p class="extra-pad-bot">We saw the need to enhance the <strong>social experience</strong> between the members of Knit N Crochet since they only meet once a month. Our proposal to them: Knitstitch, an iPad application letting them share and start knitting projects together as long as they had wifi!</p>
 
         <h1>Strategy</h1>
 
@@ -112,13 +127,30 @@
 
 
       <!-- Project Strategy overview -->
-      <img src="img/project-knitstitch-overview.png" class="images-section">     
+      <div class="section">
+        <div class="section line-section">
+
+          <h1>Index</h1>
+          <h2 class="text-pad"><a href="#culturalprobes" class="hover">Cultural Probes</a></h2>
+
+          <h2 class="text-pad"><a href="#conceptposters" class="hover">Concept Posters</a></h2>
+
+          <h2 class="text-pad"><a href="#journeyframeworks" class="hover">Journey Frameworks</a></h2>
+       
+          <h2 class="text-pad"><a href="#ipadprototype" class="hover">iPad Prototype</a></h2>
+        
+          <h2 class="text-pad"><a href="#promotionalvideo" class="hover">Promotional Video</a></h2>
+        
+          <h2 class="text-pad"><a href="#conclusion" class="hover">Conclusion</a></h2>
+          
+        </div>  
+      </div>
 
 
 
       <!-- ==================== Cultural Probes ==================== -->
 
-      <div class="order-container">
+      <div class="order-container" id="culturalprobes">
 
          <!-- Project image description -->
          <div class="section centered-section order1">
@@ -142,7 +174,7 @@
 
      <!-- ==================== Concept posters ==================== -->
 
-      <div class="order-container">
+      <div class="order-container" id="conceptposters">
 
          <!-- Project image description -->
          <div class="section centered-section order1">
@@ -165,7 +197,7 @@
 
 
       <!-- ==================== Journey Frameworks ==================== -->
-      <div class="order-container">
+      <div class="order-container" id="journeyframeworks">
         
         <!-- Project image description -->
         <div class="section centered-section order1">
@@ -187,17 +219,17 @@
 
 
       <!-- ==================== Prototype ==================== -->
-      <div class="section centered-section">
+      <div class="section centered-section" id="ipadprototype">
 
         <h1>Ipad Prototype</h1>
 
-        <div class="prototype-text-pad">
+        <div class="text-pad">
           <a href="http://o41dyj.axshare.com/#p=knitstitch&c=1" class="hover">
             <h2 class="prototype-text">Try out the desktop version!</h2>
           </a>
         </div>
 
-        <div class="prototype-text-pad">
+        <div class="text-pad">
           <a href="http://g01t5x.axshare.com/#p=home&c=1" class="hover">
             <h2 class="prototype-text">Try out the iPad version!</h2>
           </a>
@@ -208,7 +240,7 @@
 
 
     <!-- ==================== Video ==================== -->
-    <div class="main-wrapper">
+    <div class="main-wrapper" id="promotionalvideo">
       <div class="order-container">
 
         <div class="section centered-section order1">
@@ -228,7 +260,7 @@
 
 
     <!-- ==================== Conclusion ==================== -->
-    <div class="main-wrapper">
+    <div class="main-wrapper" id="conclusion">
       <div class="title-section">
 
         <h1>Conclusion</h1>
@@ -256,6 +288,8 @@
 
       </div>
     </div>
+
+    <script href="js/javascript.js" rel="stylesheet"></script>
 
 
   </body>
