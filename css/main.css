@@ -318,7 +318,7 @@ li {
 }
 
 
-/* footer section - icons */
+/* icons */
 .icon-pad,
 .icon-pad-render {
   display: inline-block;
@@ -346,6 +346,11 @@ a .icon-hover:active,
 a .icon-hover:focus,
 a .icon-hover:hover {
   color: #CCA161;
+}
+
+.fa-arrow-up {
+  color: #FFF;
+  padding: 0.15em;
 }
 
 /* ordering elements */
@@ -543,10 +548,6 @@ a .icon-hover:hover {
   height: 100%;
 }
 
-/* Scrolling */
-
-
-
 
 
 /* --------------------- INTERACTION --------------------- */
@@ -662,7 +663,16 @@ a .icon-hover:hover {
   .button-to-top {
     bottom: 5%;
     right: 5%;
-    background-color: transparent;
+    background-color: #CCA161;
+
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+
+    /* Prevent background color leak outs */
+    -webkit-background-clip: padding-box; 
+    -moz-background-clip:    padding; 
+    background-clip:         padding-box;
   }
 }
 
