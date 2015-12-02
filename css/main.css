@@ -514,11 +514,11 @@ a .icon-hover:hover {
 
 /* Project overview section styling */
 
-.project-overview-section p:first-of-type {
+.mar-bottom {
   margin-bottom: 0;
 }
 
-.project-overview-section p:last-of-type {
+.mar-top {
   margin-top: 0;
 }
 
