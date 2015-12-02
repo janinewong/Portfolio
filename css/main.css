@@ -504,14 +504,6 @@ a .icon-hover:hover {
   padding: 0em 1em;
 }
 
-.text-pad:first-child {
-  padding-left: 0;
-}
-
-.text-pad:last-child {
-  padding-right: 0;
-}
-
 /* Images in project page */
 .project-img-small {
   max-width: 50%;
@@ -546,6 +538,10 @@ a .icon-hover:hover {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.line-section h1 {
+  margin-bottom: 1em;
 }
 
 
@@ -726,10 +722,9 @@ a .icon-hover:hover {
     padding-bottom: 5em;
   }
 
-  .prototype-text-pad {
-    padding: 0;
+  .text-pad {
+    display: block;
   }
-
 
   /* ORDER */
   .order1 {
