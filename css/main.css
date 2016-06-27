@@ -289,7 +289,7 @@ li {
 
 /* section with centered text */
 .centered-section {
-  max-width: 80em;
+  max-width: 50em;
   text-align: center;
   margin: 0 auto;
   padding-bottom: 0;
