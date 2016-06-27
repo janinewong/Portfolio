@@ -15,6 +15,20 @@ $('.image-popup').magnificPopup({
 
 
 
+
+$(window).scroll(function(){
+    var stickyOffset = $('.sticky').offset().top;
+
+    if ($(window).scrollTop() >= stickyOffset) {
+       $('header').addClass('fixed-header');
+    }
+    else {
+       $('header').removeClass('fixed-header');
+    }
+});
+
+
+
 /*! Magnific Popup - v1.1.0 - 2016-02-20
 * http://dimsemenov.com/plugins/magnific-popup/
 * Copyright (c) 2016 Dmitry Semenov; */
