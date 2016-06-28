@@ -35,7 +35,7 @@
     
 
 
-    <div class="fullscreen background parallax" style="background-image:url('img/home-photo-03.jpg');" data-img-width="2049" data-img-height="1362" data-diff="300">
+    <div class="fullscreen background parallax" style="background-image:url('img/home-photo-03.jpg');" data-img-width="2049" data-img-height="1362" data-diff="100">
 
       <!-- ===================== Main Navigation ===================== -->
       <header>
@@ -44,15 +44,23 @@
               <a href="index.html"><img src="img/brand-logo.png" class="logo" alt="JW logo in black letters"></a>
 
             <div class="sub-nav">
-                <a href="about.html" class="hover">About</a>
+              <a href="index.html" class="selected hover">Home</a>
+              <a href="about.html" class="hover">About</a>
             </div>
           </div>
         </nav>
       </header>
 
-    </div>
+      <!-- Extra white space on bottom of title image -->
+      <div class="padding-container">
+        <div class="padding-fullscreen">
 
-    <div class="sticky"></div>
+          <!-- Point where Menu comes down -->
+          <div class="sticky"></div>
+        </div>
+      </div>
+
+    </div>
     
     
     
@@ -63,88 +71,61 @@
 
     <!-- Introduction Text -->
     <div class="main-wrapper">
-      <div class="section title-section" id="main-title">
+      <div class="title-section" id="main-title">
         <h1>Janine Wong.</h1>
         <h2>Marketer + Designer</h2>
         <p>I am a dual-minded person with skills in both marketing and design, particularly branding. -- Mediating is my talent! -- Which is why brand management has become my area of expertise, go figure?</p>
       </div>
     </div>
 
-    <!-- Project One -->
-    <div class="main-wrapper">
-      <div class="grid-row">
-        <div class="grid-col-5of10 grid-pad">
-          <a href="rebranding-misa.html"><img src="img/project-misa-main-mobile.jpg" class="project-image" alt="Laptop showing a screen of the home page of MISA" /></a>
-        </div>
-
-        <div class="grid-col-5of10 grid-pad">
-          <!-- Project content -->
-          <h1>Rebranding Misa</h1>
-          <h2>Marketing + Graphic Design</h2>
-          <div class="button">Explore</div>
-        </div>
-      </div>
-
-      <div class="grid-row">
-
-        <div class="grid-col-5of10 grid-pad">
-          <a href="knitstitch.html"><img src="img/project-knitstitch-main-mobile.jpg" alt="Laptop showing a screen of the home page of MISA" /></a>
-        </div>
-
-        <div class="grid-col-5of10 grid-pad">
-          <!-- Project content -->
-          <h1>Knitstitch</h1>
-          <h2>Branding + Graphic Design</h2>
-          <div class="button">Explore</div>
-        </div>
-
-      </div>
-
-      <a href="rebranding-misa.html">
-        <div class="projects-section" id="project-one">
-
-          <!-- Project content -->
-          <div class="secondary-section">
-
-            <!-- Project image in mobile view -->
-            <div class="project-img-mobile">
-              <img src="img/project-misa-main-mobile.jpg" alt="Laptop showing a screen of the home page of MISA">
-            </div>
-          
-            <h1>Rebranding Misa</h1>
-            <h2>Marketing + Graphic Design</h2>
-
-            <div class="button">Explore</div>
-          </div>
-
-        </div>
-      </a>
-    </div>
-
-    <!-- Project Two -->
-    <div class="main-wrapper">
-
-      <a href="knitstitch.html">
-        <div class="projects-section" id="project-two">
-
-          <div class="secondary-section">
-
-            <!-- Project image in mobile view -->
-            <div class="project-img-mobile">
-              <img src="img/project-knitstitch-main-mobile.jpg" alt="iPad showing a screen of Knitstitch">
-            </div>
-
-            <!-- Project content -->
-            <h1>Knitstitch</h1>
-            <h2>Branding + Graphic Design</h2>
-            <div class="button">Explore</div>
-          </div>
-
-        </div>
-      </a>
-    </div>
-
     
+    <div class="main-wrapper">
+      <ul class="photo-grid">
+
+        <!-- Project 1 -->
+        <li>
+          <a href="rebranding-misa.html">
+            <figure>
+              <img src="img/project-misa-sponsorship-02.jpg" >
+              <figcaption><h3>Rebranding Misa<br><p>Branding</p></h3></figcaption>
+            </figure>
+          </a>
+        </li>
+
+        <!-- Project 2 -->
+        <li>
+          <a href="knitstitch.html">
+            <figure>
+              <img src="img/project-misa-sponsorship-02.jpg" >
+              <figcaption><h3>Knitstitch<br><p>UX/UI Design</p></h3></figcaption>
+            </figure>
+          </a>
+        </li>
+
+        <!-- Project 3 -->
+        <li>
+          <a href="rebranding-misa.html">
+            <figure>
+              <img src="img/project-misa-sponsorship-02.jpg" >
+              <figcaption><h3>Rebranding Misa<br><p>Branding</p></h3></figcaption>
+            </figure>
+          </a>
+        </li>
+
+        <!-- Project 4 -->
+        <li>
+          <a href="knitstitch.html">
+            <figure>
+              <img src="img/project-misa-sponsorship-02.jpg" >
+              <figcaption><h3>Knitstitch<br><p>Branding</p></h3></figcaption>
+            </figure>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+         
 
 
     <!-- ===================== Footer ===================== -->

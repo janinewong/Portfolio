@@ -132,6 +132,7 @@ header {
   width: 100%;
   z-index: 99;
   padding: 0.5em 0;
+  background-color: #FFF;
 }
 
 nav {
@@ -190,7 +191,7 @@ nav a:first-child {
 body {
   font-family: "Lato", sans-serif;
   font-size: 12px;
-  background-image: url("../img/background-main.png");
+  /*background-image: url("../img/background-main.png");*/
   background-size: contain;
   background-repeat: repeat;
   background-color: #FFF;
@@ -219,10 +220,10 @@ h2 {
 }
 
 h3 {
-  font-family: "Josefin Sans";
-  font-size: 1.25em;
+  font-family: "Brandon Grotesque";
   color: #021C1E;
-  font-weight: 600;
+  font-size: 0.9em;
+  font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -268,6 +269,10 @@ li {
   padding-top: 5em;
 }
 
+body.main-wrapper:first-of-type {
+  padding-top: 0em;
+}
+
 .content-wrapper {
   margin: 0 auto;
   display: block;
@@ -283,6 +288,7 @@ li {
   max-width: 60em;
   margin: 0 auto;
 }
+
 
 /* section with double borders */
 .secondary-section {
@@ -432,17 +438,29 @@ a .icon-hover:hover {
 
 /* fullscreen setup */
 html, body {
-    /* give this to all tags from html to .fullscreen */
-    height:100%;
+  /* give this to all tags from html to .fullscreen */
+  height:100%;
 }
 .fullscreen {
-    width:100%;
-    height:100%;
-    overflow:hidden;
+  width:100%;
+  height:100%;
+  overflow:hidden;
 }
+
 .fullscreen.overflow {
-    height:auto;
-    min-height:100%;
+  height:auto;
+  min-height:100%;
+}
+
+.padding-container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.padding-fullscreen {
+  height: 6em;
+  background-color: #FFF;
 }
 
 /* parallax */
@@ -459,98 +477,99 @@ html, body {
   background-position:50% 50%9 !important;
 }
 
-/* main page - projects section */
-.projects-section {
+/* Project images */
+.photo-grid {
+  margin: 1em auto;
+  text-align: center;
+  padding: 0;
+}
+
+.photo-grid li {
+  display: inline-block;
+  width: 45%;
+  margin: 0.5em;
+}
+
+.photo-grid img {
+  display: block;
+  height: auto;
   max-width: 100%;
-  max-height: 100%;
+}
+
+.photo-grid figure {
+  height: 10em;
   overflow: hidden;
   position: relative;
-  display: block;
-  border: double 0.6em #e9e9e9;
-}
-
-.projects-section::before {
-  content: "";
-  top: 2em;
-  right: 10em;
-  bottom: 2em;
   width: 100%;
-
-  position: absolute;
-  z-index: -1;   
-
-  /* set default scale size */
-  -o-transform: scale(1, 1);
-  -moz-transform: scale (1, 1);
-  -ms-transform: scale(1, 1);
-  -webkit-transofrm: scale(1, 1);
-  transform: scale(1, 1);
-
-  /* transition for scaling picture on hover */
-  -o-transition: all 600ms ease-in,-webkit-transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -moz-transition: all 600ms ease-in,-webkit-transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -webkit-transition: all 600ms ease-in,-webkit-transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition: all 600ms ease-in,transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  margin: 0;
 }
 
-.projects-section:hover::before,
-.projects-section:focus::before,
-.projects-section:active::before {
-  /*scale picture bigger on hover */
-  -o-transform: scale(1.05, 1.05);
-  -moz-transform: scale (1.05, 1.05);
-  -ms-transform: scale(1.05, 1.05);
-  -webkit-transofrm: scale(1.05, 1.05);
-  transform: scale(1.05, 1.05);
-}
-
-/* main page - project one - knitstitch */
-.projects-section#project-one::before {
-  background: url("../img/project-misa-main.jpg") no-repeat top right;
-  background-size: contain;
-  
-  }
-
-.projects-section#project-one:hover::before,
-.projects-section#project-one:focus::before,
-.projects-section#project-one:active::before {
-  background: url("../img/project-misa-main-hover.jpg") no-repeat top right;
-  background-size: contain;
-}
-
-
-/* main page - project two - misa */
-.projects-section#project-two::before {
-  background: url("../img/project-knitstitch-main.jpg") no-repeat top right;
-  background-size: contain;
-}
-
-.projects-section#project-two:hover::before,
-.projects-section#project-two:focus::before,
-.projects-section#project-two:active::before {
-  background: url("../img/project-knitstitch-main-hover.jpg") no-repeat top right;
-  background-size: contain;
-}
-
-.projects-section::after {
-  content: "";
-  top: 0;
+.photo-grid figcaption {
+  display: table;
+  width: 100%;
+  height: 100%;
   left: 0;
-  right: 0;
-  bottom: 0;
+  opacity: 0;
   position: absolute;
-  background-color: #FFF;
-  z-index: -2;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-transition-delay: 100ms;
+  -moz-transition-delay: 100ms;
+  transition-delay: 100ms;
+  z-index: 100;
 }
 
-/* main page projects section styling */
-.projects-section .secondary-section {
-  background-color: transparent;
+.photo-grid figcaption h3 {
+  display: table-cell;
+  position: relative;
+  top: -40px;
+  width: 45%;
+  vertical-align: middle;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
-.project-img-mobile {
-  display: none;
-  width: 100%;
+.photo-grid figcaption h3 p {
+  font-size: 0.75em;
+  margin: 0;
+  text-transform: none;
+  color: #CCA161;
+  font-weight: 500;
+}
+
+.photo-grid li:hover figcaption {
+  opacity: 1;
+}
+
+.photo-grid img {
+  display: block;
+  height: auto;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+  max-width: 100%;
+}
+
+/* Hover over pictures */
+.photo-grid li:hover img {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  transform: scale(1.4);
+
+  opacity: .15;
+}
+
+
+
+.photo-grid li:hover figcaption h3 {
+  -moz-transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
 }
 
 
@@ -635,11 +654,11 @@ html, body {
 
 /* hover on a picture */
 .lightbox:hover img {
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
-  filter: alpha(opacity=75);
-  -moz-opacity: 0.75;
-  -khtml-opacity: 0.75;
-  opacity: 0.75;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
 }
 
 
