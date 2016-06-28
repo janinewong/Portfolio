@@ -445,6 +445,11 @@ html, body {
     min-height:100%;
 }
 
+/* parallax */
+.parallax {
+  background-attachment: fixed;
+}
+
 /* background setup */
 .background {
   background-repeat:no-repeat;
@@ -621,7 +626,7 @@ html, body {
 }
 
 /* lightbox for images */
-a.lightbox img {
+.lightbox img {
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -o-transition: opacity .5s ease-in-out;
@@ -629,7 +634,7 @@ a.lightbox img {
 }
 
 /* hover on a picture */
-a.lightbox:hover img {
+.lightbox:hover img {
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
   filter: alpha(opacity=75);
   -moz-opacity: 0.75;
