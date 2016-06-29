@@ -742,6 +742,13 @@ html, body {
     height: 4em;
   }
 
+  #home-bg-image {
+    background-image: url("../img/home-photo-03.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .main-wrapper {
     padding: 0 20px;
   }
