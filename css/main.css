@@ -723,7 +723,6 @@ html, body {
     padding: 0;
   }
 
-
   nav a {
     margin-left: 2em;
   }
@@ -802,6 +801,11 @@ html, body {
   h2, h3, h4, p {
     font-size: 1.25em;
   }
+
+  .parallax {
+    background-attachment: initial;
+  }
+
 }
 
 
