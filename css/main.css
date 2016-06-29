@@ -222,7 +222,6 @@ h2 {
   color: #CCA161;
   font-weight: 600;
   letter-spacing: 0.1em;
-  margin-top: -0.3em;
 }
 
 h3 {
@@ -564,11 +563,6 @@ html, body {
   padding-top: 1em;
 }
 
-/* title image */
-.title-img {
-  margin-bottom: 4em;
-}
-
 /* section image */
 .section-img {
   margin-bottom: 2em;
@@ -690,7 +684,33 @@ html, body {
   }
 
   .section {
-    padding-top: 4em;
+    padding-top: 5em;
+  }
+
+  h1 {
+    margin: 0.5em 0;
+  }
+
+  h2, h3, h4, p {
+    margin: 0.6em 0;
+  }
+
+  nav a {
+    margin-left: 2em;
+  }
+
+  nav, .sub-nav {
+    line-height: 4em;
+    height: 4em;
+  }
+
+  .logo {
+    padding: 1em 0;
+    height: 4em;
+  }
+
+  .padding-fullscreen {
+    height: 4em;
   }
 }
 
@@ -717,31 +737,6 @@ html, body {
 @media (max-width: 40em) {
   header {
     padding: 0;
-  }
-
-  nav a {
-    margin-left: 2em;
-  }
-
-  nav, .sub-nav {
-    line-height: 4em;
-    height: 4em;
-  }
-
-  .logo {
-    padding: 1em 0;
-    height: 4em;
-  }
-
-  .padding-fullscreen {
-    height: 4em;
-  }
-
-  #home-bg-image {
-    background-image: url("../img/home-photo-03.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
   .main-wrapper {
@@ -793,11 +788,6 @@ html, body {
 
   h1 {
     font-size: 1.5em;
-    margin: 0.5em 0;
-  }
-
-  h2, h3, h4, p {
-    margin: 0.6em 0;
   }
 
   h2, h3, h4, p {
@@ -809,7 +799,7 @@ html, body {
   }
 
   .photo-grid li figcaption {
-  opacity: 1;
+    opacity: 1;
   }
 
   /* Hover over pictures */
