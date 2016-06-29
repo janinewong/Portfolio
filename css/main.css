@@ -725,7 +725,7 @@ html, body {
 
 
   nav a {
-    margin-left: 1.5em;
+    margin-left: 2em;
   }
 
   nav, .sub-nav {
@@ -781,7 +781,7 @@ html, body {
   a.hover:active, 
   a.hover:hover, 
   .selected {
-    padding-bottom: 0.45em;
+    padding-bottom: 0.25em;
   }
 
   h1 {
