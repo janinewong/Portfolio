@@ -765,8 +765,9 @@ html, body {
     margin: 10px 0;
   }
 
-  .grid-pad {
-    padding: 10px;
+  .grid-pad,
+  .grid-pad:first-of-type {
+    padding: 5px 0;
   }
 
   .footer {
