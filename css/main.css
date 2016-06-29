@@ -790,8 +790,12 @@ html, body {
     font-size: 1.5em;
   }
 
-  h2, h3, h4, p {
+  h2, h3, p {
     font-size: 1.25em;
+  }
+
+  h4 {
+    font-size: 1.1em;
   }
 
   .parallax {
