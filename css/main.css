@@ -816,7 +816,18 @@ html, body {
 
   /* interests section */
   .interests-section {
-    padding: 5% 35%;
+    width: 32.8%;
+    padding: 10% 2.5%;
+  }
+
+  .interests-section:first-of-type {
+    padding-left: 0;
+    padding-right: 5%;
+  }
+
+  .interests-section:last-of-type {
+    padding-right: 0;
+    padding-left: 5%;
   }
 
 }
