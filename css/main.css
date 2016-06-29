@@ -208,7 +208,7 @@ img {
 }
 
 h1 {
-  font-family: 'brandon_grotesqueblack';
+  font-family: 'brandon_grotesquebold';
   font-size: 1.7em;
   color: #021C1E;
   letter-spacing: 0.1em;
@@ -226,7 +226,7 @@ h2 {
 }
 
 h3 {
-  font-family: "brandon_grotesqueblack";
+  font-family: "brandon_grotesquebold";
   color: #021C1E;
   font-size: 0.9em;
   font-weight: 800;
