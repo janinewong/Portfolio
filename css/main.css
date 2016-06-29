@@ -34,7 +34,7 @@
 }
 
 .grid-text {
-  float: left;
+  text-align: center;
 }
 
 /* padding for the columns */
@@ -45,10 +45,6 @@
 /* extra padding for paragraph */
 .grid-pad-left {
   padding-left: 1em;
-}
-
-.grid-pad:first-of-type {
-  padding-top: 0;
 }
 
 
@@ -300,7 +296,7 @@ body.main-wrapper:first-of-type {
 
 /* section with centered text */
 .centered-section {
-  max-width: 50em;
+  max-width: 75%;
   text-align: center;
   margin: 0 auto;
   padding-bottom: 0;
@@ -678,13 +674,12 @@ html, body {
     width: 75%;
   }
 
-  .grid-pad:first-of-type,
   .grid-pad {
     padding: 1em;
   }
 
   .section {
-    padding-top: 5em;
+    padding-top: 5.75em;
   }
 
   h1 {
@@ -747,7 +742,10 @@ html, body {
     padding: 0 10px;
   }
 
-  .main-section, .title-section, .photo-grid li {
+  .main-section, 
+  .title-section, 
+  .centered-section,
+  .photo-grid li {
     max-width: 100%;
     width: 100%;
   }
@@ -756,8 +754,7 @@ html, body {
     margin: 10px 0;
   }
 
-  .grid-pad,
-  .grid-pad:first-of-type {
+  .grid-pad {
     padding: 5px 0;
   }
 
@@ -815,6 +812,11 @@ html, body {
     -moz-transform: translateY(20px);
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
+  }
+
+  /* interests section */
+  .interests-section {
+    padding: 5% 35%;
   }
 
 }
