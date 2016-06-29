@@ -228,7 +228,7 @@ h2 {
 h3 {
   font-family: "brandon_grotesquebold";
   color: #021C1E;
-  font-size: 0.9em;
+  font-size: 1.25em;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -266,10 +266,6 @@ a.hover:hover,
 .selected {
   border-bottom: solid 0.1rem #CCA161;
   padding-bottom: 0.5rem;
-}
-
-li {
-  font-size: 1.6em;
 }
 
 .selected {
@@ -477,7 +473,7 @@ html, body {
 }
 
 .photo-grid figure {
-  height: 10em;
+  height: 15em;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -516,7 +512,7 @@ html, body {
 
 .photo-grid figcaption h3 p {
   font-family: "Brandon Grotesque";
-  font-size: 0.75em;
+  font-size: 0.85em;
   margin: 0;
   text-transform: none;
   color: #CCA161;
@@ -804,7 +800,22 @@ html, body {
   }
 
   .parallax {
-    background-attachment: scroll;
+    background-attachment: initial;
+  }
+
+  .photo-grid li figcaption {
+  opacity: 1;
+  }
+
+  /* Hover over pictures */
+  .photo-grid li img {
+    opacity: .15;
+  }
+
+  .photo-grid li figcaption h3 {
+    -moz-transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
   }
 
 }
