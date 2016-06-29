@@ -742,7 +742,11 @@ html, body {
     height: 4em;
   }
 
-  .main-wrapper, .nav-wrapper {
+  .main-wrapper {
+    padding: 0 20px;
+  }
+
+  .nav-wrapper {
     padding: 0 10px;
   }
 
@@ -752,11 +756,11 @@ html, body {
   }
 
   .photo-grid li {
-    margin: 5px 0;
+    margin: 10px 0;
   }
 
   .grid-pad {
-    padding: 5px;
+    padding: 10px;
   }
 
   .footer {
