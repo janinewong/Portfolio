@@ -723,6 +723,10 @@ html, body {
     padding: 0;
   }
 
+  .logo {
+    padding: 1.4em 0;
+  }
+
   .padding-fullscreen {
     height: 5em;
   }
@@ -767,6 +771,14 @@ html, body {
   a.hover:hover, 
   .selected {
     padding-bottom: 0.45em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2, h3, h4, p {
+    font-size: 1.25em;
   }
 }
 
