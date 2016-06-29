@@ -684,36 +684,89 @@ html, body {
 /* --------------------- RESIZE --------------------- */
 
 @media (max-width: 95em) {
-  nav {
-    width: 100%;
-    margin: 0;
+  .main-wrapper, .nav-wrapper {
+    width: 75%;
+  }
+
+  .grid-pad:first-of-type,
+  .grid-pad {
+    padding: 1em;
+  }
+
+  .section {
+    padding-top: 4em;
   }
 }
 
 
 @media (max-width:50em) {
-  .main-wrapper {
+  .main-wrapper, .nav-wrapper {
     width: 100%;
-    padding: 0 5em;
+    padding: 0 4em;
+  }
+
+  .main-wrapper:last-of-type {
+    padding-top: 3em;
+  }
+
+  .footer h2 {
+    margin-bottom: 0.75em;
+  }
+
+  .footer p {
+    margin-top: 0.75em;
   }
 }
 
 @media (max-width: 40em) {
-  .main-wrapper {
-    padding: 0 2em;
+  header {
+    padding: 0;
   }
 
-  .section {
-    padding: 3em 0em;
+  .padding-fullscreen {
+    height: 5em;
+  }
+
+  .main-wrapper, .nav-wrapper {
+    padding: 0 20px;
+  }
+
+  .main-section, .title-section, .photo-grid li {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .photo-grid li {
+    margin: 10px 0;
+  }
+
+  .grid-pad {
+    padding: 10px;
   }
 
   .footer {
-    margin-top: 7em;
+    margin-top: 5em;
+    padding-top: 0;
     padding-bottom: 5em;
   }
 
   .text-pad {
     display: block;
+  }
+
+  .footer h2 {
+    margin-bottom: 0.5em;
+  }
+
+  .footer p {
+    margin-top: 0.5em;
+  }
+
+  a.hover:focus, 
+  a.hover:active, 
+  a.hover:hover, 
+  .selected {
+    padding-bottom: 0.45em;
   }
 }
 
