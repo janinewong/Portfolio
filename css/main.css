@@ -1,13 +1,12 @@
 /* --------------------- FONT --------------------- */
 @font-face {
-    font-family: 'Brandon Grotesque';
-    src: url('fonts/brandon_reg-webfont.woff2') format('woff2'),
-         url('fonts/brandon_reg-webfont.woff') format('woff');
+    font-family: 'brandon_grotesqueblack';
+    src: url('fonts/brandon_blk-webfont.woff2') format('woff2'),
+         url('fonts/brandon_blk-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
-
 
 /* ------------------------ GRIDS ------------------------- */
 *, *:after, *:before {
@@ -199,7 +198,7 @@ img {
 }
 
 h1 {
-  font-family: 'Brandon Grotesque';
+  font-family: 'brandon_grotesqueblack';
   font-size: 1.7em;
   color: #021C1E;
   letter-spacing: 0.1em;
@@ -217,7 +216,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Brandon Grotesque";
+  font-family: "brandon_grotesqueblack";
   color: #021C1E;
   font-size: 0.9em;
   font-weight: 800;
