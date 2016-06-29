@@ -723,6 +723,10 @@ html, body {
     padding: 0;
   }
 
+  nav a {
+    margin-left: 1.5em;
+  }
+
   .logo {
     padding: 1.4em 0;
   }
