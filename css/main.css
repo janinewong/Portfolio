@@ -496,7 +496,7 @@ html, body {
   -webkit-transition-delay: 100ms;
   -moz-transition-delay: 100ms;
   transition-delay: 100ms;
-  z-index: 100;
+  z-index: 1;
 }
 
 .photo-grid figcaption h3 {
