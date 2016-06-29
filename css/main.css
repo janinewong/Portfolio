@@ -723,6 +723,10 @@ html, body {
     padding: 0;
   }
 
+  nav a {
+    margin-left: 1.5em;
+  }
+
   .logo {
     padding: 1.4em 0;
   }
@@ -732,7 +736,7 @@ html, body {
   }
 
   .main-wrapper, .nav-wrapper {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .main-section, .title-section, .photo-grid li {
@@ -741,11 +745,11 @@ html, body {
   }
 
   .photo-grid li {
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
   .grid-pad {
-    padding: 10px;
+    padding: 5px;
   }
 
   .footer {
