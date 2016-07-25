@@ -28,7 +28,7 @@
 [class^='grid-col-'] {
   float: none;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
   width: 100%;
   max-width: 100%;
 }
@@ -111,7 +111,7 @@
   }
 
   .grid-col-33 {
-    width: 33.33%;
+    width: 33%;
   }
 
   .grid-col-66 {
@@ -529,6 +529,16 @@ html, body {
 
 
 
+/* ------------------------------------ ABOUT PAGE ---------------------------------------- */
+
+.interests-section {
+  padding: 2% 10%;
+  width: 100%;
+  display: block;
+}
+
+
+
 
 /* ------------------------------------ PROJECTS PAGE ---------------------------------------- */
 
@@ -578,6 +588,7 @@ html, body {
   height: 0; 
   overflow: hidden;
   border: none;
+  margin-bottom: 3em;
 }
  
 .video-container iframe,
@@ -670,7 +681,7 @@ html, body {
   }
 
   .grid-pad {
-    padding: 1em;
+    padding: 3em 1em;
   }
 
   .section {
@@ -701,6 +712,10 @@ html, body {
 
   .padding-fullscreen {
     height: 4em;
+  }
+
+  .interests-section {
+    padding: 1% 5%;
   }
 }
 
@@ -810,19 +825,23 @@ html, body {
   }
 
   /* interests section */
-  .interests-section {
+  .interests-img {
     width: 32.8%;
     padding: 10% 2.5%;
   }
 
-  .interests-section:first-of-type {
+  .interests-img:first-of-type {
     padding-left: 0;
     padding-right: 5%;
   }
 
-  .interests-section:last-of-type {
+  .interests-img:last-of-type {
     padding-right: 0;
     padding-left: 5%;
+  }
+
+  .interests-section {
+    padding: 0;
   }
 
 }
