@@ -28,9 +28,13 @@
 [class^='grid-col-'] {
   float: none;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;
   width: 100%;
   max-width: 100%;
+}
+
+.interests {
+  vertical-align: top;
 }
 
 .grid-text {
