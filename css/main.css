@@ -40,11 +40,6 @@
   text-align: center;
 }
 
-/* padding for the columns */
-.grid-pad {
-  padding: 1.5em 0;
-}
-
 /* extra padding for paragraph */
 .grid-pad-left {
   padding-left: 1em;
@@ -122,7 +117,7 @@
   }
 
   .grid-pad {
-    padding: 1.5em;
+    padding: 0 1.5em;
   }
 }
 
@@ -273,7 +268,8 @@ a.hover:hover,
   padding-top: 5em;
 }
 
-body.main-wrapper:first-of-type {
+body.main-wrapper:first-of-type,
+.first-wrapper {
   padding-top: 0em;
 }
 
@@ -283,7 +279,7 @@ body.main-wrapper:first-of-type {
 }
 
 .section {
-  padding-top: 7em;
+  padding-top: 5em;
 }
 
 /* sections */
@@ -365,13 +361,10 @@ a .icon-hover:hover {
   margin-left: 2em;
 }
 
-.image-top-align.section-img {
-  margin: 0;
-}
-
 .extra-bot-pad {
   padding-bottom: 2em;
 }
+
 
 
 /* ------------------------------------ MAIN PAGE ---------------------------------------- */
@@ -555,6 +548,7 @@ html, body {
 /* section image */
 .section-img {
   margin-bottom: 2em;
+  margin-top: 1em;
 }
 
 /* Project overview section styling */
@@ -576,7 +570,7 @@ html, body {
   height: 0; 
   overflow: hidden;
   border: none;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
  
 .video-container iframe,
@@ -668,10 +662,6 @@ html, body {
     width: 75%;
   }
 
-  .grid-pad {
-    padding: 3em 1em;
-  }
-
   .section {
     padding-top: 5.75em;
   }
@@ -704,6 +694,11 @@ html, body {
 
   .interests-section {
     padding: 1% 5%;
+  }
+
+  .video-container,
+  h4 a {
+    margin-bottom: 1.5em;
   }
 }
 
@@ -793,6 +788,15 @@ html, body {
     font-size: 1.1em;
   }
 
+  h4 a {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+
+  .second-caption-margin {
+    margin-left: 0;
+  }
+
   .parallax {
     background-attachment: initial;
   }
@@ -836,10 +840,9 @@ html, body {
     padding: 0 20%;
   }
 
-  .image-top-align.section-img {
-    margin-bottom: 2em;
+  .video-container {
+    margin-bottom: 1em;
   }
-
 }
 
 
