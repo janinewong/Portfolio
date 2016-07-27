@@ -825,6 +825,10 @@ html, body {
     padding: 0;
   }
 
+  .image-top-align {
+    padding: 0 20%;
+  }
+
 }
 
 
