@@ -132,7 +132,7 @@ header {
 }
 
 nav {
-  height: 5em;
+  height: 4em;
   margin: 0 auto;
   
 }
@@ -161,7 +161,7 @@ nav a:first-child {
 } 
 
 .nav-wrapper {
-  width: 50%;
+  width: 55%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -169,16 +169,16 @@ nav a:first-child {
 /* regular logo */
 .logo {
   display: inline-block;
-  height: 5em;
+  height: 4em;
   margin: 0 auto;
-  padding: 1.25em 0;
+  padding: 1em 0;
 }
 
 /* navigation labels */
 .sub-nav {
   float: right;
   display: inline-block;
-  line-height: 5em;
+  line-height: 4em;
 }
 
 
@@ -262,7 +262,7 @@ a.hover:hover,
 }
 
 .main-wrapper {
-  width: 50%;
+  width: 55%;
   margin: 0 auto;
   overflow: hidden;
   padding-top: 5em;
@@ -364,6 +364,14 @@ a .icon-hover:hover {
   padding-bottom: 2em;
 }
 
+.image-top-align h4 {
+  margin-bottom: 0.5em;
+}
+
+.image-top-align p {
+  margin-top: 0.5em;
+}
+
 
 
 /* ------------------------------------ MAIN PAGE ---------------------------------------- */
@@ -401,7 +409,7 @@ html, body {
 }
 
 .padding-fullscreen {
-  height: 6em;
+  height: 5em;
   background-color: #FFF;
 }
 
@@ -568,7 +576,6 @@ html, body {
   padding-top: 30px; 
   height: 0; 
   overflow: hidden;
-  border: none;
   margin-bottom: 2em;
 }
  
@@ -658,7 +665,7 @@ html, body {
 
 @media (max-width: 95em) {
   .main-wrapper, .nav-wrapper {
-    width: 75%;
+    width: 80%;
   }
 
   .section {
@@ -669,22 +676,18 @@ html, body {
     margin: 0.1em 0;
   }
 
-  h3, h4, p {
-    margin: 0.6em 0;
-  }
-
   nav a {
     margin-left: 2em;
   }
 
   nav, .sub-nav {
-    line-height: 4em;
-    height: 4em;
+    line-height: 3em;
+    height: 3em;
   }
 
   .logo {
-    padding: 1em 0;
-    height: 4em;
+    padding: 0.8em 0;
+    height: 3em;
   }
 
   .padding-fullscreen {
