@@ -737,8 +737,14 @@ html, body {
     padding: 0 10px;
   }
 
-  .padding-fullscreen {
-    height: 3em;
+  nav, .sub-nav {
+    line-height: 4em;
+    height: 4em;
+  }
+
+  .logo {
+    padding: 1em 0;
+    height: 4em;
   }
 
   .main-section, 
