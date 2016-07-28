@@ -372,6 +372,10 @@ a .icon-hover:hover {
   margin-top: 0.5em;
 }
 
+.column-text {
+  text-align: left;
+}
+
 
 
 /* ------------------------------------ MAIN PAGE ---------------------------------------- */
@@ -686,7 +690,7 @@ html, body {
   }
 
   .logo {
-    padding: 0.8em 0;
+    padding: 0.55em 0;
     height: 3em;
   }
 
