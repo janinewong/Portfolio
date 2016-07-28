@@ -376,6 +376,10 @@ a .icon-hover:hover {
   text-align: left;
 }
 
+.img-border {
+  border: solid 1px #CCC;
+}
+
 
 
 /* ------------------------------------ MAIN PAGE ---------------------------------------- */
