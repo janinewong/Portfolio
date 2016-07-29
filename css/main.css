@@ -673,7 +673,7 @@ html, body {
 
 @media (max-width: 95em) {
   .main-wrapper, .nav-wrapper {
-    width: 80%;
+    width: 60%;
   }
 
   .section {
@@ -709,6 +709,10 @@ html, body {
   .video-container,
   h4 a {
     margin-bottom: 1.5em;
+  }
+
+  .centered-section {
+    max-width: 80%;
   }
 }
 
