@@ -290,7 +290,6 @@ a.hover:hover,
 
 /* section with centered text */
 .centered-section {
-  max-width: 75%;
   text-align: center;
   margin: 0 auto;
   padding-bottom: 0;
@@ -709,10 +708,6 @@ html, body {
   .video-container,
   h4 a {
     margin-bottom: 1.5em;
-  }
-
-  .centered-section {
-    max-width: 80%;
   }
 }
 
