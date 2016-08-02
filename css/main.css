@@ -711,6 +711,12 @@ html, body {
   }
 }
 
+@media (max-width: 1024px) {
+  .main-wrapper, .nav-wrapper {
+    width: 70%;
+  }
+}
+
 
 @media (max-width:50em) {
   .main-wrapper, .nav-wrapper {
