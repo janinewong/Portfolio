@@ -882,7 +882,7 @@ html, body {
 
   /* interests section */
   .interests-img {
-    width: 32.8%;
+    width: 32.75%;
     padding: 10% 1.25%;
   }
 
@@ -919,6 +919,10 @@ html, body {
   .grid-mobile-33 {
     width: 32.8%;
     padding: 0 1.25%;
+  }
+
+  .interests-caption {
+    font-size: 0.9em;
   }
 
 }
