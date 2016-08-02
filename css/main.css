@@ -450,7 +450,7 @@ html, body {
   vertical-align:middle;
   text-align:center;
 
-  font-family: 'Brandon Grotesque';
+  font-family: 'brandon_grotesquebold';
   font-size: 1.25em;
   color: #939393;
   letter-spacing: 0.1em;
@@ -927,6 +927,10 @@ html, body {
 
   .interests-caption {
     font-size: 0.9em;
+  }
+
+  .content-b {
+    font-size: 1.2em;
   }
 
 }
