@@ -737,10 +737,12 @@ html, body {
 
   .content-b {
     padding-bottom: 11em;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .logo-home {
-    max-width: 6em;
+    max-width: 5em;
   }
 }
 
