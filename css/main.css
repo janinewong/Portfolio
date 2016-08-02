@@ -883,17 +883,21 @@ html, body {
   /* interests section */
   .interests-img {
     width: 32.8%;
-    padding: 10% 2.5%;
+    padding: 10% 1.25%;
   }
 
-  .interests-img:first-of-type {
+  .interests-img:first-of-type,
+  .grid-mobile-pad-left,
+  .grid-mobile-33:first-of-type {
     padding-left: 0;
-    padding-right: 5%;
+    padding-right: 2.5%;
   }
 
-  .interests-img:last-of-type {
+  .interests-img:last-of-type,
+  .grid-mobile-pad-right,
+  .grid-mobile-33:last-of-type {
     padding-right: 0;
-    padding-left: 5%;
+    padding-left: 2.5%;
   }
 
   .interests-section {
@@ -907,6 +911,16 @@ html, body {
   .video-container {
     margin-bottom: 1em;
   }
+
+  .grid-mobile-50 {
+    width: 49.5%;
+  }
+
+  .grid-mobile-33 {
+    width: 32.8%;
+    padding: 0 1.25%;
+  }
+
 }
 
 
