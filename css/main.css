@@ -696,6 +696,7 @@ html, body {
   font-size: 1.25em;
 
   border: solid 0.12em #021C1E;
+  border-radius: 3px;
 }
 
 .button:hover, .button:active, .button-focus {
