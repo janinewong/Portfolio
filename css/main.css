@@ -696,6 +696,10 @@ html, body {
   .logo-home {
     max-width: 7em;
   }
+
+  .thumbnail-caption {
+    font-size: 0.9em;
+  }
 }
 
 @media (max-width: 1024px) {
