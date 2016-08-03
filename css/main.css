@@ -506,9 +506,16 @@ html, body {
 
 .interests-section {
   padding: 2% 10%;
-  width: 100%;
+  width: 50%;
   display: block;
+  margin: 0 auto;
 }
+
+.interest-section {
+  margin-top: 5em;
+  text-align: center;
+}
+
 
 
 
@@ -705,6 +712,10 @@ html, body {
   .thumbnail-caption {
     font-size: 0.9em;
   }
+
+  .footer-section {
+    max-width: 45%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -726,6 +737,10 @@ html, body {
 
   .logo-home {
     max-width: 6em;
+  }
+
+  .footer-section {
+    max-width: 75%;
   }
 }
 
