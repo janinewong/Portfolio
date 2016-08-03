@@ -305,14 +305,27 @@ a.hover:hover,
 .footer {
   width: 100%;
   height: auto;
-  margin-top: 5em;
   padding-bottom: 5em;
-  border-top: solid 0.1em #e6e6e6;
-  background-color: #FFF;
+  margin-top: 5em;
+  background-color: #EFEFEF;
 }
 
-.footer-icon {
-  float: right;
+.footer-section {
+  max-width: 25%;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  margin-bottom: 0.5em;
+}
+
+.footer p {
+  margin-top: 0.5em;
+}
+
+.stalk-section h1 {
+  float: left;
+  margin: 0;
 }
 
 /* icons */
@@ -670,22 +683,25 @@ html, body {
 
 /* --------------------- INTERACTION --------------------- */
 .button {
+  font-family: 'brandon_grotesquebold';
   display: inline-block;
-  padding: 0.75em 1.5em;
+  padding: 0.5em;
   margin: 1em 0;
-
+  background-color: none;
   color: #021C1E;
+
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
   font-size: 1.25em;
 
-  border-top: solid 0.1em #021C1E;
-  border-bottom: solid 0.1em #021C1E;
+  border: solid 0.12em #021C1E;
 }
 
 .button:hover, .button:active, .button-focus {
-  padding: 0.75em 1em;
-  color: #CCA161;
+  padding: 0.5em;
+  color: #FFF;
+  background-color: #CCA161;
   border-color: #CCA161;
 
   -webkit-transition: all 0.3s;
@@ -784,15 +800,7 @@ html, body {
   }
 
   .main-wrapper:last-of-type {
-    padding-top: 3em;
-  }
-
-  .footer h2 {
-    margin-bottom: 0.75em;
-  }
-
-  .footer p {
-    margin-top: 0.75em;
+    padding-top: 4em;
   }
 
   .logo-home {
@@ -843,19 +851,15 @@ html, body {
   .footer {
     margin-top: 2em;
     padding-top: 0;
-    padding-bottom: 5em;
+    padding-bottom: 4em;
   }
 
   .text-pad {
     display: block;
   }
 
-  .footer h2 {
-    margin-bottom: 0.5em;
-  }
-
-  .footer p {
-    margin-top: 0.5em;
+  .footer-section {
+    max-width: 100%;
   }
 
   a.hover:focus, 
