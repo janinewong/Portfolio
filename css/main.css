@@ -129,6 +129,7 @@ header {
   z-index: 99;
   padding: 0.5em 0;
   background-color: #FFF;
+  transition: top 0.2s ease-in-out;
 }
 
 nav {
@@ -152,6 +153,10 @@ nav a:hover {
 
 nav a:first-child {
   margin-left: 0;
+}
+
+.nav-up {
+    top: -5em;
 }
 
 .fixed-header {
