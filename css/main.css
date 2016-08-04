@@ -81,7 +81,7 @@
   }
 
   .grid-col-5of10 {
-    width: 49%;
+    width: 49.5%;
   }
 
   .grid-col-6of10 {
@@ -421,6 +421,11 @@ a .icon-hover:hover {
 
 .thumbnail-img:hover {
   opacity: 0.6;
+}
+
+.content-top-align {
+  vertical-align: top;
+  padding-top: 1em;
 }
 
 
