@@ -878,6 +878,10 @@ html, body {
     width: 29%;
   }
 
+  .grid-mobile-25 {
+    width: 24.3%;
+  }
+
   .grid-mobile-33 {
     width: 32.8%;
     padding: 0 1.25%;
@@ -893,6 +897,10 @@ html, body {
 
   .padding-fullscreen {
     font-size: 0.85em;
+  }
+
+  .about-caption {
+    font-size: 0.9em;
   }
 
 }
