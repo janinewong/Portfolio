@@ -108,12 +108,16 @@
     width: 23%;
   }
 
+  .grid-col-75 {
+    width: 75%;
+  }
+
   .grid-col-33 {
     width: 32.9%;
   }
 
   .grid-col-66 {
-    width: 66.66%;
+    width: 66%;
   }
 
   .grid-pad {
@@ -720,7 +724,7 @@ html, body {
 
 @media (max-width: 1024px) {
   .main-wrapper, .nav-wrapper {
-    width: 70%;
+    width: 85%;
   }
 }
 
@@ -859,6 +863,14 @@ html, body {
 
   .grid-mobile-50 {
     width: 49.5%;
+  }
+
+  .grid-mobile-70 {
+    width: 69%;
+  }
+
+  .grid-mobile-30 {
+    width: 29%;
   }
 
   .grid-mobile-33 {
