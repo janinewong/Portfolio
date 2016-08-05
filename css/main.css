@@ -728,7 +728,8 @@ html, body {
 
 @media (max-width: 1024px) {
   .main-wrapper, 
-  .nav-wrapper {
+  .nav-wrapper,
+  .title-section {
     width: 85%;
   }
 }
