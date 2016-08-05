@@ -727,14 +727,16 @@ html, body {
 }
 
 @media (max-width: 1024px) {
-  .main-wrapper, .nav-wrapper {
+  .main-wrapper, 
+  .nav-wrapper {
     width: 85%;
   }
 }
 
 
 @media (max-width:50em) {
-  .main-wrapper, .nav-wrapper {
+  .main-wrapper, 
+  .nav-wrapper {
     width: 100%;
     padding: 0 4em;
   }
@@ -750,6 +752,11 @@ html, body {
   .footer-section {
     max-width: 75%;
   }
+
+  .title-section {
+    max-width: 85%;
+  }
+
 }
 
 @media (max-width: 40em) {
