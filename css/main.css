@@ -758,6 +758,10 @@ html, body {
     max-width: 85%;
   }
 
+  .grid-pad {
+    padding: 0 0.75em;
+  }
+
 }
 
 @media (max-width: 40em) {
