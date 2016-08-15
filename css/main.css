@@ -134,6 +134,7 @@ header {
   padding: 0.5em 0;
   background-color: #FFF;
   transition: top 0.2s ease-in-out;
+  top: 0;
 }
 
 nav {
@@ -687,6 +688,10 @@ html, body {
   nav, .sub-nav {
     line-height: 3em;
     height: 3em;
+  }
+
+  .nav-up {
+    top: -4em;
   }
 
   .logo {
