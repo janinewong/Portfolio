@@ -839,6 +839,7 @@ html, body {
 
   h4 a {
     margin-bottom: 0.5em;
+    display: inline-block;
   }
 
   .first-caption-margin,
