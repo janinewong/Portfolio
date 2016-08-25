@@ -841,8 +841,10 @@ html, body {
     margin-bottom: 0.5em;
   }
 
+  .first-caption-margin,
   .second-caption-margin {
-    margin-right: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   .parallax {
