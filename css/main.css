@@ -243,8 +243,8 @@ h4 {
 
 p {
   font-size: 1.5em;
-  color: #333333;
-  line-height: 1.5em;
+  color: #666;
+  line-height: 1.75em;
 }
 
 a {
@@ -777,6 +777,7 @@ html, body {
   }
 
   .main-wrapper {
+    width: 90%;
     padding: 0 20px;
   }
 
