@@ -671,7 +671,7 @@ html, body {
 
 @media (max-width: 95em) {
   .main-wrapper, .nav-wrapper {
-    width: 60%;
+    width: 70%;
   }
 
   .section {
