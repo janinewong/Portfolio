@@ -923,6 +923,10 @@ html, body {
     font-size: 0.9em;
   }
 
+  .next-project {
+    text-align: center;
+  }
+
 }
 
 
