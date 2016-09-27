@@ -1222,7 +1222,7 @@ img.mfp-img {
     margin: 0; }
 
 .mfp-bottom-bar {
-  margin-top: -40px;
+  margin-top: -60px;
   position: absolute;
   top: 100%;
   left: 0;
@@ -1245,7 +1245,8 @@ img.mfp-img {
 
 /* padding-bottom and top for image */
 .mfp-no-margins img.mfp-img {
-  padding: 5em 0;
+  padding-top: 5em;
+  padding-bottom: 6em;
 }
 /* position of shadow behind the image */
 .mfp-no-margins .mfp-figure:after {
