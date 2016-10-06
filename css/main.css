@@ -242,7 +242,7 @@ h4 {
 }
 
 p {
-  font-size: 17px;
+  font-size: 16px;
   color: #666;
   line-height: 1.75em;
 }
@@ -755,6 +755,10 @@ html, body {
   .nav-wrapper {
     width: 100%;
     padding: 0 4em;
+  }
+
+  .title-section {
+    padding-top: 2em;
   }
 
   .main-wrapper:last-of-type {
