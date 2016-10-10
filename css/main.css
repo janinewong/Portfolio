@@ -187,7 +187,7 @@ nav a:first-child {
 /* navigation labels */
 .sub-nav {
   float: right;
-  display: inline-block;
+  display: table;
   line-height: 4em;
 }
 
@@ -322,8 +322,10 @@ a.hover:hover,
 }
 
 .footer-section {
-  max-width: 25%;
+  padding-top: 5em;
+  width: 55%;
   margin: 0 auto;
+  text-align: left;
 }
 
 .footer h3 {
@@ -334,16 +336,18 @@ a.hover:hover,
   margin-top: 0.5em;
 }
 
-.stalk-section h1 {
-  float: left;
-  margin: 0;
+
+.footer-align {
+  width: 200px;
+  vertical-align: top;
+  float: right;
 }
 
 /* icons */
 .icon-pad {
   display: inline-block;
   margin-right: 1.75em;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.88em;
 }
 
 .icon-pad:last-of-type {
@@ -438,6 +442,74 @@ a .icon-hover:hover {
   width: 25px;
   text-align: center;
 }
+
+.fun-icon {
+  width: 40px;
+  height: 40px;
+  display: table-cell;
+  vertical-align: middle;
+  background: url("../img/fun-icon.jpg") no-repeat;
+  background-size: auto 55px;
+  background-position: -7.5px -10px;
+  animation: fave-icon 1s steps(28);
+}
+
+.fun-icon:hover,
+.fun-holder .fun-image:hover {
+  background-position: -1547.5px -10px;
+  transition: background 1s steps(28);
+}
+
+.fun-image {
+  width: 40px;
+  height: 40px;
+  display: table-cell;
+  vertical-align: middle;
+  background: url("../img/fun-image.png") no-repeat;
+  background-size: auto 55px;
+  background-position: -7.5px -10px;
+  animation: fave-icon 1s steps(28);
+}
+
+.fun-holder {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.fun-text {
+  display: table-cell;
+}
+
+.fun-holder .fun-image,
+.fun-holder .fun-text {
+  transition: opacity 0s;
+}
+
+.fun-holder .fun-image {
+  position:absolute; 
+  top:-75%; 
+  left:-25%; 
+  opacity:0;
+}
+
+.fun-holder:hover .fun-image {
+  opacity:1;
+}
+
+.fun-holder:hover .fun-text {
+  opacity:0;
+}
+
+@keyframes fave-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1540px 0;
+  }
+}
+
 
 
 
@@ -679,7 +751,9 @@ html, body {
 /* --------------------- RESIZE --------------------- */
 
 @media (max-width: 95em) {
-  .main-wrapper, .nav-wrapper {
+  .main-wrapper, 
+  .nav-wrapper,
+  .footer-section {
     width: 70%;
   }
 
@@ -736,16 +810,18 @@ html, body {
     font-size: 0.9em;
   }
 
-  .footer-section {
-    max-width: 45%;
-  }
 }
 
 @media (max-width: 1024px) {
   .main-wrapper, 
   .nav-wrapper,
-  .title-section {
+  .title-section,
+  .footer-section {
     width: 85%;
+  }
+
+  .footer-padding-right {
+    padding-right: 1em;
   }
 }
 
@@ -767,10 +843,6 @@ html, body {
 
   .logo-home {
     max-width: 6em;
-  }
-
-  .footer-section {
-    max-width: 75%;
   }
 
   .title-section {
@@ -810,7 +882,8 @@ html, body {
 
   .main-section, 
   .title-section, 
-  .centered-section {
+  .centered-section,
+  .footer-section {
     max-width: 100%;
     width: 100%;
   }
@@ -821,16 +894,25 @@ html, body {
 
   .footer {
     margin-top: 2em;
-    padding-top: 0;
-    padding-bottom: 4em;
+
+    padding: 0 20px 4em 20px;
+    text-align: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-align {
+    float: none;
+  }
+
+  .footer-padding-right {
+    padding-right: 0;
   }
 
   .text-pad {
     display: block;
-  }
-
-  .footer-section {
-    max-width: 100%;
   }
 
   a.hover:focus, 
@@ -938,6 +1020,11 @@ html, body {
 
   .next-project {
     text-align: center;
+  }
+
+  .fun-holder .fun-image {
+    top: -90%; 
+    left: -30%; 
   }
 
 }
