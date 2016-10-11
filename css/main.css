@@ -453,23 +453,30 @@ a .icon-hover:hover {
 /* ------------------------------------ FUN PAGE ---------------------------------------- */
 
 .fun-icon {
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   position: absolute;
-  background: url("../img/fun-icon.jpg") no-repeat;
+  background: url("../img/fun-icon.png") no-repeat;
   background-size: auto 55px;
-  background-position: -7.5px -10px;
+  background-position: 0 0;
   animation: fave-icon 1s steps(28);
 }
 
 .fun-icon:hover,
-.fun-holder .fun-image:hover,
 .fun-icon:active,
-.fun-holder .fun-image:active,
 .fun-icon:focus,
+.fun-icon.active {
+  background-position: -1540px 0px;
+  transition: background 1s steps(28);
+  cursor: pointer;
+}
+
+.fun-holder .fun-image:hover,
+.fun-holder .fun-image:active,
 .fun-holder .fun-image:focus {
   background-position: -1547.5px -10px;
   transition: background 1s steps(28);
+  cursor: pointer;
 }
 
 .fun-image {
@@ -483,8 +490,7 @@ a .icon-hover:hover {
   animation: fave-icon 1s steps(28);
 }
 
-.fun-holder,
-.twitter-holder {
+.fun-holder {
   position: relative;
   width: 40px;
   height: 40px;
@@ -550,24 +556,30 @@ a .icon-hover:hover {
 }
 
 .twitter-heart {
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   position: absolute;
   background: url("../img/twitter-fave-heart-sprite.png") no-repeat;
   background-size: auto 55px;
-  background-position: -7.5px -7.5px;
+  background-position: 0 0;
   animation: fave-icon 1s steps(28);
 }
 
 .twitter-heart:hover,
 .twitter-heart:active,
-.twitter-heart:focus {
-  background-position: -1547.5px -7.5px;
+.twitter-heart:focus,
+.twitter-heart.active {
+  background-position: -1540px 0px;
   transition: background 1s steps(28);
+  cursor: pointer;
 }
 
 .twitter-holder {
+  width: 55px;
+  height: 55px;
   margin: 0 auto;
+  background-color: #EFEFEF;
+  border-radius: 2px;
 }
 
 

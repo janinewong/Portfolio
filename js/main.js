@@ -51,10 +51,9 @@ $(window).scroll(function(){
 });
 
 
-/* restart gif */
-var restart = $(".reset-img").attr("src");
-$(".reset-img").attr("src", "#");
-$(".reset-img").attr("src", restart);
+
+
+
 
 
 $(document).ready(function() {
@@ -80,6 +79,11 @@ $(document).ready(function() {
         $('.fun-thumbnails').fadeIn(2000);
     },5000);
 
+
+    /* restart gif */
+    var restart = $(".reset-img").attr("src");
+    $(".reset-img").attr("src", "#");
+    $(".reset-img").attr("src", restart);
 });
 
 
