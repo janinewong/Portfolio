@@ -463,7 +463,11 @@ a .icon-hover:hover {
 }
 
 .fun-icon:hover,
-.fun-holder .fun-image:hover {
+.fun-holder .fun-image:hover,
+.fun-icon:active,
+.fun-holder .fun-image:active,
+.fun-icon:focus,
+.fun-holder .fun-image:focus {
   background-position: -1547.5px -10px;
   transition: background 1s steps(28);
 }
@@ -502,11 +506,15 @@ a .icon-hover:hover {
   opacity:0;
 }
 
-.fun-holder:hover .fun-image {
+.fun-holder:hover .fun-image,
+.fun-holder:active .fun-image,
+.fun-holder:focus .fun-image {
   opacity:1;
 }
 
-.fun-holder:hover .fun-text {
+.fun-holder:hover .fun-text,
+.fun-holder:active .fun-text,
+.fun-holder:focus .fun-text {
   opacity:0;
 }
 
@@ -551,7 +559,9 @@ a .icon-hover:hover {
   animation: fave-icon 1s steps(28);
 }
 
-.twitter-heart:hover {
+.twitter-heart:hover,
+.twitter-heart:active,
+.twitter-heart:focus {
   background-position: -1547.5px -7.5px;
   transition: background 1s steps(28);
 }
