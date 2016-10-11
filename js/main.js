@@ -50,6 +50,13 @@ $(window).scroll(function(){
     }
 });
 
+/* for delay of images on fun home page */
+setTimeout(function(){
+    $('.fun-thumbnails').fadeIn(2000);
+},5000);
+
+
+
 
 
 $(document).ready(function() {
