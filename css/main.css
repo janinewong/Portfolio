@@ -443,11 +443,19 @@ a .icon-hover:hover {
   text-align: center;
 }
 
+.image-caption {
+  padding-top: 0.5em;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+
+/* ------------------------------------ FUN PAGE ---------------------------------------- */
+
 .fun-icon {
   width: 40px;
   height: 40px;
-  display: table-cell;
-  vertical-align: middle;
+  position: absolute;
   background: url("../img/fun-icon.jpg") no-repeat;
   background-size: auto 55px;
   background-position: -7.5px -10px;
@@ -471,7 +479,8 @@ a .icon-hover:hover {
   animation: fave-icon 1s steps(28);
 }
 
-.fun-holder {
+.fun-holder,
+.twitter-holder {
   position: relative;
   width: 40px;
   height: 40px;
@@ -508,6 +517,47 @@ a .icon-hover:hover {
   100% {
     background-position: -1540px 0;
   }
+}
+
+.fun-thumbnails {
+  display: none;
+  transition-timing-function: ease;
+}
+
+.fun-title {
+  padding-top: 2em;
+}
+
+.fun-section {
+  padding-top: 2em;
+}
+
+.article-wrapper {
+  padding-top: 8em;
+  padding-bottom: 3em;
+}
+
+.twitter-section {
+  padding: 2em 0;
+}
+
+.twitter-heart {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: url("../img/twitter-fave-heart-sprite.png") no-repeat;
+  background-size: auto 55px;
+  background-position: -7.5px -7.5px;
+  animation: fave-icon 1s steps(28);
+}
+
+.twitter-heart:hover {
+  background-position: -1547.5px -7.5px;
+  transition: background 1s steps(28);
+}
+
+.twitter-holder {
+  margin: 0 auto;
 }
 
 
@@ -810,6 +860,14 @@ html, body {
     font-size: 0.9em;
   }
 
+  .fun-title {
+    padding-top: 1em;
+  }
+
+  .article-wrapper {
+    padding-top: 6em;
+  }
+
 }
 
 @media (max-width: 1024px) {
@@ -1025,6 +1083,18 @@ html, body {
   .fun-holder .fun-image {
     top: -90%; 
     left: -30%; 
+  }
+
+  .fun-title {
+    padding-top: 0;
+  }
+
+  .article-wrapper {
+    padding-top: 5em;
+  }
+
+  .twitter-section {
+    padding: 1em 0;
   }
 
 }
