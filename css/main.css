@@ -316,16 +316,21 @@ a.hover:hover,
 .footer {
   width: 100%;
   height: auto;
-  padding-bottom: 5em;
+  padding-bottom: 2em;
   margin-top: 5em;
   background-color: #EFEFEF;
+  font-size: 0.85em;
 }
 
 .footer-section {
-  padding-top: 5em;
+  padding-top: 4em;
   width: 55%;
   margin: 0 auto;
   text-align: left;
+}
+
+.footer h1 {
+  margin-bottom: 0;
 }
 
 .footer h3 {
@@ -334,8 +339,17 @@ a.hover:hover,
 
 .footer p {
   margin-top: 0.5em;
+  font-size: small;
 }
 
+.footer-caption p {
+  color: #CCC;
+  font-size: 0.9em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-top: 1em;
+}
 
 .footer-align {
   width: 200px;
