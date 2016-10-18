@@ -207,6 +207,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  outline: none !important;
+}
+
 h1 {
   font-family: 'brandon_grotesquebold';
   font-size: 1.7em;
