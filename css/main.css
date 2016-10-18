@@ -783,6 +783,10 @@ html, body {
   -moz-opacity: 0.75;
   -khtml-opacity: 0.75;
   opacity: 0.75;
+
+  cursor: -moz-zoom-in; 
+  cursor: -webkit-zoom-in; 
+  cursor: zoom-in;
 }
 
 
