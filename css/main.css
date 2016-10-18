@@ -207,10 +207,6 @@ img {
   max-width: 100%;
 }
 
-a {
-  outline: none !important;
-}
-
 h1 {
   font-family: 'brandon_grotesquebold';
   font-size: 1.7em;
@@ -255,6 +251,7 @@ a {
   color: #CCA161;
   text-decoration: none;
   border-bottom: none;
+  outline: none !important;
 
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
