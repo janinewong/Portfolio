@@ -674,11 +674,12 @@ html, body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 800;
-  padding-bottom: 5em;
+  padding-bottom: 15em;
 }
 
 .logo-home {
-  max-width: 8em;
+  max-width: 11em;
+  margin-bottom: 1em;
 }
 
 
@@ -896,10 +897,6 @@ html, body {
     padding-right: 20px;
   }
 
-  .logo-home {
-    max-width: 7em;
-  }
-
   .thumbnail-caption {
     font-size: 0.9em;
   }
@@ -943,16 +940,16 @@ html, body {
     padding-top: 4em;
   }
 
-  .logo-home {
-    max-width: 6em;
-  }
-
   .title-section {
     max-width: 85%;
   }
 
   .grid-pad {
     padding: 0 0.75em;
+  }
+
+  .logo-home {
+    max-width: 9em;
   }
 
 }
