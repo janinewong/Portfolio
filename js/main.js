@@ -39,20 +39,23 @@ function hasScrolled() {
 
 
 /* for header */
-$(window).scroll(function(){
-    var stickyOffset = $('.sticky').offset().top;
-
-    if ($(window).scrollTop() >= stickyOffset) {
-       $('header').addClass('fixed-header');
-    }
-    else {
-       $('header').removeClass('fixed-header');
-    }
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
 });
 
 
+/* for arrow down */
 
+$('a[href^="#"]').click(function () {
+    $('html, body').animate({
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 500);
 
+    return false;
+});
 
 
 
