@@ -1019,6 +1019,10 @@ html, body {
   .footer-padding-right {
     padding-right: 1em;
   }
+
+  .demo a {
+    bottom: -.9em;
+  }
 }
 
 
@@ -1231,6 +1235,10 @@ html, body {
 
   .twitter-section {
     padding: 1em 0;
+  }
+
+  .demo a {
+    bottom: -1.3em;
   }
 
 }
