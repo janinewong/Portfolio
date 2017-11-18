@@ -845,7 +845,7 @@ html, body {
 /* for Arrow Down in header */
 .demo a {
   position: absolute;
-  bottom: -0.25em;
+  bottom: -0.9em;
   left: 50%;
   z-index: 2;
   display: inline-block;
