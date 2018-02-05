@@ -661,6 +661,7 @@ html, body {
 /* content centering styles */
 .content-a {
   display:table;
+  position: absolute;
 }
 .content-b {
   display:table-cell;
@@ -845,7 +846,7 @@ html, body {
 /* for Arrow Down in header */
 .demo a {
   position: absolute;
-  bottom: -0.9em;
+  bottom: 1.5em;
   left: 50%;
   z-index: 2;
   display: inline-block;
@@ -1019,10 +1020,6 @@ html, body {
   .footer-padding-right {
     padding-right: 1em;
   }
-
-  .demo a {
-    bottom: -.9em;
-  }
 }
 
 
@@ -1052,7 +1049,6 @@ html, body {
   .logo-home {
     max-width: 9em;
   }
-
 }
 
 @media (max-width: 40em) {
@@ -1238,11 +1234,17 @@ html, body {
   }
 
   .demo a {
-    bottom: -1.3em;
+    bottom: .75em;
   }
-
 }
 
+
+/* larger than 4K */
+@media (min-width: 95em) {
+  .demo a {
+    bottom: 2.5em;
+  }
+}
 
 
 
