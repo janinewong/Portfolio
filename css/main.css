@@ -791,6 +791,11 @@ html, body {
 }
 
 
+.col-6of10-text-pad {
+  padding-top: 20em;
+}
+
+
 
 /* --------------------- INTERACTION --------------------- */
 .button {
