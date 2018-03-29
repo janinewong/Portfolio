@@ -675,7 +675,6 @@ html, body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 800;
-  padding-bottom: 13em;
 }
 
 .logo-home {
@@ -687,6 +686,10 @@ html, body {
 
 
 /* ------------------------------------ ABOUT PAGE ---------------------------------------- */
+
+.about-photo { 
+    margin: 0 auto;
+}
 
 .interests-section {
   padding: 2% 10%;
@@ -851,7 +854,7 @@ html, body {
 /* for Arrow Down in header */
 .demo a {
   position: absolute;
-  bottom: 1.5em;
+  bottom: -1em;
   left: 50%;
   z-index: 2;
   display: inline-block;
@@ -995,9 +998,9 @@ html, body {
   }
 
   .content-b {
-    padding-bottom: 11em;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 7em;
   }
 
   .thumbnail-caption {
@@ -1241,6 +1244,10 @@ html, body {
   .demo a {
     bottom: .75em;
   }
+    
+    .about-photo {
+        width: 100%;
+    }
 }
 
 
