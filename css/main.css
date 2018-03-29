@@ -703,7 +703,13 @@ html, body {
   text-align: center;
 }
 
+.interest-photos {
+    background-color: #efefef
+}
 
+.about-footer {
+    padding-top: 3em;
+}
 
 /* ------------------------------------ PROJECTS PAGE ---------------------------------------- */
 
