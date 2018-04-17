@@ -957,6 +957,7 @@ html, body {
 
 /* --------------------- RESIZE --------------------- */
 
+/* laptop size */
 @media (max-width: 95em) {
   .main-wrapper, 
   .nav-wrapper,
@@ -1020,10 +1021,13 @@ html, body {
   .article-wrapper {
     padding-top: 6em;
   }
-
+    
+    #arrow-down a {
+        bottom: 3.5em;
+    }
 }
 
-/* laptop size */
+
 @media (max-width: 1024px) {
   .main-wrapper, 
   .nav-wrapper,
@@ -1035,9 +1039,6 @@ html, body {
   .footer-padding-right {
     padding-right: 1em;
   }
-    #arrow-down a {
-        bottom: 3.5em;
-    }
 }
 
 /* tablet size */
