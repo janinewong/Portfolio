@@ -222,6 +222,7 @@ h2 {
   color: #CCA161;
   font-weight: 600;
   letter-spacing: 0.1em;
+    line-height: 1.25em;
 }
 
 h3 {
@@ -239,6 +240,7 @@ h4 {
   font-size: 1.1em;
   text-transform: uppercase;
   letter-spacing: 0.1em;  
+    line-height: 1.5em;
 }
 
 p {
@@ -875,7 +877,7 @@ html, body {
 }
 
 #arrow-down a {
-  padding-bottom: 60px;
+  bottom: 3em;
 }
 #arrow-down a span {
   position: absolute;
@@ -1021,6 +1023,7 @@ html, body {
 
 }
 
+/* laptop size */
 @media (max-width: 1024px) {
   .main-wrapper, 
   .nav-wrapper,
@@ -1032,9 +1035,12 @@ html, body {
   .footer-padding-right {
     padding-right: 1em;
   }
+    #arrow-down a {
+        bottom: 3.5em;
+    }
 }
 
-
+/* tablet size */
 @media (max-width:50em) {
   .main-wrapper, 
   .nav-wrapper {
@@ -1061,8 +1067,10 @@ html, body {
   .logo-home {
     max-width: 9em;
   }
+    
 }
 
+/* smaller than 650px */
 @media (max-width: 40em) {
   header {
     padding: 0;
@@ -1245,8 +1253,8 @@ html, body {
     padding: 1em 0;
   }
 
-  .demo a {
-    bottom: .75em;
+  #arrow-down a {
+    bottom: 3.25em;
   }
     
     .about-photo {
@@ -1257,8 +1265,8 @@ html, body {
 
 /* larger than 4K */
 @media (min-width: 95em) {
-  .demo a {
-    bottom: 2.5em;
+  #arrow-down a {
+    bottom: 4em;
   }
 }
 
