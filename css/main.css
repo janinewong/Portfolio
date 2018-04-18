@@ -690,12 +690,11 @@ html, body {
   vertical-align:middle;
   text-align:center;
 
-  font-family: 'brandon_grotesquebold';
+  font-family: 'proxima_nova_rgbold';
   font-size: 1.25em;
   color: #939393;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-weight: 800;
 }
 
 .logo-home {
@@ -887,7 +886,7 @@ html, body {
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: #fff;
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  font : normal 400 20px/1 'proxima_nova_rg', sans-serif;
   letter-spacing: .1em;
   text-decoration: none;
   transition: opacity .3s;
