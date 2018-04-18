@@ -1,20 +1,47 @@
 /* --------------------- FONT --------------------- */
+
 @font-face {
-    font-family: 'Brandon Grotesque';
-    src: url('fonts/brandon_reg-webfont.woff2') format('woff2'),
-         url('fonts/brandon_reg-webfont.woff') format('woff');
+    font-family: 'proxima_nova_rgbold';
+    src: url('fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
+
 @font-face {
-    font-family: 'brandon_grotesquebold';
-    src: url('fonts/brandon_bld-webfont.woff2') format('woff2'),
-         url('fonts/brandon_bld-webfont.woff') format('woff');
+    font-family: 'proxima_nova_rg';
+    src: url('fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+
+@font-face {
+    font-family: 'proxima_nova_light';
+    src: url('fonts/proximanova-light-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'proxima_nova_light_italic';
+    src: url('fonts/proximanova-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'proxima_nova_semibold';
+    src: url('fonts/proximanova-semibold-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -144,11 +171,11 @@ nav {
 }
 
 nav a {
+    font-family: 'proxima_nova_semibold';
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-left: 3em;
   color: #021C1E;
-  font-weight: 600;
   text-decoration: none;
 }
 
@@ -195,9 +222,8 @@ nav a:first-child {
 /* --------------------- STYLING --------------------- */
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'proxima_nova_light', sans-serif;
   font-size: 12px;
-  /*background-image: url("../img/background-main.png");*/
   background-size: contain;
   background-repeat: repeat;
   background-color: #EFEFEF;
@@ -208,16 +234,13 @@ img {
 }
 
 h1 {
-  font-family: 'brandon_grotesquebold';
+  font-family: 'proxima_nova_rgbold';
   font-size: 2em;
   color: #021C1E;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: 800;
 }
 
 h2 {
-  font-family: "Josefin Sans";
+  font-family: 'proxima_nova_rg';
   font-size: 1.4em;
   color: #CCA161;
   font-weight: 600;
@@ -226,7 +249,7 @@ h2 {
 }
 
 h3 {
-  font-family: "brandon_grotesquebold";
+  font-family: 'proxima_nova_rgbold';
   color: #021C1E;
   font-size: 1.5em;
   font-weight: 800;
@@ -235,18 +258,18 @@ h3 {
 }
 
 h4 {
-  font-family: "Josefin Sans";
+  font-family: 'proxima_nova_rg';
   color: #CCA161;
-  font-size: 1.1em;
+  font-size: 1.3em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;  
+  letter-spacing: 0.05em;  
     line-height: 1.5em;
 }
 
 p {
   font-size: 1.5em;
   color: #666;
-  line-height: 1.75em;
+  line-height: 1.5em;
 }
 
 a {
@@ -268,7 +291,7 @@ a.hover:active,
 a.hover:hover,
 .selected {
   border-bottom: solid 0.1rem #CCA161;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
 }
 
 .selected {
@@ -286,10 +309,6 @@ a.hover:hover,
 .main-wrapper-container {
   background-color: #FFF;
   width: 100%;
-}
-
-.first-wrapper {
-  padding-top: 0em;
 }
 
 .content-wrapper {
@@ -1138,15 +1157,15 @@ html, body {
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   h2, h3, p {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 
   h4 {
-    font-size: 1.1em;
+    font-size: 1.4em;
   }
 
   h4 a {
