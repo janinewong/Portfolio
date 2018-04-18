@@ -827,7 +827,7 @@ html, body {
 
 /* --------------------- INTERACTION --------------------- */
 .button {
-  font-family: 'brandon_grotesquebold';
+  font-family: 'proxima_nova_rgbold';
   display: inline-block;
   padding: 0.5em;
   margin: 1em 0;
@@ -840,6 +840,7 @@ html, body {
 
   border: solid 0.11em #021C1E;
   border-radius: 3px;
+    
 }
 
 .button:hover, .button:active, .button-focus {
@@ -1109,6 +1110,7 @@ html, body {
   nav, .sub-nav {
     line-height: 4em;
     height: 4em;
+      font-size: 1.1em;
   }
 
   .logo {
