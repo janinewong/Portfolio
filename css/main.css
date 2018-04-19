@@ -457,14 +457,57 @@ a .icon-hover:hover {
 }
 
 .thumbnail-img {
-  opacity: 1;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  transition: all 300ms;
+    -webkit-transition: all 300ms; 
+    -moz-transition: all 300ms;
+    transition: all 300ms;
 }
 
-.thumbnail-img:hover {
-  opacity: 0.6;
+.container:hover .thumbnail-img {
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
+    transform: scale(1.1);
+}
+
+
+.container {
+    position: relative;
+    width: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+    -webkit-transition: all 300ms; 
+    -moz-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.container:hover .overlay {
+  opacity: .75;
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
+    transform: scale(1.1);
+}
+
+.text {
+  color: #FFF;
+  font-size: 2em;
+    font-family: 'proxima_nova_rgbold';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .content-top-align {
@@ -697,33 +740,64 @@ html, body {
 }
 
 .projects-collage {
-    height: 100em;
-    width: 75%;
+    height: 20em;
+    max-width: 55em;
     position: relative;
     margin: 0 auto;
+    overflow: visible;
+}
+
+.projects-collage:last-of-type {
+    margin-bottom: 5em;
 }
 
 .projects-collage-image {
     position: absolute;
     width: 20em;
     height: 20em;
+    background-color: #000;
     -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
     box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
 }
 
+.image-01:hover,
+.image-02:hover,
+.image-03:hover,
+.image-04:hover,
+.image-05:hover {
+    z-index: 99;
+}
+
 .image-01 {
-    top: 0;
-    left 15%;
+    top: 20%;;
+    left: 20%;
     z-index: 5;
 }
 
 .image-02 {
+    top: 30%;
+    right: 15%;
+    z-index: 3;
+}
+
+.image-03 {
+    top: -10%;
+    left: 0;
+    z-index: 2;
+}
+
+.image-04 {
     top: 10%;
-    right: 20%;
+    right: 35%;
     z-index: 4;
 }
 
+.image-05 {
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
 
 
 
@@ -1236,6 +1310,11 @@ html, body {
     
     .about-photo {
         width: 100%;
+    }
+    
+    .projects-collage-image {
+        height: 15em;
+        width: 15em;
     }
 }
 
