@@ -157,17 +157,16 @@
 /* --------------------- HEADER --------------------- */
 header {
   width: 100%;
-  z-index: 99;
-  padding: 0.5em 0;
-  background-color: #FFF;
-  transition: top 0.2s ease-in-out;
   top: 0;
+    position: absolute;
+    z-index: 99;
 }
 
 nav {
-  height: 4em;
+  height: 5em;
+    padding-top:5em;
   margin: 0 auto;
-  
+  vertical-align: middle;
 }
 
 nav a {
@@ -180,22 +179,12 @@ nav a {
 }
 
 nav a:hover {
-  color: #CCA161;
+  color: #FFF;
 }
 
 nav a:first-child {
   margin-left: 0;
 }
-
-.nav-up {
-    top: -5em;
-}
-
-.fixed-header {
-  position: fixed;
-  background-color: #FFF;
-  border-bottom: solid 0.1em #e6e6e6;
-} 
 
 .nav-wrapper {
   width: 55%;
@@ -273,7 +262,7 @@ p {
 }
 
 a {
-  color: #CCA161;
+  color: #FFF;
   text-decoration: none;
   border-bottom: none;
   outline: none !important;
@@ -288,14 +277,18 @@ a {
 
 a.hover:focus,
 a.hover:active,
-a.hover:hover,
-.selected {
-  border-bottom: solid 0.1rem #CCA161;
-  padding-bottom: 0.25rem;
+a.hover:hover {
+  border-bottom: solid 0.2em #CCA161;
+  padding-bottom: 0.25em;
 }
 
+nav a.hover:focus,
+nav a.hover:active,
+nav a.hover:hover,
 .selected {
-  color: #CCA161;
+    color: #FFF;
+    border-bottom: solid 0.2em #FFF;
+    padding-bottom: 0.25em;
 }
 
 .main-wrapper {
@@ -445,7 +438,13 @@ a .icon-hover:hover {
 }
 
 .home-caption {
-  color: #021C1E;
+  color: #FFF;
+    font-size: 5em;
+    font-family: 'proxima_nova_rgbold';
+}
+
+.home-caption-subtext {
+    color: #FFF;
 }
 
 .thumbnail-caption {
@@ -487,6 +486,8 @@ a .icon-hover:hover {
   font-size: 1.1em;
   font-style: italic;
 }
+
+
 
 
 /* ------------------------------------ FUN PAGE ---------------------------------------- */
@@ -660,11 +661,6 @@ html, body {
   bottom: 0;
 }
 
-.padding-fullscreen {
-  height: 5em;
-  background-color: #FFF;
-}
-
 /* parallax */
 .parallax {
   background-attachment: fixed;
@@ -677,6 +673,7 @@ html, body {
   background-position:50% 50%;
   /* ie8- graceful degradation */
   background-position:50% 50%9 !important;
+    background-color: #f4c20d;
 }
 
 /* content centering styles */
@@ -688,18 +685,43 @@ html, body {
   display:table-cell;
   position:relative;
   vertical-align:middle;
-  text-align:center;
-
-  font-family: 'proxima_nova_rgbold';
-  font-size: 1.25em;
-  color: #939393;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+    text-align: center;
 }
 
-.logo-home {
-  max-width: 11em;
-  margin-bottom: 1em;
+.home-me {
+    width: 20em;
+    border-radius: 50%;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+}
+
+.projects-collage {
+    height: 100em;
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.projects-collage-image {
+    position: absolute;
+    width: 20em;
+    height: 20em;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+}
+
+.image-01 {
+    top: 0;
+    left 15%;
+    z-index: 5;
+}
+
+.image-02 {
+    top: 10%;
+    right: 20%;
+    z-index: 4;
 }
 
 
@@ -877,98 +899,51 @@ html, body {
 
 
 /* for Arrow Down in header */
-.demo a {
-  position: absolute;
-  bottom: -1em;
-  left: 50%;
-  z-index: 2;
-  display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  color: #fff;
-  font : normal 400 20px/1 'proxima_nova_rg', sans-serif;
-  letter-spacing: .1em;
-  text-decoration: none;
-  transition: opacity .3s;
-}
-.demo a:hover {
-  opacity: .9;
+
+#arrow-down {
+  position: relative;
+    display: table-row;
+    margin: 0 auto;
+    bottom: 0;
+    left: 47%;
+    width: 5em;
+    height: 5em;
 }
 
 #arrow-down a {
-  bottom: 3em;
-}
-#arrow-down a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 46px;
-  height: 46px;
-  margin-left: -23px;
-  border: 1px solid #d5a218;
-  border-radius: 100%;
-  background-color: #d5a218;
-  box-sizing: border-box;
-}
-#arrow-down a span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: '';
-  width: 16px;
-  height: 16px;
-  margin: -12px 0 0 -8px;
-  border-left: 3px solid #fff;
-  border-bottom: 3px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
-#arrow-down a span::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  content: '';
-  width: 44px;
-  height: 44px;
-  box-shadow: 0 0 0 0 rgba(213, 164, 24, .75);
-  border-radius: 100%;
-  opacity: 0;
-  -webkit-animation: sdb03 3s infinite;
-  animation: sdb03 3s infinite;
-  box-sizing: border-box;
+    display: table-cell;
+    color: #D28500;
+    vertical-align: middle;
+    text-align: center;
 }
 
-@-webkit-keyframes sdb03 {
-  0% {
-    opacity: 0;
+#arrow-down a:hover,
+#arrow-down a:active,
+#arrow-down a:focus {
+    color: #FFF;
+}
+
+.arrow-down-animation {
+    position: absolute;
+    -webkit-animation: MoveUpDown 3s linear infinite;
+    animation: MoveUpDown 3s linear infinite;
+}
+
+@-webkit-keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 10px;
   }
-  30% {
-    opacity: 1;
-  }
-  60% {
-    box-shadow: 0 0 0 30px rgba(255,255,255,.1);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
+  50% {
+    bottom: 20px;
   }
 }
 
-@keyframes sdb03 {
-  0% {
-    opacity: 0;
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 10px;
   }
-  30% {
-    opacity: 1;
-  }
-  60% {
-    box-shadow: 0 0 0 30px rgba(255,255,255,.1);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
+  50% {
+    bottom: 20px;
   }
 }
 
@@ -1001,17 +976,9 @@ html, body {
     height: 3em;
   }
 
-  .nav-up {
-    top: -4em;
-  }
-
   .logo {
     padding: 0.55em 0;
     height: 3em;
-  }
-
-  .padding-fullscreen {
-    height: 4em;
   }
 
   .interests-section {
@@ -1026,7 +993,7 @@ html, body {
   .content-b {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 7em;
+      padding-top: 5em;
   }
 
   .thumbnail-caption {
@@ -1041,9 +1008,6 @@ html, body {
     padding-top: 6em;
   }
     
-    #arrow-down a {
-        bottom: 3.5em;
-    }
 }
 
 
@@ -1245,10 +1209,6 @@ html, body {
     font-size: 1.2em;
   }
 
-  .padding-fullscreen {
-    font-size: 0.85em;
-  }
-
   .about-caption {
     font-size: 0.9em;
   }
@@ -1273,10 +1233,6 @@ html, body {
   .twitter-section {
     padding: 1em 0;
   }
-
-  #arrow-down a {
-    bottom: 3.25em;
-  }
     
     .about-photo {
         width: 100%;
@@ -1286,9 +1242,6 @@ html, body {
 
 /* larger than 4K */
 @media (min-width: 95em) {
-  #arrow-down a {
-    bottom: 4em;
-  }
 }
 
 
