@@ -1032,7 +1032,6 @@ a.arrow-light:focus {
 }
 
 .arrow-down-animation {
-    position: absolute;
     -webkit-animation: MoveUpDown 2s ease infinite;
     animation: MoveUpDown 2s ease infinite;
 }
