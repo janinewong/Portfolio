@@ -471,10 +471,11 @@ a .icon-hover:hover {
 
 .container:hover .thumbnail-img,
 .container:hover .video {
-    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
-    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.25);
     transform: scale(1.1);
+    overflow: visible;
 }
 
 
@@ -500,10 +501,11 @@ a .icon-hover:hover {
 
 .container:hover .overlay {
   opacity: .75;
-    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
-    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.25);
     transform: scale(1.1);
+    overflow: visible;
 }
 
 .text {
@@ -689,7 +691,8 @@ a .icon-hover:hover {
 
 /* title content */
 .title-section {
-  margin: 12em auto;
+  margin: 7em auto;
+    padding: 12em 0;
 }
 
 /* fullscreen setup */
@@ -811,7 +814,8 @@ html, body {
     z-index: 1;
 }
 
-.video {
+.video,
+.container {
     width: 20em;
     height: 20em;
 }
@@ -1003,21 +1007,34 @@ html, body {
 
 #arrow-down a {
     display: table-cell;
-    color: #D28500;
     vertical-align: middle;
     text-align: center;
 }
 
-#arrow-down a:hover,
-#arrow-down a:active,
-#arrow-down a:focus {
+.arrow-dark {
+    color: #000;
+}
+
+.arrow-light {
+    color: #D28500;
+}
+
+a.arrow-dark:hover,
+a.arrow-dark:active,
+a.arrow-dark:focus {
+    color: #666;
+}
+
+a.arrow-light:hover,
+a.arrow-light:active,
+a.arrow-light:focus {
     color: #FFF;
 }
 
 .arrow-down-animation {
     position: absolute;
-    -webkit-animation: MoveUpDown 3s linear infinite;
-    animation: MoveUpDown 3s linear infinite;
+    -webkit-animation: MoveUpDown 2s ease infinite;
+    animation: MoveUpDown 2s ease infinite;
 }
 
 @-webkit-keyframes MoveUpDown {
@@ -1335,7 +1352,9 @@ html, body {
         height: 15em;
     }
     
-    .projects-collage-image {
+    .projects-collage-image,
+    .video,
+    .container {
         height: 15em;
         width: 15em;
     }
