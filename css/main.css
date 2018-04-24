@@ -262,7 +262,7 @@ p {
 }
 
 a {
-  color: #FFF;
+  color: #021c1E;
   text-decoration: none;
   border-bottom: none;
   outline: none !important;
@@ -277,15 +277,21 @@ a {
 
 a.hover:focus,
 a.hover:active,
-a.hover:hover {
-  border-bottom: solid 0.2em #CCA161;
+a.hover:hover,
+.nav-dark .hover:focus,
+.nav-dark .hover:active,
+.nav-dark .hover:hover,
+.nav-dark .selected
+{
+  border-bottom: solid 0.2em #f4c20d;
   padding-bottom: 0.25em;
+    color: #f4c20d;
 }
 
-nav a.hover:focus,
-nav a.hover:active,
-nav a.hover:hover,
-.selected {
+nav .nav-light .hover:focus,
+nav .nav-light .hover:active,
+nav .nav-light .hover:hover,
+.nav-light .selected {
     color: #FFF;
     border-bottom: solid 0.2em #FFF;
     padding-bottom: 0.25em;
@@ -299,9 +305,8 @@ nav a.hover:hover,
     padding-bottom: 4em;
 }
 
-.main-wrapper-container {
-  background-color: #FFF;
-  width: 100%;
+.first-wrapper {
+    padding-top: 2em;
 }
 
 .content-wrapper {
@@ -693,6 +698,7 @@ a .icon-hover:hover {
 .title-section {
   margin: 7em auto;
     padding: 12em 0;
+    width: 75%;
 }
 
 /* fullscreen setup */
@@ -1162,8 +1168,6 @@ a.arrow-light:focus {
 
   .main-wrapper {
     width: 90%;
-    padding-right: 20px;
-      padding-left: 20px;
   }
 
   .nav-wrapper {
