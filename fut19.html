@@ -43,17 +43,17 @@
   <body>
 
     <!-- ===================== Main Navigation ===================== -->
-    <header class="fixed-header">
-    <nav>
-        <div class="nav-wrapper">
-            <a href="/"><img src="img/logo.png" class="logo" alt="JW logo in black letters"></a>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="/"><img src="img/logo.png" class="logo" alt="JW logo in black letters"></a>
 
-        <div class="sub-nav nav-dark">
-            <a href="/" class="hover">Work</a>
-            <a href="about" class="selected hover">About</a>
-        </div>
-        </div>
-    </nav>
+            <div class="sub-nav nav-dark">
+                <a href="/" class="hover">Work</a>
+                <a href="about" class="selected hover">About</a>
+            </div>
+            </div>
+        </nav>
     </header>
 
 
@@ -61,25 +61,41 @@
     <!-- ===================== Hero Content ===================== -->
 
     <div class="section-content">
-        <div class="section-hero">
+        <div class="section-hero" id="project-fut19-bg">
 
             <div class="main-wrapper">
 
-                <div class="grid-row">
-                    <div class="grid-col-4of10">
-                        <h1 id="light">FIFA Ultimate Team 19 Console</h1>
+                <div class="grid-hero align-center bg-container">
+
+                    <h1 data-aos="fade-right" data-aos-duration="500" class="title" id="light">FIFA Ultimate Team 19 Console</h1>
+
+                    <div class="direction-right">
+                        <img src="img/fut19/hero-image.png" alt="image of TV showing the FUT19 opening splash screen with Ronaldo" class="img-hero" data-aos="fade-left" data-aos-duration="500" data-aos-delay="250" />
                     </div>
 
-                    <div class="grid-col-5of10">
-                        <img src="img/fut19/hero-image.png" alt="image of TV showing the FUT19 opening splash screen with Ronaldo" class="img-hero" />
-                    </div>
-                    
-                    <div class="grid-col-4of10" id="align-top">
+                    <svg width="375px" height="337px" viewBox="0 0 302 337" class="squares-left" id="bg-title">
+                        <rect id="project-fut19-color2" transform="translate(266.000000, 107.000000) rotate(-45.000000) translate(-266.000000, -107.000000) " x="241" y="82" width="50" height="50"></rect>
+
+                        <path d="M101,267 L136,302 L101,337 L66,302 L101,267 Z M101,280.786797 L79.7867966,302 L101,323.213203 L122.213203,302 L101,280.786797 Z" id="project-fut19-color1" style="transform: translate(4em);"></path>
+                    </svg>
+
+                    <svg width="500px" height="425px" viewBox="0 0 406 425" class="squares-right" id="bg-title" style="transform:rotate(90deg);">
+                        <path d="M141.421356,4.8316906e-13 L282.842712,141.421356 L141.421356,282.842712 L2.4158453e-13,141.421356 L141.421356,4.8316906e-13 Z M141.421356,39.5979797 L39.5979797,141.421356 L141.421356,243.244733 L243.244733,141.421356 L141.421356,39.5979797 Z" id="project-fut19-color3" style="transform: translateX(150px);"></path>
+                        
+                        <rect id="project-fut19-color2" transform="translate(150, 51.000000) rotate(-45.000000) translate(-550, -51.000000) " x="345" y="26" width="50" height="50"></rect>
+                        
+                        <rect id="project-fut19-color1" transform="translate(300.500000, 406.500000) rotate(-45.000000) translate(-300.500000, -406.500000) " x="288" y="394" width="25" height="25"></rect>
+                    </svg>
+                
+                </div>
+
+                <div class="grid-hero">
+                    <div>
                         <h3 class="margin-bot-adjust" id="light">console games, gaming</h3>
                         <p class="margin-top-adjust" id="light">2019</p>
                     </div>
 
-                    <div class="grid-col-4of10" id="align-top">
+                    <div>
                         <h3 class="margin-bot-adjust" id="light">team shoutouts</h3>
                         <p class="margin-top-adjust" id="light">Simon Jenkins, Mimi Lee, FUT 19 Console Dev Team</p>
                     </div>
@@ -102,14 +118,16 @@
 
             </div>
 
-            <img src="img/fut19/challenge-image.png" alt="3 phones showing the login screen of FUT Companion App, the home page, and the Transfer Market" />
+            <div class="grid-center">
+                <img src="img/fut19/challenge-image.png" id="img-large" alt="3 phones showing the login screen of FUT Companion App, the home page, and the Transfer Market" />
+            </div>
 
 
             <!-- ===================== Story Content ===================== -->
             
-            <div class="grid-row" id="section-padding">
+            <div class="grid-2col" id="section-padding">
                 
-                <div class="grid-col-5of10">
+                <div>
                     <div class="title-caption" id="project-fut19-color1">story</div>
                     <h2 id="title">Unlocking Potential<span id="project-fut19-color1">.</span></h2>
 
@@ -122,7 +140,7 @@
                     </div>
                 </div>
 
-                <div class="grid-col-5of10" id="align-top">
+                <div>
                     <img src="img/fut19/story-image.png" alt="2 TV screens showing the New Items screen in FUT 18" id="img-min" />
                 </div>
 
@@ -131,13 +149,13 @@
 
             <!-- ===================== Approach Content ===================== -->
             
-            <div class="grid-row" id="section-padding">
+            <div class="grid-2col" id="section-padding">
                     
-                <div class="grid-col-5of10 grid-order2" id="img-left">
+                <div id="img-left">
                     <img src="img/fut19/approach-image.png" alt="2 TV screens showing the New Items screen in FUT 18" id="img-min" />
                 </div>
     
-                <div class="grid-col-5of10 grid-order1" id="align-top">
+                <div class="grid-order">
 
                     <div class="title-caption" id="content-indent"><span id="project-fut19-color3">approach</span></div>
                     <h2 id="title">Energy<span id="project-fut19-color3">.</span> Motion<span id="project-fut19-color3">.</h2>
@@ -152,60 +170,136 @@
 
             <!-- ===================== Features 1 Content ===================== -->
             
-            <div class="section-center" id="section-padding">
+            <div class="section-center-small" id="section-padding">
 
-                <div class="title-caption" id="content-indent"><span id="project-fut19-color2">features</span></div>
-                <h2 id="title">new layout<span id="project-fut19-color2">.</h2>
+                <div class="title-caption" id="content-indent"><span id="project-fut19-color4">features</span></div>
+                <h2 id="title">new layout<span id="project-fut19-color4">.</h2>
 
                 <div id="content-indent">
-                    <p>We surfaced the actions in big tiles similar to how the rest of the game is styled. As users already have a mental model of how to interact with big tiles already, there was less room for error on how to interact with it. In this way, the call to actions are much more clear instead of hiding it behind tabs at the top of the screen. Once the user has sorted the action tile where each item should go into, they can confirm and be on their merry way.</p>
+                    <p>We surfaced the actions in big tiles similar to how the rest of the game is styled. As users already have a mental model of how to interact with big tiles already, there was less room for error on how to interact with it.</p>
+
+                    <p>In this way, the call to actions are much more clear instead of hiding it behind tabs at the top of the screen. Once the user has sorted the action tile where each item should go into, they can confirm and be on their merry way.</p>
                 </div>   
     
             </div>
 
-            <img src="img/fut19/feature1-image.png" alt="2 TV screens showing the New Items screen in FUT 18" />
+            <div class="grid-center">
+                <img src="img/fut19/feature1-image.png" id="img-large" alt="3 screens showing the New Items screen on each selected tile and an empty state of the Keep Items tile" />
+            </div>
+
+            <!-- ===================== Features 2 Content ===================== -->
+            
+            <div class="grid-2col" id="section-padding">
+                
+                <div id="img-left">
+                    <img src="img/fut19/feature2-image.png" alt="2 TV screens showing the New Items screen in FUT 18" id="img-min" />
+                </div>
+
+                <div class="grid-order">
+                    <div class="title-caption" id="project-fut19-color1">features</div>
+                    <h2 id="title">Duplicate Players<span id="project-fut19-color1">.</span></h2>
+
+                    <div id="content-indent">
+                        <p>A common use case is when users have to deal with duplicate players. A user cannot keep the same player in their club, so the user will either have to quick sell it for coins or send it to the Transfer List to sell on the market.</p>
+                        
+                        <p>I made a couple of iterations trying to surface how to deal with duplicates through iconography and callouts (shown in the first image), however in the end we decided to keep the flow the same and made it more apparent in a small duplicates callout on the tile (shown in the second image).</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ===================== Features 3 Content ===================== -->
+            
+            <div class="section-center-small" id="section-padding">
+
+                <div class="title-caption" id="content-indent"><span id="project-fut19-color3">features</span></div>
+                <h2 id="title">snappy micro-interactions<span id="project-fut19-color3">.</h2>
+
+                <div id="content-indent">
+                    <p>With the theme of motion, I iterated on how to make the experience feel faster. At first, we thought it would give a personalized touch to display the name of the player in the background when added to a tile but because of legal constraints we decided against it (shown in the first image below). Instead, we opted for subtle glows and increased the sizes of the coin and item icons (shown in the second image below).</p>
+                </div>   
+    
+            </div>
+
+            <div class="grid-center">
+
+                <div class="bg-container">
+                    <img src="img/fut19/feature3-bg.png" class="bg-right" alt="colourful diamond graphic with stripes and pops of colour" />
+
+                    <img src="img/fut19/feature3-gif1.gif" class="project-img-pad" alt="animated GIF showing a transition from moving a player into 'Quick Sell' with the player's last name popping up" />
+
+                    <img src="img/fut19/feature3-gif2.gif" alt="animated GIF showing a transition from moving a player into 'Quick Sell' with a glow going across the tile and increasing the coins and number of items" />
+                </div>
+
+
+            </div>
+
+
+            <!-- ===================== Tech Content ===================== -->
+            
+            <div id="section-padding">
+
+                <h2 id="title">tech<span id="project-fut19-color1">.</h2>
+
+                    <div class="grid-3col">
+                        <div class="grid-pad">
+                            <h3>Photoshop</h3>
+                            <p>All FIFA files were designed in Photoshop with shared libraries for FIFA assets.</p>
+                        </div>
+
+                        <div class="grid-pad">
+                            <h3>After Effects</h3>
+                            <p>I used After Effects to create all animations to replicate what the experience would look like.</p>
+                        </div>   
+                    </div>
+    
+            </div>
+
+
+            <!-- ===================== Reflect Content ===================== -->
+            
+            <div class="bg-container" id="section-padding">
+
+                <div class="section-center">
+                    <div class="title-caption"><span id="project-fut19-color4">reflect</span></div>
+                    <h2 id="title">Context is key<span id="project-fut19-color4">.</h2>
+
+                        <p>I learned that context really is essential to creating a great user experience, especially since there are so many edge and use cases that a user might go through.</p>
+
+                        <p>It’s important to always think back in the mind of the user and catch those edge cases so the design works for every scenario. In this case, I relied heavily on the UX designer’s game knowledge of how a user interacts with the New Item screen.</p>
+        
+                </div>
+
+                <svg width="500px" height="425px" viewBox="0 0 406 425" class="squares-left">
+                    <path d="M141.421356,4.8316906e-13 L282.842712,141.421356 L141.421356,282.842712 L2.4158453e-13,141.421356 L141.421356,4.8316906e-13 Z M141.421356,39.5979797 L39.5979797,141.421356 L141.421356,243.244733 L243.244733,141.421356 L141.421356,39.5979797 Z" id="project-fut19-color3"></path>
+                    <rect id="project-fut19-color2" transform="translate(370.000000, 51.000000) rotate(-45.000000) translate(-370.000000, -51.000000) " x="345" y="26" width="50" height="50"></rect>
+                    <rect id="project-fut19-color1" transform="translate(300.500000, 406.500000) rotate(-45.000000) translate(-300.500000, -406.500000) " x="288" y="394" width="25" height="25"></rect>
+                </svg>
+
+                <svg width="375px" height="337px" viewBox="0 0 302 337" class="squares-right">
+                    <rect id="project-fut19-color2" transform="translate(266.000000, 107.000000) rotate(-45.000000) translate(-266.000000, -107.000000) " x="241" y="82" width="50" height="50"></rect>
+                    <rect id="project-fut19-color3" transform="translate(18.500000, 18.500000) rotate(-45.000000) translate(-18.500000, -18.500000) " x="6" y="6" width="25" height="25"></rect>
+                    <path d="M101,267 L136,302 L101,337 L66,302 L101,267 Z M101,280.786797 L79.7867966,302 L101,323.213203 L122.213203,302 L101,280.786797 Z" id="project-fut19-color4" ></path>
+                </svg>
+            </div>
+
+
+            <!-- ===================== Next Project Content ===================== -->
+            <div class="section-next" id="section-padding">
+                <div class="section-center">
+                    <div class="title-caption"><span id="project-fut19-color3">next project</span></div>
+                    <h2 id="title">FIFA Ultimate Team 18 Companion App<span id="project-fut19-color3">.</h2>
+                </div>
+            </div>
                 
         </div>
 
-    </div>
 
-
-
-
-    <div class="footer about-footer">
-      <div class="footer-section">
-
-        <div class="grid-row">
-          <div class="grid-col-6of10 footer-padding-right">
-            <h3>Let's Work Together</h3> 
-            <p>Whether you have an interesting project you're working on or for other work inquiries, feel free to shoot me a message at: jaeninwong@gmail.com</p>  
-          </div>
-
-
-          <div class="grid-col-2of10 footer-align">
-            <h3>Stalk me</h3>
-            <a href="https://ca.linkedin.com/in/janine-wong" class="icon-pad" target="blank">
-              <i class="fa fa-linkedin-square fa-3x icon-pad footer-icon icon-hover" ></i>
-            </a>
-
-            <a href="https://www.instagram.com/jaeenine/" class="icon-pad" target="blank">
-              <i class="fa fa-instagram fa-3x icon-pad footer-icon icon-hover" ></i>
-            </a>
-
-            <a href="https://www.pinterest.com/jaeenine/" class="icon-pad" target="blank">
-              <i class="fa fa-pinterest fa-3x icon-pad footer-icon icon-hover" aria-hidden="true"></i>
-            </a>
-
-            <a href="https://twitter.com/jaeenine" target="blank">
-              <i class="fa fa-twitter fa-3x icon-pad footer-icon icon-hover" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>        
-        
-        <div class="footer-caption">
-          <p>Coded with love by Janine</p>
+        <div data-aos="fade-up" class="section-center project-next-img" id="project-fut18-bg">
+            <img src="img/fut18/project-image.png" alt="project image" />
         </div>
-      </div>
+
     </div>
 
 
