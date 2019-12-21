@@ -283,6 +283,10 @@ a:hover {
   margin: 0 auto;
 }
 
+.section-next {
+  margin-top: 4em;
+}
+
 .section-landing {
   margin-top: 8em;
 }
