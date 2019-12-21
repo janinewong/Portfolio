@@ -16,12 +16,11 @@
   grid-auto-flow: row dense;
   max-width: 80em;
   margin: 0 auto;
-  padding-bottom: 4em;
 }
 
 .project-item {
   border-radius: 0.5em;
-  padding: 1em;
+  transition: transform .5s cubic-bezier(.31,2.71,.8,.9);
 }
 
 .grid-hero {
@@ -125,6 +124,7 @@ nav a:first-child {
 /* navigation labels */
 .sub-nav {
   float: right;
+  vertical-align: middle;
 }
 
 
@@ -191,23 +191,11 @@ p {
   line-height: 1.75em;
 }
 
-#light {
-  color: #FFF;
-}
-
-.margin-top-adjust {
-  margin-top: 0;
-}
-
-.margin-bot-adjust {
-  margin-bottom: 0;
-}
-
 a {
-  color: #000;
-  border-bottom: solid 0.23m #F00084;
-  padding-bottom: 0.25em;
+  color: #F00084;
+  text-underline-position: under;
   outline: none !important;
+  display: inline-block;
 
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -216,25 +204,19 @@ a {
   transition: all 0.3s;
 }
 
-
-a.hover:focus,
-a.hover:active,
-a.hover:hover,
-.nav-dark .hover:focus,
-.nav-dark .hover:active,
-.nav-dark .hover:hover,
-.nav-dark .selected
-{
-  color: #F00084;
+a:focus,
+a:active {
+  background-color: #F00084;
+  color: #FFF;
+  text-decoration: none;
 }
 
-nav .nav-light .hover:focus,
-nav .nav-light .hover:active,
-nav .nav-light .hover:hover,
-.nav-light .selected {
-    color: #FFF;
-    border-bottom: solid 0.2em #FFF;
-    padding-bottom: 0.25em;
+a:hover {
+  text-decoration: none;
+}
+
+#light {
+  color: #FFF;
 }
 
 .main-wrapper {
@@ -245,15 +227,6 @@ nav .nav-light .hover:hover,
 
 .main-wrapper:first-of-type {
   padding-top: 0;
-}
-
-.first-wrapper {
-    padding-top: 2em;
-}
-
-.content-wrapper {
-  margin: 0 auto;
-  display: block;
 }
 
 #title {
@@ -314,16 +287,47 @@ nav .nav-light .hover:hover,
   margin-top: 8em;
 }
 
+.section-footer {
+  text-align: center;
+}
+
+.section-footer h2 {
+  margin-bottom: 0;
+}
+
 /* next project */
 
-.project-next-img {
+.project-next {
   height: 20em;
+}
+
+.project-next a {
   padding-top: 2em;
 }
 
+.project-next a:hover {
+  transform: scale(1.05);
+}
+
+.project-next a:active,
+.project-next a:focus {
+  transform: scale(1);
+  transition: none;
+}
+
 .project-img {
-  padding: 3em;
-  padding-bottom: 0;
+  padding-top: 2em;
+}
+
+.project-item a:hover {
+  transform: scale(1.05);
+}
+
+.project-item a:focus,
+.project-item a:active {
+  border-radius: 0.5em;
+  transform: scale(1);
+  transition: none;
 }
 
 .project-text {
@@ -344,21 +348,9 @@ nav .nav-light .hover:hover,
   margin: 0;
 }
 
-a .icon-hover {
-  color: #021C1E;
-
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-
-a .icon-hover:active,
-a .icon-hover:focus,
-a .icon-hover:hover {
-  color: #CCA161;
+.project-item a {
+  text-decoration: none;
+  padding: 1em;
 }
 
 .img-hero {
@@ -373,8 +365,12 @@ a .icon-hover:hover {
   z-index: 1;
 }
 
-.title-name {
+.margin-bot-adjust {
   margin-bottom: 0;
+}
+
+.margin-top-adjust {
+  margin-top: 0;
 }
 
 .bg-container {
@@ -400,7 +396,7 @@ a .icon-hover:hover {
 
 
 
-/* ------------------------------------ SVGS ---------------------------------------- */
+/* ------------------------------------ ICONS/SVGS ---------------------------------------- */
 
 .squares-left {
   position: absolute;
@@ -414,6 +410,10 @@ a .icon-hover:hover {
   z-index: -1;
   top: 13em;
   right: -15em;
+}
+
+.fa {
+  padding-left: 0.25em;
 }
 
 
@@ -563,7 +563,6 @@ a .icon-hover:hover {
 
   .grid-projects {
     grid-gap: 0;
-    padding-bottom: 0;
   }
 
   .project-item {
