@@ -219,6 +219,10 @@ a:hover {
   color: #FFF;
 }
 
+#dark {
+  color: #000;
+}
+
 .main-wrapper {
   max-width: 60em;
   margin: 0 auto;
@@ -302,12 +306,14 @@ a:hover {
 /* next project */
 
 .project-next {
-  height: 20em;
+  max-height: 20em;
   overflow: hidden;
+  text-align: center;
 }
 
 .project-next a {
-  padding-top: 2em;
+  padding: 4em;
+  max-width: 80em;
 }
 
 .project-next a:hover {
@@ -380,7 +386,6 @@ a:hover {
 
 .bg-container {
   position: relative;
-  width: 100%;
 }
 
 #bg-title {
@@ -391,6 +396,13 @@ a:hover {
   position: absolute;
   top: 0;
   left: 20em;
+  z-index: -1;
+}
+
+.bg-left {
+  position: absolute;
+  top: 0;
+  right: 20em;
   z-index: -1;
 }
 
@@ -410,11 +422,25 @@ a:hover {
   left: -25em;
 }
 
+.squares-left-long {
+  position: absolute;
+  z-index: -1;
+  top: 2em;
+  left: -23em;
+}
+
 .squares-right {
   position: absolute;
   z-index: -1;
   top: 13em;
   right: -15em;
+}
+
+.squares-right-long {
+  position: absolute;
+  z-index: -1;
+  top: 2em;
+  right: -12em;
 }
 
 .fa {
@@ -443,9 +469,47 @@ a:hover {
   fill: #14D6AF;
 }
 
+/* Developer Center project */
+
+
+/* Readiness Checklist project */
+#project-checklist-bg {
+  background-color: #FAB717;
+}
+
+
+/* FUT 18 project */
+
 #project-fut18-bg {
   background-color: #231E7D;
 }
+
+#project-fut18-color1 {
+  color: #231E7D;
+  fill: #231E7D;
+}
+
+#project-fut18-color2 {
+  color: #CE2369;
+  fill: #CE2369;
+}
+
+#project-fut18-color3 {
+  color: #BEEE36;
+  fill: #BEEE36;
+}
+
+#project-fut18-color4 {
+  color: #FFF;
+  fill: #FFF;
+}
+
+#project-fut18-color5 {
+  color: #FB8936;
+  fill: #FB8936;
+}
+
+/* FUT 19 project */
 
 #project-fut19-bg {
   background-color: #0639AB;
@@ -475,7 +539,7 @@ a:hover {
 /* --------------------- RESIZE --------------------- */
 
 /* laptop size */
-@media (max-width: 80em) {
+@media screen and (max-width: 80em) {
   .main-wrapper, 
   .nav-wrapper {
     width: 90%;
@@ -498,7 +562,7 @@ a:hover {
 
 
 /* smaller than 920px */
-@media (max-width: 920px) {
+@media screen and (max-width: 920px) {
   header {
     padding: 0;
     font-size: 0.85em;
@@ -507,6 +571,10 @@ a:hover {
   .main-wrapper {
     width: 90%;
     padding: 2em 0;
+  }
+
+  nav a {
+    line-height: 2em;
   }
 
   h1 {
@@ -552,10 +620,22 @@ a:hover {
   #section-padding {
     padding-top: 2em;
   }
+
+  .section-landing {
+    margin-top: 6em;
+  }
  
   .footer-section {
     max-width: 100%;
     width: 100%;
+  }
+
+  .project-next a {
+    padding: 2em;
+  }
+
+  .project-img-pad {
+    padding: 1em 0;
   }
 
   .grid-row {
@@ -587,7 +667,7 @@ a:hover {
 
 
 /* larger than 4K */
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .nav-wrapper {
     width: 60em;
   }
