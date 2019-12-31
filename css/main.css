@@ -221,6 +221,16 @@ a:hover {
 
 #dark {
   color: #000;
+  text-shadow: none;
+}
+
+#selected {
+  color: #F00084;
+}
+
+#selected:focus,
+#selected:active {
+  color: #FFF;
 }
 
 .main-wrapper {
@@ -251,6 +261,10 @@ a:hover {
 
 #img-large {
   max-width: 125%;
+}
+
+#img-xlarge {
+  max-width: 175%;
 }
 
 #img-left {
@@ -470,12 +484,36 @@ a:hover {
 }
 
 /* Developer Center project */
+#project-developer-center-bg {
+  background-color: #F3F4F8;
+}
+
+#project-developer-center-color1 {
+  color: #0145DF;
+  fill: #0145DF;
+}
+
+#project-developer-center-color2 {
+  color: #005C83;
+  fill: #005C83;
+}
+
+#project-developer-center-color3 {
+  color: #4E439B;
+  fill: #4E439B;
+}
+
+#project-developer-center-color4 {
+  color: #DC0A3C;
+  fill: #DC0A3C;
+}
 
 
 /* Readiness Checklist project */
 #project-checklist-bg {
   background-color: #FAB717;
 }
+
 
 
 /* FUT 18 project */
@@ -602,7 +640,12 @@ a:hover {
   }
 
   .img-hero {
-    padding-left: 30%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  #img-xlarge {
+    max-width: 100%;
   }
 
   #img-min, #img-left {
@@ -661,6 +704,10 @@ a:hover {
 
   #avatar {
     max-width: 4em;
+  }
+
+  .squares-right-long {
+    right: -17em;
   }
     
 }
