@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Norwester';
-  src: url('/css/fonts/norwester.woff2') format('woff2'), url('/css/fonts/norwester.woff') format('woff');
+  src: url('fonts/norwester.woff2') format('woff2'), url('fonts/norwester.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
