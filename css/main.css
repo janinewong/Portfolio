@@ -11,7 +11,7 @@
 
 .grid-projects {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1em 1em;
   grid-auto-flow: row dense;
   max-width: 80em;
@@ -483,6 +483,11 @@ a:hover {
   fill: #14D6AF;
 }
 
+#default-color5 {
+  color: #FFF;
+  fill: #FFF;
+}
+
 /* Developer Center project */
 #project-developer-center-bg {
   background-color: #F3F4F8;
@@ -509,11 +514,10 @@ a:hover {
 }
 
 
-/* Readiness Checklist project */
-#project-checklist-bg {
+/* The Scaffold project */
+#project-scaffold-bg {
   background-color: #FAB717;
 }
-
 
 
 /* FUT 18 project */
@@ -683,6 +687,10 @@ a:hover {
 
   .grid-row {
     display: block;
+  }
+
+  .grid-pad {
+    padding: 0em;
   }
 
   .grid-order {
