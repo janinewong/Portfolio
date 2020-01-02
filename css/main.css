@@ -599,7 +599,9 @@ a:hover {
     grid-gap: 0;
   }
 
-  .project-item {
+  .project-item,
+  .project-item a:focus,
+  .project-item a:active {
     border-radius: 0;
     padding: 0;
   }
