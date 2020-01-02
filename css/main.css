@@ -90,7 +90,7 @@ header {
 }
 
 nav a {
-  font-family: 'Norwester';
+  font-family: 'Norwester', sans-serif;
   text-transform: uppercase;
   margin-left: 3em;
   color: #000;
@@ -143,7 +143,7 @@ img {
 }
 
 h1 {
-  font-family: 'Norwester';
+  font-family: 'Norwester', sans-serif;
   font-size: 7em;
   color: #000;
   line-height: 1em;
@@ -152,7 +152,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Norwester';
+  font-family: 'Norwester', sans-serif;
   font-size: 6em;
   color: #000;
   line-height: 1.1em;
@@ -161,7 +161,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Norwester';
+  font-family: 'Norwester', sans-serif;
   font-size: 1.2em;
   line-height: 1.75em;
   color: #000;
