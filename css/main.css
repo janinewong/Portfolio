@@ -205,7 +205,11 @@ a {
 }
 
 a:focus,
-a:active {
+a:active,
+a:focus #dark,
+a:active #dark,
+a:focus p,
+a:active p {
   background-color: #F00084;
   color: #FFF;
   text-decoration: none;
